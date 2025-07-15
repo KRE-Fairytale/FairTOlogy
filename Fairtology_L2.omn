@@ -1,0 +1,368 @@
+Prefix: : <http://example.org/fairtale#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://example.org/fairtale#FairytaleOntology>
+
+
+Datatype: xsd:decimal
+
+    
+Datatype: xsd:integer
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: hasAdaptation
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        Fairytale
+    
+    
+ObjectProperty: hasAttribute
+
+    Domain: 
+        CharacterType
+    
+    Range: 
+        CharacterAttributes
+    
+    
+ObjectProperty: hasAudienceAttitude
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        PublicAttitude
+    
+    
+ObjectProperty: hasCharacterType
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        CharacterType
+    
+    
+ObjectProperty: hasEndingType
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        EndingType
+    
+    
+ObjectProperty: hasMoralTheme
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        MoralTheme
+    
+    
+ObjectProperty: hasPromotedAspect
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        ActivePromotion
+    
+    
+ObjectProperty: producedBy
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        Producer
+    
+    
+ObjectProperty: receivedBy
+
+    Domain: 
+        Fairytale
+    
+    Range: 
+        Audience
+    
+    
+DataProperty: attitudeSummary
+
+    Domain: 
+        PublicAttitude
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: ratingSource
+
+    Domain: 
+        PublicAttitude
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: ratingValue
+
+    Domain: 
+        PublicAttitude
+    
+    Range: 
+        xsd:decimal
+    
+    
+DataProperty: reviewCount
+
+    Domain: 
+        PublicAttitude
+    
+    Range: 
+        xsd:integer
+    
+    
+Class: ActivePromotion
+
+    
+Class: Audience
+
+    
+Class: Bittersweet
+
+    SubClassOf: 
+        EndingType
+    
+    
+Class: CharacterAttributes
+
+    
+Class: CharacterType
+
+    
+Class: CinematicAdaptation
+
+    SubClassOf: 
+        Fairytale
+    
+    
+Class: EmpowermentTheme
+
+    SubClassOf: 
+        MoralTheme
+    
+    
+Class: EndingType
+
+    
+Class: Evil
+
+    SubClassOf: 
+        CharacterAttributes
+    
+    
+Class: Fairytale
+
+    
+Class: HappilyEverAfter
+
+    SubClassOf: 
+        EndingType
+    
+    
+Class: Helper
+
+    SubClassOf: 
+        CharacterType
+    
+    
+Class: Hero
+
+    SubClassOf: 
+        CharacterType
+    
+    
+Class: IdentityAndInclusionTheme
+
+    SubClassOf: 
+        MoralTheme
+    
+    
+Class: InnerSelf
+
+    SubClassOf: 
+        ActivePromotion
+    
+    
+Class: Innocent
+
+    SubClassOf: 
+        CharacterAttributes
+    
+    
+Class: LiteraryForm
+
+    SubClassOf: 
+        Fairytale
+    
+    
+Class: MixedReception
+
+    SubClassOf: 
+        PublicAttitude
+    
+    
+Class: MoralAmbiguityTheme
+
+    SubClassOf: 
+        MoralTheme
+    
+    
+Class: MoralTheme
+
+    
+Class: NegativeReception
+
+    SubClassOf: 
+        PublicAttitude
+    
+    
+Class: OuterWorld
+
+    SubClassOf: 
+        ActivePromotion
+    
+    
+Class: PositiveReception
+
+    SubClassOf: 
+        PublicAttitude
+    
+    
+Class: Producer
+
+    
+Class: PublicAttitude
+
+    
+Class: Rebel
+
+    SubClassOf: 
+        CharacterAttributes
+    
+    
+Class: Tragic
+
+    SubClassOf: 
+        EndingType
+    
+    
+Class: TragicAttribute
+
+    SubClassOf: 
+        CharacterAttributes
+    
+    
+Class: Trickster
+
+    SubClassOf: 
+        CharacterType
+    
+    
+Class: Villain
+
+    SubClassOf: 
+        CharacterType
+    
+    
+Class: VirtueRewardedTheme
+
+    SubClassOf: 
+        MoralTheme
+    
+    
+Individual: Bittersweet
+
+    
+Individual: EmpowermentTheme
+
+    
+Individual: HappilyEverAfter
+
+    
+Individual: Hero
+
+    
+Individual: InnerSelf
+
+    
+Individual: LittleMermaidAudience
+
+    Types: 
+        MixedReception
+    
+    Facts:  
+     attitudeSummary  "Appreciated for diversity and agency, but divisive in tone and pacing.",
+     ratingSource  "IMDb",
+     ratingValue  7.0,
+     reviewCount  98000
+    
+    
+Individual: LittleMermaid_2023
+
+    Types: 
+        CinematicAdaptation
+    
+    Facts:  
+     hasAudienceAttitude  LittleMermaidAudience,
+     hasCharacterType  Hero,
+     hasEndingType  Bittersweet,
+     hasMoralTheme  EmpowermentTheme,
+     hasPromotedAspect  OuterWorld
+    
+    
+Individual: OuterWorld
+
+    
+Individual: SnowWhiteAudience
+
+    Types: 
+        PositiveReception
+    
+    Facts:  
+     attitudeSummary  "Classic portrayal of good triumphing over evil with enduring appeal.",
+     ratingSource  "IMDb",
+     ratingValue  7.6,
+     reviewCount  150000
+    
+    
+Individual: SnowWhite_Disney
+
+    Types: 
+        CinematicAdaptation
+    
+    Facts:  
+     hasAudienceAttitude  SnowWhiteAudience,
+     hasCharacterType  Hero,
+     hasEndingType  HappilyEverAfter,
+     hasMoralTheme  VirtueRewardedTheme,
+     hasPromotedAspect  InnerSelf
+    
+    
+Individual: VirtueRewardedTheme
+
+    
