@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#"
+     xml:base="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1">
+        <rdfs:comment>An ontology for modeling structural and thematic elements of global fairy tales, including character archetypes, moral themes, and narrative outcomes.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasCharacterArchetype -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasCharacterArchetype">
+        <rdfs:domain rdf:resource="http://example.org/fairytale#Fairytale"/>
+        <rdfs:range rdf:resource="http://example.org/fairytale#CharacterArchetype"/>
+        <rdfs:comment>Links a tale to a character archetype involved.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasEndingType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasEndingType">
+        <rdfs:domain rdf:resource="http://example.org/fairytale#Fairytale"/>
+        <rdfs:range rdf:resource="http://example.org/fairytale#EndingType"/>
+        <rdfs:comment>Links a tale to its ending resolution type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasLiteraryMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasLiteraryMode">
+        <rdfs:domain rdf:resource="http://example.org/fairytale#Fairytale"/>
+        <rdfs:range rdf:resource="http://example.org/fairytale#LiteraryMode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasMoralTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasMoralTheme">
+        <rdfs:domain rdf:resource="http://example.org/fairytale#Fairytale"/>
+        <rdfs:range rdf:resource="http://example.org/fairytale#MoralTheme"/>
+        <rdfs:comment>Links a tale to the moral lesson it conveys.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasPlot -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasPlot">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/fairytale#Fairytale"/>
+        <rdfs:range rdf:resource="http://example.org/fairytale#Plot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/fairytale#CharacterArchetype -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#CharacterArchetype">
+        <rdfs:comment>Represents common character roles in fairy tales which were modeled based on a  simplified set of narrative character roles commonly found in fairy tales. This model draws conceptually from Northrop Frye&apos;s theory of literary archetypes but adapts it to the domain of folk and fairy tale ontology.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#EndingType -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#EndingType">
+        <rdfs:comment>Denotes the resolution structure or emotional closure of the story.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#Fairytale -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#Fairytale">
+        <rdfs:comment>Represents the original fairy tale narratives.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#Helper -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#Helper">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#CharacterArchetype"/>
+        <rdfs:comment>Supports the hero through guidance or gifts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#Hero -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#Hero">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#CharacterArchetype"/>
+        <rdfs:comment>Central figure on a quest or journey.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#IronicMode -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#IronicMode">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#LiteraryMode"/>
+        <rdfs:comment>A narrative where the characters are below the audience in knowledge or power; emphasizes irony, futility, or ambiguity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#LiteraryMode -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#LiteraryMode">
+        <rdfs:comment>Narrative mode expressing the symbolic or emotional tone of a tale. Adapted from Frye’s typology of literary modes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#MoralTheme -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#MoralTheme">
+        <rdfs:comment>Captures the ethical teachings conveyed through the narratives.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#MythicMode -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#MythicMode">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#LiteraryMode"/>
+        <rdfs:comment>A narrative mode where characters are gods or superhuman beings; the setting is cosmic and timeless.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#Plot -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#Plot">
+        <rdfs:comment>Encapsulates the overall designed arrangement of story elements to produce an emotional or thematic effect.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#RomanticMode -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#RomanticMode">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#LiteraryMode"/>
+        <rdfs:comment>A narrative mode in which the hero operates above ordinary limitations; idealized, heroic, or magical.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#TragicMode -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#TragicMode">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#LiteraryMode"/>
+        <rdfs:comment>A narrative where the protagonist falls from a high position due to fate or personal flaw; evokes pity and fear.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/fairytale#Villain -->
+
+    <owl:Class rdf:about="http://example.org/fairytale#Villain">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#CharacterArchetype"/>
+        <rdfs:comment>Antagonist who creates conflict or danger.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Audience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Audience">
+        <rdfs:comment>Refers to the intended or actual viewers/readers of the tale.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Bittersweet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Bittersweet">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#EndingType"/>
+        <rdfs:comment>Mixed resolution involving growth through loss or sacrifice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#HappilyEverAfter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#HappilyEverAfter">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#EndingType"/>
+        <rdfs:comment>Positive resolution, often involving marriage or restoration.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Tragic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Tragic">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#EndingType"/>
+        <rdfs:comment>Negative outcome involving loss or death.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Trickster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Trickster">
+        <rdfs:subClassOf rdf:resource="http://example.org/fairytale#CharacterArchetype"/>
+        <rdfs:comment>Character who disrupts or subverts norms through cleverness.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
