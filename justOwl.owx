@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L2">
+    <Prefix name="" IRI="http://example.org/fairtale#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The FairTOlogy perspectivization ontology. The fairy tale reported through a cut.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI=":ActivePromotion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Bittersweet"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CharacterAttributes"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CinematicAdaptation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":EmpowermentTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":EndingType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Evil"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Helper"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":IdentityAndInclusionTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":InnerSelf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Innocent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":LiteraryForm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MixedReception"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MoralAmbiguityTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MoralTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":NegativeReception"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":OuterWorld"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PositiveReception"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Rebel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Tragic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":TragicAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Trickster"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Villain"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":VirtueRewardedTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasAdaptation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasAudienceAttitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasCharacterType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasEndingType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasMoralTheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasPromotedAspect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":producedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":receivedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":attitudeSummary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":ratingSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":reviewCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Bittersweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":EmpowermentTheme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Hero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":InnerSelf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":OuterWorld"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":VirtueRewardedTheme"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Bittersweet"/>
+        <Class abbreviatedIRI=":EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":CinematicAdaptation"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":EmpowermentTheme"/>
+        <Class abbreviatedIRI=":MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Evil"/>
+        <Class abbreviatedIRI=":CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":HappilyEverAfter"/>
+        <Class abbreviatedIRI=":EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Helper"/>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Hero"/>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":IdentityAndInclusionTheme"/>
+        <Class abbreviatedIRI=":MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":InnerSelf"/>
+        <Class abbreviatedIRI=":ActivePromotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Innocent"/>
+        <Class abbreviatedIRI=":CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LiteraryForm"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MixedReception"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MoralAmbiguityTheme"/>
+        <Class abbreviatedIRI=":MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":NegativeReception"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":OuterWorld"/>
+        <Class abbreviatedIRI=":ActivePromotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PositiveReception"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Rebel"/>
+        <Class abbreviatedIRI=":CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Tragic"/>
+        <Class abbreviatedIRI=":EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":TragicAttribute"/>
+        <Class abbreviatedIRI=":CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Trickster"/>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Villain"/>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":VirtueRewardedTheme"/>
+        <Class abbreviatedIRI=":MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audience"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":MixedReception"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":CinematicAdaptation"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":PositiveReception"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":CinematicAdaptation"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasAudienceAttitude"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasCharacterType"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+        <NamedIndividual abbreviatedIRI=":Hero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasEndingType"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+        <NamedIndividual abbreviatedIRI=":Bittersweet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasMoralTheme"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+        <NamedIndividual abbreviatedIRI=":EmpowermentTheme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasPromotedAspect"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaid_2023"/>
+        <NamedIndividual abbreviatedIRI=":OuterWorld"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasAudienceAttitude"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasCharacterType"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+        <NamedIndividual abbreviatedIRI=":Hero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasEndingType"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+        <NamedIndividual abbreviatedIRI=":HappilyEverAfter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasMoralTheme"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+        <NamedIndividual abbreviatedIRI=":VirtueRewardedTheme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasPromotedAspect"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhite_Disney"/>
+        <NamedIndividual abbreviatedIRI=":InnerSelf"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":attitudeSummary"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+        <Literal>Appreciated for diversity and agency, but divisive in tone and pacing.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingSource"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+        <Literal>IMDb</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":reviewCount"/>
+        <NamedIndividual abbreviatedIRI=":LittleMermaidAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">98000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":attitudeSummary"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+        <Literal>Classic portrayal of good triumphing over evil with enduring appeal.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingSource"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+        <Literal>IMDb</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":reviewCount"/>
+        <NamedIndividual abbreviatedIRI=":SnowWhiteAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasAdaptation"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasAttribute"/>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasAudienceAttitude"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasCharacterType"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasEndingType"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasMoralTheme"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasPromotedAspect"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":producedBy"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":receivedBy"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasAdaptation"/>
+        <Class abbreviatedIRI=":Fairytale"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasAttribute"/>
+        <Class abbreviatedIRI=":CharacterAttributes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasAudienceAttitude"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasCharacterType"/>
+        <Class abbreviatedIRI=":CharacterType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasEndingType"/>
+        <Class abbreviatedIRI=":EndingType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasMoralTheme"/>
+        <Class abbreviatedIRI=":MoralTheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasPromotedAspect"/>
+        <Class abbreviatedIRI=":ActivePromotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":producedBy"/>
+        <Class abbreviatedIRI=":Producer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":receivedBy"/>
+        <Class abbreviatedIRI=":Audience"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":attitudeSummary"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":ratingSource"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":reviewCount"/>
+        <Class abbreviatedIRI=":PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":attitudeSummary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":ratingSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":reviewCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Audience</IRI>
+        <Literal>The group of people who are the target audience of the fairy tale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Producer</IRI>
+        <Literal>The entity that has produced the fairy tale</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
