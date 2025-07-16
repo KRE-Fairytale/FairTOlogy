@@ -1,0 +1,1282 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L2">
+    <Prefix name="" IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This ontology models the structural and thematic elements of fairy tales across cultural and historical contexts. It includes core narrative components such as character archetypes, moral themes, ending types, and literary modes, as well as distinctions between oral traditions and media adaptations.
+
+The ontology integrates a perspectivization frame to capture how modern retellings reinterpret traditional narratives. In this model, a background (the original tale or fabula) is represented through a lens (adaptation choices, such as framing the hero as a rebel or emphasizing empowerment), which creates a viewpoint or cut (the reframed moral or emotional focus).The conceptualizer (e.g., filmmaker, studio) constructs the adaptation, and the ontology captures the audience’s attitude toward that reframed version — whether positive, negative, or mixed — based on ratings, reviews, or reception data.
+
+This perspectivization is not merely rhetorical; it reflects how contemporary interpretations blend narrative roles and values, producing new, culturally resonant meanings (e.g., the transformation of the “villain” into a misunderstood or tragic figure). Through this layered structure, the ontology supports semantic comparison between traditional and modern versions of fairy tales, illuminating shifts in moral focus, character perception, and cultural discourse.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0:15-07-2025, by Nazanin Fakharian, Ahmadreza Nazari, Zahra Farajihormozi
+This ontology is developed as a domain-specific extension of the Perspectivisation Ontology (v2.0, Aldo Gangemi, 2024), which models framing events, lenses, and attitudes. We adopt its core structure and reuse relevant classes while specializing it for the domain of folk and fairy tale adaptations.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Bittersweet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#EmpowermentTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#EndingType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Evil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Helper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#IdentityAndInclusionTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#InnerSelf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Innocent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#LiteraryForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#MixedReception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#MoralAmbiguityTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#NegativeReception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#OuterWorld"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#PositiveReception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Rebel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Tragic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#TragicAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Trickster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#Villain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAdaptation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#producedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://example.org/fairtale#receivedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#Bittersweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#EmpowermentTheme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#InnerSelf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#OuterWorld"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
+            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Audience"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Bittersweet"/>
+        <Class IRI="http://example.org/fairtale#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#EmpowermentTheme"/>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#EndingType"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Evil"/>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#HappilyEverAfter"/>
+        <Class IRI="http://example.org/fairtale#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Helper"/>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Hero"/>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#IdentityAndInclusionTheme"/>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#InnerSelf"/>
+        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Innocent"/>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#LiteraryForm"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#LiteraryForm"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#MixedReception"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#MoralAmbiguityTheme"/>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#NegativeReception"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#OuterWorld"/>
+        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#PositiveReception"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Producer"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Rebel"/>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Tragic"/>
+        <Class IRI="http://example.org/fairtale#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#TragicAttribute"/>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Trickster"/>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#Villain"/>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation"/>
+        <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+        <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://example.org/fairtale#MixedReception"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://example.org/fairtale#PositiveReception"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+        <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+        <NamedIndividual IRI="http://example.org/fairtale#Bittersweet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+        <NamedIndividual IRI="http://example.org/fairtale#EmpowermentTheme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
+        <NamedIndividual IRI="http://example.org/fairtale#OuterWorld"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+        <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+        <NamedIndividual IRI="http://example.org/fairtale#HappilyEverAfter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+        <NamedIndividual IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
+        <NamedIndividual IRI="http://example.org/fairtale#InnerSelf"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+        <Literal>Appreciated for diversity and agency, but divisive in tone and pacing.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+        <Literal>IMDb</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
+        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">98000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+        <Literal>Classic portrayal of good triumphing over evil with enduring appeal.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+        <Literal>IMDb</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
+        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAdaptation"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAttribute"/>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#producedBy"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://example.org/fairtale#receivedBy"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAdaptation"/>
+        <Class IRI="http://example.org/fairtale#Fairytale"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAttribute"/>
+        <Class IRI="http://example.org/fairtale#CharacterAttributes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
+        <Class IRI="http://example.org/fairtale#CharacterType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
+        <Class IRI="http://example.org/fairtale#EndingType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
+        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
+        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#producedBy"/>
+        <Class IRI="http://example.org/fairtale#Producer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://example.org/fairtale#receivedBy"/>
+        <Class IRI="http://example.org/fairtale#Audience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
+            </ObjectInverseOf>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
+        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </HasKey>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude</IRI>
+        <Literal>The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as &apos;investment&apos; in &apos;taxes are investiments&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background</IRI>
+        <Literal>The background knowledge for an eventuality targeted by perspectivisation, e.g., fiscal knowledge behind current taxation policies in &apos;taxes are investiments&apos;. In the example, only the background is expressed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:33:13Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:35:13Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:33:19Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:35:20Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:33:07Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:35:06Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:45:06Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut</IRI>
+        <Literal>The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in &apos;taxes are investiments&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality</IRI>
+        <Literal>The eventuality targeted by perspectivisation, explicitly or implicitly extracted from its background knowledge (e.g., current taxation policies in &apos;taxes are investiments&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens</IRI>
+        <Literal>The lens used by perspectivisation on an eventuality, e.g., &apos;investments&apos; on current taxation policies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <Literal>A compositional frame for situations that provide a redescription of an eventuality by using a lens, with an attitude. It usually requires background knowledge for the eventuality (and possibly the lens), as well as one or more agents conceptualising it. 
+A &apos;cut&apos; (in the cinematic sense) emerges from a perspectivisation, which composes an eventuality with a lens, as in the example &apos;taxes are investments&apos;, where current taxation policies (the eventuality) is cut by shooting through the investment lens.
+The OWL representation of this frame includes heavy punning: each aspect of a perspectivisation is in fact modeled as a semantic role (holding between perspectivisation situations and the things involved in them, as an individual (the frame projections), as well as classes (the intensional components of the frame), since almost all aspects are frames on their turn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://w3id.org/framester/schema/semanticRole"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation</IRI>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:45:36Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
