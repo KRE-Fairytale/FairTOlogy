@@ -32,13 +32,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://example.org/fairtale#Audience"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://example.org/fairtale#BittersweetEnding"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
@@ -47,16 +41,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://example.org/fairtale#EmpowermentTheme"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://example.org/fairtale#EndingType"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://example.org/fairtale#Evil"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#Fairytale"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#HappilyEverAfter"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#Helper"/>
@@ -105,9 +93,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#Tragic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#TragicEnding"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#Trickster"/>
@@ -159,6 +144,39 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#BittersweetEnding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Departure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#MagicAid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#ReturnAndReward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#TestOrTrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#TragicEnding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Transformation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IronicMode"/>
@@ -275,13 +293,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://example.org/fairtale#BittersweetEnding"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://example.org/fairtale#EmpowermentTheme"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://example.org/fairtale#HappilyEverAfter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
@@ -336,6 +348,12 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#BittersweetEnding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#HappilyEverAfter"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -418,16 +436,8 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.org/fairtale#BittersweetEnding"/>
-        <Class IRI="http://example.org/fairtale#EndingType"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
@@ -438,10 +448,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://example.org/fairtale#MoralTheme"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.org/fairtale#EndingType"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://example.org/fairtale#Evil"/>
         <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
     </SubClassOf>
@@ -450,16 +456,12 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.org/fairtale#HappilyEverAfter"/>
-        <Class IRI="http://example.org/fairtale#EndingType"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://example.org/fairtale#Helper"/>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#Hero"/>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#IdentityAndInclusionTheme"/>
@@ -518,16 +520,12 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.org/fairtale#TragicEnding"/>
-        <Class IRI="http://example.org/fairtale#EndingType"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://example.org/fairtale#Trickster"/>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#Villain"/>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
@@ -618,6 +616,50 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
         <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#BittersweetEnding"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Departure"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#HappilyEverAfter"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#MagicAid"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#ReturnAndReward"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#TestOrTrial"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#TragicEnding"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Transformation"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IronicMode"/>
@@ -720,7 +762,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
         <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
-        <NamedIndividual IRI="http://example.org/fairtale#BittersweetEnding"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#BittersweetEnding"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
@@ -745,7 +787,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
         <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
-        <NamedIndividual IRI="http://example.org/fairtale#HappilyEverAfter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#HappilyEverAfter"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
@@ -834,7 +876,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasAttribute"/>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
@@ -941,11 +983,11 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
-        <Class IRI="http://example.org/fairtale#CharacterType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
-        <Class IRI="http://example.org/fairtale#EndingType"/>
+        <Class IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
@@ -1166,18 +1208,8 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#CharacterType</IRI>
-        <Literal>Represents the narrative role of a character based on simplified Fryean archetypes, such as Hero, Villain, Helper, and Trickster. These types define structural and symbolic functions within a story.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://example.org/fairtale#EmpowermentTheme</IRI>
         <Literal>Theme focused on personal or collective agency, autonomy, and resistance to domination.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#EndingType</IRI>
-        <Literal>The type of narrative closure experienced in a tale or adaptation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1455,6 +1487,46 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough</IRI>
         <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CharacterArchetype</IRI>
+        <Literal>Represents the narrative role of a character based on simplified Fryean archetypes, such as Hero, Villain, Helper, and Trickster. These types define structural and symbolic functions within a story.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Departure</IRI>
+        <Literal>The hero leaves home or normality, usually to face a challenge or enter a magical realm. Corresponds to Propp’s function of &apos;absentation&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType</IRI>
+        <Literal>The type of narrative closure experienced in a tale or adaptation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#MagicAid</IRI>
+        <Literal>A supernatural helper, object, or force assists the hero. Reflects Propp’s &apos;donor&apos; and &apos;magical agent&apos; functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure</IRI>
+        <Literal>A commonly repeated narrative configuration or structural pattern found across multiple fairy tales (e.g., departure, magical aid, transformation).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#ReturnAndReward</IRI>
+        <Literal>The hero returns and is recognized or rewarded. Reflects Propp’s &apos;recognition&apos;, &apos;wedding&apos;, or &apos;punishment&apos; stages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#TestOrTrial</IRI>
+        <Literal>The protagonist faces challenges or obstacles to prove worth or readiness. Corresponds to Propp’s &apos;interdiction&apos;, &apos;violation&apos;, and &apos;struggle&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Transformation</IRI>
+        <Literal>A change of form, status, or understanding occurs. Reflects Propp’s &apos;transfiguration&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
