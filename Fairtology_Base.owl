@@ -37,7 +37,7 @@
     <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasEndingType -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasEndingType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
+        <rdfs:domain rdf:resource="http://example.org/fairytale#Plot"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
         <rdfs:comment>Links a tale to its ending resolution type.</rdfs:comment>
     </owl:ObjectProperty>
