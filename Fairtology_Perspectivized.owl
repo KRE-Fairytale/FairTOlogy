@@ -26,52 +26,16 @@ This perspectivization is not merely rhetorical; it reflects how contemporary in
 This ontology is developed as a domain-specific extension of the Perspectivisation Ontology (v2.0, Aldo Gangemi, 2024), which models framing events, lenses, and attitudes. We adopt its core structure and reuse relevant classes while specializing it for the domain of folk and fairy tale adaptations.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Audience"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://example.org/fairtale#EmpowermentTheme"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Evil"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Helper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Hero"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#IdentityAndInclusionTheme"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://example.org/fairtale#InnerSelf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Innocent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#LiteraryForm"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#MixedReception"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#MoralAmbiguityTheme"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#NegativeReception"/>
@@ -81,27 +45,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <Class IRI="http://example.org/fairtale#PositiveReception"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Producer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Rebel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Tragic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Trickster"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#Villain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
@@ -146,19 +89,55 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ActivePromotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audience"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BittersweetEnding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CharacterArchetype"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CharacterAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Departure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmpowermentTheme"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EndingType"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Evil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fairytale"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IdentityAndInclusionTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Innocent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IronicMode"/>
@@ -170,7 +149,25 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#MagicAid"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoralAmbiguityTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoralTheme"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MythicMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicAttitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rebel"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RecurringNarrativeStructure"/>
@@ -185,6 +182,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#TestOrTrial"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Tragic"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TragicEnding"/>
     </Declaration>
     <Declaration>
@@ -194,7 +194,16 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#Transformation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Trickster"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TricksterMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Villain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtueRewardedTheme"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -293,10 +302,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://example.org/fairtale#EmpowermentTheme"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
+        <DataProperty IRI="#hasValue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://example.org/fairtale#InnerSelf"/>
@@ -315,9 +321,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -353,7 +356,16 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <NamedIndividual IRI="#BittersweetEnding"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#EmpowermentTheme"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#HappilyEverAfter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VirtueRewardedTheme"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -428,108 +440,32 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         </ObjectHasValue>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Audience"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://example.org/fairtale#CinematicAdaptation"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#EmpowermentTheme"/>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Evil"/>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Helper"/>
-        <Class IRI="#CharacterArchetype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Hero"/>
-        <Class IRI="#CharacterArchetype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#IdentityAndInclusionTheme"/>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+        <Class IRI="#Medium"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#InnerSelf"/>
-        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Innocent"/>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
+        <Class IRI="#ActivePromotion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#LiteraryForm"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Medium"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#MixedReception"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#MoralAmbiguityTheme"/>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <Class IRI="#PublicAttitude"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#NegativeReception"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="#PublicAttitude"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#OuterWorld"/>
-        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+        <Class IRI="#ActivePromotion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://example.org/fairtale#PositiveReception"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Producer"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Rebel"/>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Tragic"/>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Trickster"/>
-        <Class IRI="#CharacterArchetype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#Villain"/>
-        <Class IRI="#CharacterArchetype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+        <Class IRI="#PublicAttitude"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -618,24 +554,72 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ActivePromotion"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audience"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BittersweetEnding"/>
         <Class IRI="#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <Class IRI="#Fairytale"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CharacterArchetype"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CharacterAttribute"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creator"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Departure"/>
         <Class IRI="#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmpowermentTheme"/>
+        <Class IRI="#MoralTheme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EndingType"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Evil"/>
+        <Class IRI="#CharacterAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fairytale"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HappilyEverAfter"/>
         <Class IRI="#EndingType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helper"/>
+        <Class IRI="#CharacterArchetype"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hero"/>
+        <Class IRI="#CharacterArchetype"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdentityAndInclusionTheme"/>
+        <Class IRI="#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Innocent"/>
+        <Class IRI="#CharacterAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IronicMode"/>
@@ -650,8 +634,32 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Fairytale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoralAmbiguityTheme"/>
+        <Class IRI="#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoralTheme"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MythicMode"/>
         <Class IRI="#LiteraryMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plot"/>
+        <Class IRI="#Fairytale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicAttitude"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rebel"/>
+        <Class IRI="#CharacterAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RecurringNarrativeStructure"/>
@@ -670,6 +678,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Tragic"/>
+        <Class IRI="#CharacterAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TragicEnding"/>
         <Class IRI="#EndingType"/>
     </SubClassOf>
@@ -682,8 +694,20 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Trickster"/>
+        <Class IRI="#CharacterArchetype"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TricksterMode"/>
         <Class IRI="#LiteraryMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Villain"/>
+        <Class IRI="#CharacterArchetype"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtueRewardedTheme"/>
+        <Class IRI="#MoralTheme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -757,7 +781,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
         <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
-        <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
+        <NamedIndividual IRI="#Hero"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
@@ -767,7 +791,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
         <NamedIndividual IRI="http://example.org/fairtale#LittleMermaid_2023"/>
-        <NamedIndividual IRI="http://example.org/fairtale#EmpowermentTheme"/>
+        <NamedIndividual IRI="#EmpowermentTheme"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
@@ -782,7 +806,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
         <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
-        <NamedIndividual IRI="http://example.org/fairtale#Hero"/>
+        <NamedIndividual IRI="#Hero"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
@@ -792,7 +816,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
         <NamedIndividual IRI="http://example.org/fairtale#SnowWhite_Disney"/>
-        <NamedIndividual IRI="http://example.org/fairtale#VirtueRewardedTheme"/>
+        <NamedIndividual IRI="#VirtueRewardedTheme"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
@@ -880,11 +904,11 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasEndingType"/>
@@ -892,7 +916,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
@@ -900,11 +924,11 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#producedBy"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://example.org/fairtale#receivedBy"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -967,7 +991,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLiteraryMode"/>
-        <Class IRI="http://example.org/fairtale#Fairytale"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasAdaptation"/>
@@ -975,11 +999,11 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasAttribute"/>
-        <Class IRI="http://example.org/fairtale#CharacterAttribute"/>
+        <Class IRI="#CharacterAttribute"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasAudienceAttitude"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="#PublicAttitude"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasCharacterType"/>
@@ -991,19 +1015,19 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasMoralTheme"/>
-        <Class IRI="http://example.org/fairtale#MoralTheme"/>
+        <Class IRI="#MoralTheme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#hasPromotedAspect"/>
-        <Class IRI="http://example.org/fairtale#ActivePromotion"/>
+        <Class IRI="#ActivePromotion"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#producedBy"/>
-        <Class IRI="http://example.org/fairtale#Producer"/>
+        <Class IRI="#Creator"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://example.org/fairtale#receivedBy"/>
-        <Class IRI="http://example.org/fairtale#Audience"/>
+        <Class IRI="#Audience"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -1140,19 +1164,27 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </SubObjectPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="#PublicAttitude"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="#PublicAttitude"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="#PublicAttitude"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
-        <Class IRI="http://example.org/fairtale#PublicAttitude"/>
+        <Class IRI="#PublicAttitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Plot"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
@@ -1169,6 +1201,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <DataPropertyRange>
         <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <HasKey>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -1198,31 +1234,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </HasKey>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#ActivePromotion</IRI>
-        <Literal>The viewpoint foregrounded in a reframed narrative, shaped by moral and role-based reinterpretation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#CharacterAttribute</IRI>
-        <Literal>Perspective-driven narrative qualities assigned to characters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#EmpowermentTheme</IRI>
-        <Literal>Theme focused on personal or collective agency, autonomy, and resistance to domination.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#Hero</IRI>
-        <Literal>Central transformative figure who confronts challenges and drives the plot; typically aligned with positive ideals.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#IdentityAndInclusionTheme</IRI>
-        <Literal>Theme highlighting recognition, acceptance, or celebration of diverse identities.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://example.org/fairtale#InnerSelf</IRI>
         <Literal>Emphasis on internal transformation, self-discovery, or emotional development.</Literal>
     </AnnotationAssertion>
@@ -1238,16 +1249,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#MoralAmbiguityTheme</IRI>
-        <Literal>Theme where moral distinctions are blurred, and characters or actions are ethically complex.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#MoralTheme</IRI>
-        <Literal>Represents the ethical or cultural message a story conveys, either traditionally or through reinterpretation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://example.org/fairtale#NegativeReception</IRI>
         <Literal>Audience expresses disapproval or criticism of the adaptation.</Literal>
     </AnnotationAssertion>
@@ -1260,21 +1261,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://example.org/fairtale#PositiveReception</IRI>
         <Literal>Audience expresses clear approval or acclaim for the adaptation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#PublicAttitude</IRI>
-        <Literal>Represents audience reception of a narrative adaptation, based on public discourse, reviews, or evaluative signals.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#Villain</IRI>
-        <Literal>Antagonistic figure who creates conflict or resists the hero’s aims; may be morally complex or reframed in reinterpretations.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://example.org/fairtale#VirtueRewardedTheme</IRI>
-        <Literal>Theme asserting that virtuous behavior leads to a favorable outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1490,8 +1476,18 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActivePromotion</IRI>
+        <Literal>The viewpoint foregrounded in a reframed narrative, shaped by moral and role-based reinterpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CharacterArchetype</IRI>
         <Literal>Represents the narrative role of a character based on simplified Fryean archetypes, such as Hero, Villain, Helper, and Trickster. These types define structural and symbolic functions within a story.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CharacterAttribute</IRI>
+        <Literal>Perspective-driven narrative qualities assigned to characters.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1500,8 +1496,23 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmpowermentTheme</IRI>
+        <Literal>Theme focused on personal or collective agency, autonomy, and resistance to domination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EndingType</IRI>
         <Literal>The type of narrative closure experienced in a tale or adaptation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hero</IRI>
+        <Literal>Central transformative figure who confronts challenges and drives the plot; typically aligned with positive ideals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IdentityAndInclusionTheme</IRI>
+        <Literal>Theme highlighting recognition, acceptance, or celebration of diverse identities.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1512,6 +1523,21 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MagicAid</IRI>
         <Literal>A supernatural helper, object, or force assists the hero. Reflects Propp’s &apos;donor&apos; and &apos;magical agent&apos; functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MoralAmbiguityTheme</IRI>
+        <Literal>Theme where moral distinctions are blurred, and characters or actions are ethically complex.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MoralTheme</IRI>
+        <Literal>Represents the ethical or cultural message a story conveys, either traditionally or through reinterpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PublicAttitude</IRI>
+        <Literal>Represents audience reception of a narrative adaptation, based on public discourse, reviews, or evaluative signals.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1532,6 +1558,16 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Transformation</IRI>
         <Literal>A change of form, status, or understanding occurs. Reflects Propp’s &apos;transfiguration&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Villain</IRI>
+        <Literal>Antagonistic figure who creates conflict or resists the hero’s aims; may be morally complex or reframed in reinterpretations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VirtueRewardedTheme</IRI>
+        <Literal>Theme asserting that virtuous behavior leads to a favorable outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
