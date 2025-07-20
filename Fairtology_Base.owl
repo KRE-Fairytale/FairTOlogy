@@ -23,6 +23,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#CreatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Creator"/>
+        <rdfs:comment>Indicates the creator or adapting agent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#ReceivedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#ReceivedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Audience"/>
+        <rdfs:comment>Connects to target audience type or group.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasCharacterType -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasCharacterType">
@@ -67,16 +87,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasNarrativeStructure">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Plot"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasPlot -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#hasPlot">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Plot"/>
     </owl:ObjectProperty>
     
 
@@ -161,6 +171,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Character">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Creator"/>
     
 
 
