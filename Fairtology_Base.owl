@@ -99,9 +99,9 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Character"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#MoralTheme"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Plot"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#https://ontology.golemlab.eu/G1_Character"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -123,10 +123,11 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/narrative.owl#NarrativeUnit -->
+    <!-- http://www.ontologydesignpatterns.org/ont/narrative.owl#https://ontology.golemlab.eu/G7_Narrative_Sequence -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/narrative.owl#NarrativeUnit">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/narrative.owl#https://ontology.golemlab.eu/G7_Narrative_Sequence">
+        <rdfs:comment>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</rdfs:comment>
+        <rdfs:label>NarrativeUnit</rdfs:label>
     </owl:Class>
     
 
@@ -152,14 +153,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#BittersweetEnding">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#EndingType"/>
         <rdfs:comment>Mixed resolution involving growth through loss or sacrifice.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Character -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Character">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
     </owl:Class>
     
 
@@ -271,7 +264,9 @@
     <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure">
-        <rdfs:comment>A commonly repeated narrative configuration or structural pattern found across multiple fairy tales (e.g., departure, magical aid, transformation).</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/narrative.owl#https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <rdfs:comment>A commonly repeated narrative configuration or structural pattern found across multiple fairy tales (e.g., departure, magical aid, transformation). Aligned with Vladimir Propp’s 31 narrative functions</rdfs:comment>
+        <rdfs:label>RecurringNarrativeStructure</rdfs:label>
     </owl:Class>
     
 
@@ -344,6 +339,16 @@
     <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Villain">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L#CharacterArchetype"/>
         <rdfs:comment>Antagonist who creates conflict or danger.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#https://ontology.golemlab.eu/G1_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#https://ontology.golemlab.eu/G1_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
+        <rdfs:comment>“Character is a text- or media-based figure in a storyworld, usually human or human-like,” understood through readers’ knowledge of real people (Jannidis, 2019). Readers attribute to characters mental states such as intentions and beliefs, and consider them to engage in actions. Characters can have specific functional roles within narratives, such as protagonist or antagonist, influencing how readers perceive and interpret the story.</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
     </owl:Class>
     
 
