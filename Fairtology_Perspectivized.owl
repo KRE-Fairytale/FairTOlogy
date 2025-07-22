@@ -6,14 +6,13 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology">
-    <Prefix name="gc" IRI="https://ontology.golemlab.eu/"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#"/>
     <Prefix name="fto" IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="persp" IRI="htto://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal>This ontology models the structural and thematic elements of fairy tales across cultural and historical contexts. It includes core narrative components such as character archetypes, moral themes, ending types, and literary modes, as well as distinctions between oral traditions and media adaptations.
@@ -199,7 +198,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="_L1#NarrativeUnit"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="gc:G7_Narrative_Sequence"/>
+        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -266,6 +265,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAudienceAttitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCharacterType"/>
@@ -419,7 +421,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="_L1#NarrativeUnit"/>
-        <Class abbreviatedIRI="gc:G7_Narrative_Sequence"/>
+        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -943,6 +945,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#CinematicAdaptation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <Class IRI="#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCharacterType"/>
         <Class IRI="#Character"/>
     </ObjectPropertyDomain>
@@ -1041,6 +1047,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAudienceAttitude"/>
         <Class IRI="#PublicAttitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <Class IRI="#Character"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCharacterType"/>
@@ -1534,17 +1544,17 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>gc:G7_Narrative_Sequence</AbbreviatedIRI>
+        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
         <Literal>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>gc:G7_Narrative_Sequence</AbbreviatedIRI>
+        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
         <Literal>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
