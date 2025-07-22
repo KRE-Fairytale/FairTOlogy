@@ -620,10 +620,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#ActivePromotion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Plot"/>
-        <Class IRI="#Fairytale"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#PositiveReception"/>
         <Class IRI="#PublicAttitude"/>
     </SubClassOf>
@@ -1172,10 +1168,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <DataPropertyDomain>
         <DataProperty IRI="#hasValue"/>
         <Class IRI="#Character"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasValue"/>
-        <Class IRI="#Plot"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
