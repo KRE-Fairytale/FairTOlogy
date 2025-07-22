@@ -508,6 +508,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CharacterArchetype"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#CharacterAttribute"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CharacterAttribute"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </SubClassOf>
@@ -534,6 +541,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="#Evil"/>
         <Class IRI="#CharacterAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fairytale"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLiteraryMode"/>
+            <Class IRI="#LiteraryMode"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HappilyEverAfter"/>
