@@ -243,6 +243,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#NarrativeUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#NarrativeUnit">
+        <owl:equivalentClass rdf:resource="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <rdfs:comment>refers to various types of organisation of narrative units and events, including causal and temporal structures, which is essential for understanding narrative coherence.</rdfs:comment>
+        <rdfs:label>NarrativeUnit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Plot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Plot">
@@ -255,7 +265,7 @@
     <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure">
-        <rdfs:subClassOf rdf:resource="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#NarrativeUnit"/>
         <rdfs:comment>A commonly repeated narrative configuration or structural pattern found across multiple fairy tales (e.g., departure, magical aid, transformation). Aligned with Vladimir Propp’s 31 narrative functions</rdfs:comment>
         <rdfs:label>RecurringNarrativeStructure</rdfs:label>
     </owl:Class>
@@ -348,7 +358,7 @@
 
     <owl:Class rdf:about="https://ontology.golemlab.eu/G7_Narrative_Sequence">
         <rdfs:comment>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</rdfs:comment>
-        <rdfs:label>NarrativeUnit</rdfs:label>
+        <rdfs:isDefinedBy>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</rdfs:isDefinedBy>
     </owl:Class>
     
 

@@ -6,13 +6,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="gc" IRI="https://ontology.golemlab.eu/"/>
     <Prefix name="fto" IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="persp" IRI="htto://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal>This ontology models the structural and thematic elements of fairy tales across cultural and historical contexts. It includes core narrative components such as character archetypes, moral themes, ending types, and literary modes, as well as distinctions between oral traditions and media adaptations.
@@ -40,18 +41,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
@@ -207,7 +196,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#VirtueRewardedTheme"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <Class IRI="_L1#NarrativeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gc:G7_Narrative_Sequence"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -220,6 +212,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -238,9 +233,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
@@ -283,6 +275,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasLiteraryMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMedium"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMoralTheme"/>
@@ -395,27 +390,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         </ObjectHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
-            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
-            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
-            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
         <ObjectHasValue>
             <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
@@ -443,6 +417,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
             <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
         </ObjectHasValue>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="_L1#NarrativeUnit"/>
+        <Class abbreviatedIRI="gc:G7_Narrative_Sequence"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
@@ -450,22 +428,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation"/>
-        <Class IRI="https://w3id.org/framester/schema/FrameOccurrence"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
@@ -578,10 +540,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#CharacterAttribute"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Fairytale"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#HappilyEverAfter"/>
         <Class IRI="#EndingType"/>
     </SubClassOf>
@@ -623,7 +581,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Medium"/>
-        <Class IRI="#Fairytale"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MixedReception"/>
@@ -667,7 +625,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RecurringNarrativeStructure"/>
-        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <Class IRI="_L1#NarrativeUnit"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReturnAndReward"/>
@@ -714,7 +672,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#MoralTheme"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <Class IRI="_L1#NarrativeUnit"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
@@ -899,9 +857,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="#hasLiteraryMode"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
-    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
@@ -928,10 +887,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
@@ -963,7 +918,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#createdBy"/>
-        <Class IRI="#Fairytale"/>
+        <Class IRI="#Medium"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAdaptation"/>
@@ -990,6 +945,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMedium"/>
+        <Class IRI="#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMoralTheme"/>
         <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
@@ -999,8 +958,12 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#receivedBy"/>
-        <Class IRI="#Fairytale"/>
+        <Class IRI="#Medium"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in"/>
+        <Class IRI="#RecurringNarrativeStructure"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
@@ -1024,10 +987,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
         <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
@@ -1084,6 +1043,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLiteraryMode"/>
         <Class IRI="#LiteraryMode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMedium"/>
+        <Class IRI="#Medium"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMoralTheme"/>
@@ -1241,6 +1204,18 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </HasKey>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in</IRI>
+        <Literal>In GOLEM, indicates that a character is involved in a social relationship.
+
+The composition of d-uses and played-by relations: a description d-uses a role that is played by an endurant (DOLCE-Lite-Plus, 2005).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in</IRI>
+        <Literal>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude</IRI>
         <Literal>Aldo Gangemi</Literal>
@@ -1259,61 +1234,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background</IRI>
         <Literal>The background knowledge for an eventuality targeted by perspectivisation, e.g., fiscal knowledge behind current taxation policies in &apos;taxes are investiments&apos;. In the example, only the background is expressed.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable</IRI>
-        <Literal>Aldo Gangemi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:33:13Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:35:13Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended</IRI>
-        <Literal>Aldo Gangemi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:33:19Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:35:20Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending</IRI>
-        <Literal>Aldo Gangemi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:33:07Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:35:06Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation</IRI>
-        <Literal>Aldo Gangemi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-08T09:45:06Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -1594,13 +1514,23 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
+        <IRI>_L1#NarrativeUnit</IRI>
         <Literal>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
+        <IRI>_L1#NarrativeUnit</IRI>
         <Literal>NarrativeUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>gc:G7_Narrative_Sequence</AbbreviatedIRI>
+        <Literal>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>gc:G7_Narrative_Sequence</AbbreviatedIRI>
+        <Literal>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</Literal>
     </AnnotationAssertion>
 </Ontology>
 
