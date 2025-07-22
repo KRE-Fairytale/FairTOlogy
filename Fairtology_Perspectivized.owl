@@ -207,6 +207,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#VirtueRewardedTheme"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
     </Declaration>
     <Declaration>
@@ -664,7 +667,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RecurringNarrativeStructure"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReturnAndReward"/>
@@ -709,6 +712,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="#VirtueRewardedTheme"/>
         <Class IRI="#MoralTheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -1584,6 +1591,16 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#receivedBy</IRI>
         <Literal>Connects to target audience type or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
+        <Literal>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
+        <Literal>NarrativeUnit</Literal>
     </AnnotationAssertion>
 </Ontology>
 

@@ -101,7 +101,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#MoralTheme"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Plot"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#https://ontology.golemlab.eu/G1_Character"/>
+                    <rdf:Description rdf:about="https://ontology.golemlab.eu/G1_Character"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -334,9 +334,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#https://ontology.golemlab.eu/G1_Character -->
+    <!-- https://ontology.golemlab.eu/G1_Character -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#https://ontology.golemlab.eu/G1_Character">
+    <owl:Class rdf:about="https://ontology.golemlab.eu/G1_Character">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Fairytale"/>
         <rdfs:comment>“Character is a text- or media-based figure in a storyworld, usually human or human-like,” understood through readers’ knowledge of real people (Jannidis, 2019). Readers attribute to characters mental states such as intentions and beliefs, and consider them to engage in actions. Characters can have specific functional roles within narratives, such as protagonist or antagonist, influencing how readers perceive and interpret the story.</rdfs:comment>
         <rdfs:label>Character</rdfs:label>
