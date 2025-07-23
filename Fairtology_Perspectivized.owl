@@ -1596,6 +1596,11 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCharacter</IRI>
+        <Literal>This property identifies the characters featured in a fairytale, including both human and non-human entities, each potentially associated with specific roles or functions within the narrative structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasCharacterType</IRI>
         <Literal>Maps the main figures in the story with archetypical roles</Literal>
     </AnnotationAssertion>
@@ -1608,6 +1613,11 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasLiteraryMode</IRI>
         <Literal>Specifies the symbolic tone or emotional structure (Romantic, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMedium</IRI>
+        <Literal>links a fairytale to its mode of expression or transmission. Common subclasses of Medium include LiteraryForm (e.g., novel, short story) and CinematicAdaptation (e.g., animated film, live-action movie).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
