@@ -435,6 +435,20 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
     </SubClassOf>
@@ -534,6 +548,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#EndingType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Character"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CharacterArchetype"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
@@ -568,6 +589,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Departure"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EmpowermentTheme"/>
         <Class IRI="#MoralTheme"/>
     </SubClassOf>
@@ -585,6 +613,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
             <ObjectProperty IRI="#hasLiteraryMode"/>
             <Class IRI="#LiteraryMode"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fairytale"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HappilyEverAfter"/>
@@ -634,6 +669,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MagicAid"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Medium"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
     </SubClassOf>
@@ -666,12 +708,33 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#ActivePromotion"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Plot"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PositiveReception"/>
         <Class IRI="#PublicAttitude"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PublicAttitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicAttitude"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicAttitude"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://example.org/fairtale#ratingValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Rebel"/>
@@ -693,12 +756,26 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ReturnAndReward"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RomanticMode"/>
         <Class IRI="#LiteraryMode"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TestOrTrial"/>
         <Class IRI="#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestOrTrial"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tragic"/>
@@ -715,6 +792,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="#Transformation"/>
         <Class IRI="#RecurringNarrativeStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Trickster"/>
@@ -1252,7 +1336,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasValue"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <HasKey>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
