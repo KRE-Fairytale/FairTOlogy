@@ -142,6 +142,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#MythicMode"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NarrativeUnit"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NegativeReception"/>
     </Declaration>
     <Declaration>
@@ -194,9 +197,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <Class IRI="#VirtueRewardedTheme"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="_L1#NarrativeUnit"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="gc:G1_Character"/>
@@ -406,13 +406,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         </ObjectHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
-            <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
         <ObjectHasValue>
             <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
@@ -431,8 +424,8 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class abbreviatedIRI="gc:G1_Character"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="_L1#NarrativeUnit"/>
-        <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+        <Class IRI="#NarrativeUnit"/>
+        <Class abbreviatedIRI="gc:G7_Narrative_Sequence"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -447,8 +440,29 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
@@ -519,6 +533,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="#CharacterArchetype"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CharacterArchetype"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+            <Class IRI="#CharacterAttribute"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CharacterArchetype"/>
@@ -599,6 +620,13 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LiteraryMode"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+            <Class IRI="#MoralTheme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MagicAid"/>
         <Class IRI="#RecurringNarrativeStructure"/>
     </SubClassOf>
@@ -623,6 +651,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#LiteraryMode"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NarrativeUnit"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NegativeReception"/>
         <Class IRI="#PublicAttitude"/>
     </SubClassOf>
@@ -644,7 +676,14 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RecurringNarrativeStructure"/>
-        <Class IRI="_L1#NarrativeUnit"/>
+        <Class IRI="#NarrativeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecurringNarrativeStructure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
+            <Class IRI="#MoralTheme"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReturnAndReward"/>
@@ -689,10 +728,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="#VirtueRewardedTheme"/>
         <Class IRI="#MoralTheme"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="_L1#NarrativeUnit"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -913,7 +948,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
@@ -921,19 +956,19 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#createdBy"/>
@@ -1021,7 +1056,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds"/>
@@ -1029,19 +1064,19 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#createdBy"/>
@@ -1465,6 +1500,16 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NarrativeUnit</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NarrativeUnit</IRI>
+        <Literal>NarrativeUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NegativeReception</IRI>
         <Literal>Audience expresses disapproval or criticism of the adaptation.</Literal>
     </AnnotationAssertion>
@@ -1570,16 +1615,6 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>_L1#NarrativeUnit</IRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>_L1#NarrativeUnit</IRI>
-        <Literal>NarrativeUnit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>gc:G1_Character</AbbreviatedIRI>
         <Literal>“Character is a text- or media-based figure in a storyworld, usually human or human-like,” understood through readers’ knowledge of real people (Jannidis, 2019). Readers attribute to characters mental states such as intentions and beliefs, and consider them to engage in actions. Characters can have specific functional roles within narratives, such as protagonist or antagonist, influencing how readers perceive and interpret the story.</Literal>
     </AnnotationAssertion>
@@ -1590,11 +1625,12 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
+        <AbbreviatedIRI>gc:G7_Narrative_Sequence</AbbreviatedIRI>
         <Literal>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
