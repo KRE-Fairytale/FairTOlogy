@@ -6,7 +6,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology">
+<<<<<<< Updated upstream
     <Prefix name="" IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#"/>
+=======
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="gc" IRI="https://ontology.golemlab.eu/"/>
+>>>>>>> Stashed changes
     <Prefix name="fto" IRI="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -198,7 +203,14 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="_L1#NarrativeUnit"/>
     </Declaration>
     <Declaration>
+<<<<<<< Updated upstream
         <Class IRI="https://ontology.golemlab.eu/G7_Narrative_Sequence"/>
+=======
+        <Class abbreviatedIRI="gc:G1_Character"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gc:G7_Narrative_Sequence"/>
+>>>>>>> Stashed changes
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
@@ -283,6 +295,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMoralTheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNarrativeStructure"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPromotedAspect"/>
@@ -418,6 +433,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
             <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies"/>
             <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
         </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Character"/>
+        <Class abbreviatedIRI="gc:G1_Character"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="_L1#NarrativeUnit"/>
@@ -965,6 +984,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNarrativeStructure"/>
+        <Class IRI="#Plot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPromotedAspect"/>
         <Class IRI="#Medium"/>
     </ObjectPropertyDomain>
@@ -1067,6 +1090,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMoralTheme"/>
         <Class IRI="#MoralTheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNarrativeStructure"/>
+        <Class IRI="#RecurringNarrativeStructure"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPromotedAspect"/>
@@ -1355,6 +1382,21 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <Literal>The viewpoint foregrounded in a reframed narrative, shaped by moral and role-based reinterpretation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Audience</IRI>
+        <Literal>Refers to the intended or actual viewers/readers of the tale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal>Characters can have specific functional roles within narratives, such as protagonist or antagonist, influencing how readers perceive and interpret the story.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Character</IRI>
+        <Literal>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CharacterArchetype</IRI>
         <Literal>Represents the narrative role of a character based on simplified Fryean archetypes, such as Hero, Villain, Helper, and Trickster. These types define structural and symbolic functions within a story.</Literal>
@@ -1410,6 +1452,11 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <Literal>A supernatural helper, object, or force assists the hero. Reflects Propp’s &apos;donor&apos; and &apos;magical agent&apos; functions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Medium</IRI>
+        <Literal>Different retellings or media forms of a fairy tale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MixedReception</IRI>
         <Literal>Audience response is divided or ambivalent, with no clear consensus.</Literal>
@@ -1433,6 +1480,11 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#OuterWorld</IRI>
         <Literal>Focused on external structures, social tensions, or transformative critique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Plot</IRI>
+        <Literal>Encapsulates the overall designed arrangement of story elements to produce an emotional or thematic effect.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1536,7 +1588,16 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+<<<<<<< Updated upstream
         <IRI>https://ontology.golemlab.eu/G7_Narrative_Sequence</IRI>
+=======
+        <AbbreviatedIRI>gc:G1_Character</AbbreviatedIRI>
+        <Literal>“Character is a text- or media-based figure in a storyworld, usually human or human-like,” understood through readers’ knowledge of real people (Jannidis, 2019). Readers attribute to characters mental states such as intentions and beliefs, and consider them to engage in actions. Characters can have specific functional roles within narratives, such as protagonist or antagonist, influencing how readers perceive and interpret the story.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>gc:G7_Narrative_Sequence</AbbreviatedIRI>
+>>>>>>> Stashed changes
         <Literal>G7_Narrative_Sequences can take various forms, including sequences of functions, such as Proppian functions (Propp, 1968), sequences of motifs, or hyleme sequences like fabula and syuzhet. Specifically, a type of narrative sequence is fabula, which refers to the sequence of events of a narrative in chronological and causal order (Abbott, 2019). It represents the underlying structure of the story or what happens in it. Since the concept of fabula is mainly defined in relation to that of syuzhet, its conceptual function is to express a specific ordering of some narrative units. Accordingly, the fabula is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant). Another type is syuzhet, often translated as &quot;plot&quot; or “discourse”. Syuzhet encompasses how events are presented and organized within a narrative (Kukkonen, 2019; Abbott, 2019). It involves the specific ordering and techniques used to articulate the story, reflecting the author’s design and organization to achieve particular aesthetic and cognitive-emotional effects, like suspense. As for fabula, the conceptual function of syuzhet is to express a specific ordering of some narrative units. Accordingly, the syuzhet is a sequence (rdf:Seq) of narrative units (gc:G9) that orders (dlp:sequences) a set of temporal entities called events (dlp: perdurant).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
