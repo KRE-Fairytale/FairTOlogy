@@ -26,7 +26,7 @@
     <!-- http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in">
-        <rdfs:domain rdf:resource="https://ontology.golemlab.eu/G1_Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#RecurringNarrativeStructure"/>
         <rdfs:comment>In GOLEM, indicates that a character is involved in a social relationship.
 
