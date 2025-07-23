@@ -292,6 +292,9 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="#hasNarrativeStructure"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPlot"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPromotedAspect"/>
     </Declaration>
     <Declaration>
@@ -1015,6 +1018,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <Class IRI="#Plot"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlot"/>
+        <Class IRI="#Fairytale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPromotedAspect"/>
         <Class IRI="#Medium"/>
     </ObjectPropertyDomain>
@@ -1121,6 +1128,10 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasNarrativeStructure"/>
         <Class IRI="#RecurringNarrativeStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlot"/>
+        <Class IRI="#Plot"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPromotedAspect"/>
@@ -1602,6 +1613,11 @@ The OWL representation of this frame includes heavy punning: each aspect of a pe
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasMoralTheme</IRI>
         <Literal>Connects a tale to a traditional or reframed moral message.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPlot</IRI>
+        <Literal>This property associates a fairytale with its narrative plot, typically composed of key functions, phases, or turning points that structure the story.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
