@@ -301,9 +301,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="#receivedBy"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
     </Declaration>
     <Declaration>
@@ -433,13 +430,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
@@ -931,11 +921,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <NamedIndividual IRI="#InnerSelf"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-        <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
-        <Literal>Appreciated for diversity and agency, but divisive in tone and pacing.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
         <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
         <Literal>IMDb</Literal>
@@ -949,11 +934,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <DataProperty IRI="http://example.org/fairtale#reviewCount"/>
         <NamedIndividual IRI="http://example.org/fairtale#LittleMermaidAudience"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">98000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-        <NamedIndividual IRI="http://example.org/fairtale#SnowWhiteAudience"/>
-        <Literal>Classic portrayal of good triumphing over evil with enduring appeal.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
@@ -1299,10 +1279,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates"/>
     </SubObjectPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-        <Class IRI="#PublicAttitude"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
         <Class IRI="#PublicAttitude"/>
     </DataPropertyDomain>
@@ -1318,10 +1294,30 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <DataProperty IRI="#hasValue"/>
         <Class IRI="#Character"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="http://example.org/fairtale#attitudeSummary"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Departure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#MagicAid"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Plot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#ReturnAndReward"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#TestOrTrial"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Transformation"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="http://example.org/fairtale#ratingSource"/>
         <Datatype abbreviatedIRI="xsd:string"/>
