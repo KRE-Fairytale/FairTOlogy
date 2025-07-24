@@ -1,17 +1,17 @@
 import pandas as pd
 import rdflib
 from rdflib import URIRef, Literal, Namespace, RDF, RDFS, OWL, Graph, XSD
-import pprint
 import numpy as np
 
 # Define namespaces
-FTO = Namespace("http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology_L1#")
+FTO = Namespace("http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 OWL = Namespace("http://www.w3.org/2002/07/owl#")
 XML = Namespace("http://www.w3.org/XML/1998/namespace")
 XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
 PERS = Namespace("http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#")
+GC = Namespace("https://ontology.golemlab.org.eu/")
 
 # Define graph
 g = Graph()
@@ -23,7 +23,8 @@ g.bind("rdf", RDF)
 g.bind("owl", OWL)
 g.bind("xml", XML)
 g.bind("xsd", XSD)
-g.bin("pers", PERS)
+g.bind("pers", PERS)
+g.bind("gc", GC)
 
 # Define object properties
 g.add((FTO.hasCharacterType, RDF.type, OWL.ObjectProperty))
@@ -35,11 +36,12 @@ g.add((FTO.ReceivedBy, RDF.type, OWL.ObjectProperty))
 g.add((FTO.hasPromotedAspect, RDF.type, OWL.ObjectProperty))
 g.add((FTO.createdBy, RDF.type, OWL.ObjectProperty))
 g.add((FTO.hasAdaptation, RDF.type, OWL.ObjectProperty))
-
-
-# I defined these properties
-g.add((FTO.hasPlot, RDF.type, OWL.ObjectProperty))
+g.add((FTO.creates, RDF.type, OWL.ObjectProperty))
+g.add((FTO.hasAudienceAttitude, RDF.type, OWL.ObjectProperty))
+g.add((FTO.hasCharacter, RDF.type, OWL.ObjectProperty))
 g.add((FTO.hasMedium, RDF.type, OWL.ObjectProperty))
+g.add((FTO.hasPlot, RDF.type, OWL.ObjectProperty))
+g.add((FTO.recievedBy, RDF.type, OWL.ObjectProperty))
 g.add((FTO.hasLiteraryMode, RDF.type, OWL.ObjectProperty))
 
 # Specify Domains
@@ -47,20 +49,14 @@ g.add((FTO.hasCharacterType, RDFS.domain, FTO.Character))
 g.add((FTO.hasAttribute, RDFS.domain, FTO.CharacterArchetype))
 g.add((FTO.hasAdaptation, RDFS.domain, FTO.LiteraryForm))
 
+
 # Specify Ranges
 g.add((FTO.hasCharacterType, RDFS.range, FTO.CharacterArchetype))
 g.add((FTO.hasAttribute, RDFS.range, FTO.CharacterAttribute))
-
-
+g.add((FTO.hasValue, RDFS.range, RDFS.Literal))
 
 # Specify the type of properties (namespaces)
 g.add((FTO.hasValue, RDF.type, OWL.DatatypeProperty))
-
-# Read the datasets
-base_df = pd.read_csv("data/Fairytale_Adaptations_Dataset_FinalUpdated.csv")
-char_df = pd.read_csv("data/characters_full.csv")
-plt_df = pd.read_csv("data/plot.csv")
-full_df = base_df.merge(char_df, how= 'outer', on='ID').merge(plt_df, how='outer', on='ID')
 
 # Define classes
 g.add((FTO['Creator'], RDF.type, OWL.Class))
@@ -108,6 +104,11 @@ g.add((FTO['Medium'], RDF.type, OWL.Class))
 g.add((FTO['LiteraryForm'], RDF.type, OWL.Class))
 g.add((FTO['CinematicAdaptation'], RDF.type, OWL.Class))
 
+g.add((FTO['MixedReception'], RDF.type, OWL.Class))
+g.add((FTO['PositiveReception'], RDF.type, OWL.Class))
+g.add((FTO['NegativeReception'], RDF.type, OWL.Class))
+
+
 # Define subclasses
 g.add((FTO['Helper'], RDFS.subClassOf, FTO.CharacterArchetype))
 g.add((FTO['Hero'], RDFS.subClassOf, FTO.CharacterArchetype))
@@ -130,7 +131,7 @@ g.add((FTO['ReturnAndReward'], RDFS.subClassOf, FTO.RecurringNarrativeStructure)
 g.add((FTO['TestOrTrial'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['Transformation'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 
-g.add((FTO['PublicAttitude']. RDFS.subClassof, PERS.Attitude))
+g.add((FTO['PublicAttitude'], RDFS.subClassOf, PERS.Attitude))
 
 g.add((FTO.Innocent, RDFS.subClassOf, FTO.CharacterAttribute))
 g.add((FTO.Evil, RDFS.subClassOf, FTO.CharacterAttribute))
@@ -147,138 +148,155 @@ g.add((FTO['CinematicAdaptation'], RDF.type, OWL.Class))
 
 g.add((FTO.RecurringNarrativeStructure, OWL.sameAs, FTO.NarrativeUnit))
 
+# Read the datasets
+base_df = pd.read_csv("data/Fairytale_Adaptations_Dataset_FinalUpdated.csv")
+char_df = pd.read_csv("data/characters_full.csv")
+plt_df = pd.read_csv("data/plot.csv")
+full_df = base_df.merge(char_df, how= 'outer', on='ID').merge(plt_df, how='outer', on='ID')
+
 # Iterate over the rows
 for index, row in full_df.iterrows():
-    if pd.notna(row):
-        # Create and Add Fairy tale uri
-        fairytale_uri = URIRef(FTO[row['ID']+'_'+row['Fairytale'].strip().lower().replace(" ","_")])
-        g.add((fairytale_uri, RDF.type, FTO.Fairytale))
-        g.add((fairytale_uri, FTO.hasValue, Literal(row['Fairytale'])))
 
-        # Create and add creator uri
-        creator_uri = URIRef(FTO[row['Creator'].strip().lower().replace(" ", "_")])
-        g.add((creator_uri, RDF.type, FTO.Creator))
-        g.add((fairytale_uri, FTO.createdBy, creator_uri))
-        g.add((creator_uri, FTO.hasValue, Literal(row['Creator'])))
+    # Create and Add Fairy tale uri
+    fairytale_uri = URIRef(FTO[str(row['ID'])+'_'+row['Fairytale'].strip().lower().replace(" ","_").replace("'","_")])
+    g.add((fairytale_uri, RDF.type, FTO.Fairytale))
+    g.add((fairytale_uri, FTO.hasValue, Literal(row['Fairytale'])))
 
-        # Add Plot
-        plot_uri = URIRef(FTO[row['ID']+'_'+'Plot'])
-        g.add((plot_uri, RDF.type, FTO.Plot))
-        g.add((fairytale_uri, RDF.hasPlot, plot_uri))
-        g.add((plot_uri, FTO.hasValue, Literal(row['Plot'])))
+    # Create and add creator uri
+    creator_uri = URIRef(FTO[row['Creator'].strip().lower().replace(" ", "_").replace("'","_")])
+    g.add((creator_uri, RDF.type, FTO.Creator))
+    g.add((fairytale_uri, FTO.createdBy, creator_uri))
+    g.add((creator_uri, FTO.hasValue, Literal(row['Creator'])))
 
-        # Add EndingTypes
-        if row['EndingType'] != '' or row['EndingType'] != np.nan:
-            if row['EndingType'].strip() == 'BitterSweetEnding':
-                g.add((fairytale_uri, FTO.hasEndingType, FTO.BittersweetEnding))
+    # Add Plot
+    plot_uri = URIRef(FTO[str(row['ID'])+'_'+'Plot'])
+    g.add((plot_uri, RDF.type, FTO.Plot))
+    g.add((fairytale_uri, RDF.hasPlot, plot_uri))
+    g.add((plot_uri, FTO.hasValue, Literal(row['Plot'])))
 
-            elif row['EndingType'].strip() == 'HappilyEverAfter':
-                g.add((fairytale_uri, FTO.hasEndingType, FTO.HappilyEverAfter))
+    # Add EndingTypes
+    if row['EndingType'] != '' or row['EndingType'] != np.nan:
+        if row['EndingType'].strip() == 'BitterSweetEnding':
+            g.add((fairytale_uri, FTO.hasEndingType, FTO.BittersweetEnding))
 
-            elif row['EndingType'].strip() == 'TragicEnding':
-                g.add((fairytale_uri, FTO.hasEndingType, FTO.TragicEnding))
+        elif row['EndingType'].strip() == 'HappilyEverAfter':
+            g.add((fairytale_uri, FTO.hasEndingType, FTO.HappilyEverAfter))
 
-        # Add different LiteraryModes
-        if row['LiteraryMode'] != '' or row['LiteraryMode'] != np.nan:
-            if row['LiteraryMode'].strip() == 'IronicMode':
-                g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.IronicMode))
+        elif row['EndingType'].strip() == 'TragicEnding':
+            g.add((fairytale_uri, FTO.hasEndingType, FTO.TragicEnding))
 
-            elif row['LiteraryMode'].strip() == 'MythicMode':
-                g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.MythicMode))
+    # Add different LiteraryModes
+    if row['LiteraryMode'] != '' or row['LiteraryMode'] != np.nan:
+        if row['LiteraryMode'].strip() == 'IronicMode':
+            g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.IronicMode))
 
-            elif row['LiteraryMode'].strip() == 'RomanticMode':
-                g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.RomanticMode))
+        elif row['LiteraryMode'].strip() == 'MythicMode':
+            g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.MythicMode))
 
-            elif row['LiteraryMode'].strip() == 'TragicMode':
-                g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TragicMode))
+        elif row['LiteraryMode'].strip() == 'RomanticMode':
+            g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.RomanticMode))
 
-            elif row['LiteraryMode'].strip() == 'TricksterMode':
-                g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TricksterMode))
+        elif row['LiteraryMode'].strip() == 'TragicMode':
+            g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TragicMode))
 
-        # Add MoralThemes
-        if row['MoralTheme'] != '' or row['MoralTheme'] != np.nan:
-            if row['MoralTheme'].strip() == 'EmpowermentTheme':
-                g.add((fairytale_uri, FTO.hasMoralTheme, FTO.EmpowermentTheme))
+        elif row['LiteraryMode'].strip() == 'TricksterMode':
+            g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TricksterMode))
 
-            elif row['MoralTheme'].strip() == 'IdentityAndInclusionTheme':
-                g.add((fairytale_uri, FTO.hasMoralTheme, FTO.IdentityAndInclusionTheme))
+    # Add MoralThemes
+    if row['MoralTheme'] != '' or row['MoralTheme'] != np.nan:
+        if row['MoralTheme'].strip() == 'EmpowermentTheme':
+            g.add((fairytale_uri, FTO.hasMoralTheme, FTO.EmpowermentTheme))
 
-            elif row['MoralTheme'].strip() == 'MoralAmbiguityTheme':
-                g.add((fairytale_uri, FTO.hasMoralTheme, FTO.MoralAmbiguityTheme))
+        elif row['MoralTheme'].strip() == 'IdentityAndInclusionTheme':
+            g.add((fairytale_uri, FTO.hasMoralTheme, FTO.IdentityAndInclusionTheme))
 
-            elif row['MoralTheme'].strip() == 'VirtueRewardedTheme':
-                g.add((fairytale_uri, FTO.hasMoralTheme, FTO.VirtueRewardedTheme))
+        elif row['MoralTheme'].strip() == 'MoralAmbiguityTheme':
+            g.add((fairytale_uri, FTO.hasMoralTheme, FTO.MoralAmbiguityTheme))
 
-        activepromotion_uri = URIRef(FTO[row['ActivePromotion'].strip()])
-        g.add((activepromotion_uri, RDF.type, FTO.ActivePromotion))
-        g.add((fairytale_uri, FTO.hasActivePromotion, activepromotion_uri))
+        elif row['MoralTheme'].strip() == 'VirtueRewardedTheme':
+            g.add((fairytale_uri, FTO.hasMoralTheme, FTO.VirtueRewardedTheme))
 
-        # Add character
-        character_uri = URIRef(FTO[row['Character'].strip()])
-        g.add((character_uri, RDF.type, FTO.Chracter))
-        g.add(fairytale_uri, FTO.hasCharacter, character_uri)
-        g.add((character_uri, FTO.hasValue, Literal(row['Character'].strip())))
+    activepromotion_uri = URIRef(FTO[row['ActivePromotion'].replace("'","_").replace(" ","_").strip()])
+    g.add((activepromotion_uri, RDF.type, FTO.ActivePromotion))
+    g.add((fairytale_uri, FTO.hasPromotedAspect, activepromotion_uri))
 
-        char_arch = ''
-        if row['CharacterArchetype'] != "" or row['CharacterArchetype'] != np.nan:
-            if row['CharacterArchetype'].strip() == 'Hero':
-                g.add((character_uri, FTO.hasCharacterType, FTO.Hero))
-                char_arch = FTO.Hero
+    # Add character
+    character_uri = URIRef(FTO[row['Character'].replace("'","_").replace(" ","_").strip()])
+    g.add((character_uri, RDF.type, FTO.Chracter))
+    g.add((fairytale_uri, FTO.hasCharacter, character_uri))
+    g.add((character_uri, FTO.hasValue, Literal(row['Character'].strip())))
 
-            elif row['CharacterArchetype'].strip() == 'Helper':
-                g.add((character_uri, FTO.hasCharacterType, FTO.Helper))
-                char_arch = FTO.Helper
+    char_arch = ''
+    if row['CharacterArchetype'] != "" or row['CharacterArchetype'] != np.nan:
+        if row['CharacterArchetype'].strip() == 'Hero':
+            g.add((character_uri, FTO.hasCharacterType, FTO.Hero))
+            char_arch = FTO.Hero
 
-            elif row['CharacterArchetype'].strip() == 'Villain':
-                g.add((character_uri, FTO.hasCharacterType, FTO.Villain))
-                char_arch = FTO.Villain
+        elif row['CharacterArchetype'].strip() == 'Helper':
+            g.add((character_uri, FTO.hasCharacterType, FTO.Helper))
+            char_arch = FTO.Helper
 
-            elif row['CharacterArchetype'].stirp() == 'Trickster':
-                g.add((character_uri, FTO.hasCharacterType, FTO.Trickster))
-                char_arch = FTO.Trickster
+        elif row['CharacterArchetype'].strip() == 'Villain':
+            g.add((character_uri, FTO.hasCharacterType, FTO.Villain))
+            char_arch = FTO.Villain
 
-        if row['CharacterAttribute'] != "" or row['CharacterAttribute'] != np.nan:
-            if row['CharacterAttribute'].strip() == 'Innocent':
-                g.add((char_arch, FTO.hasAttribute, FTO.Innocent))
+        elif row['CharacterArchetype'].strip() == 'Trickster':
+            g.add((character_uri, FTO.hasCharacterType, FTO.Trickster))
+            char_arch = FTO.Trickster
 
-            elif row['CharacterAttribute'].strip() == 'Evil':
-                g.add((char_arch, FTO.hasAttribute, FTO.Evil))
+    if row['CharacterAttribute'] != "" or row['CharacterAttribute'] != np.nan:
+        if row['CharacterAttribute'].strip() == 'Innocent':
+            g.add((char_arch, FTO.hasAttribute, FTO.Innocent))
 
-            elif row['CharacterAttribute'].strip() == 'Rebel':
-                g.add((char_arch, FTO.hasAttribute, FTO.Rebel))
+        elif row['CharacterAttribute'].strip() == 'Evil':
+            g.add((char_arch, FTO.hasAttribute, FTO.Evil))
 
-            elif row['CharacterAttribute'].strip() == 'Tragic':
-                g.add((char_arch, FTO.hasAttribute, FTO.Tragic))
+        elif row['CharacterAttribute'].strip() == 'Rebel':
+            g.add((char_arch, FTO.hasAttribute, FTO.Rebel))
 
-        # Define RecurrentNarrativeStructure instances
-        departure_uri = URIRef(FTO[row['ID']+'_'+'departure'])
-        magicalaid_uri = URIRef(FTO[row['ID'] + '_' + 'magicalaid'])
-        returnandreward_uri = URIRef(FTO[row['ID'] + '_' + 'returnandreward'])
-        testortrial_uri = URIRef(FTO[row['ID'] + '_' + 'testortrial'])
-        transformation_uri = URIRef(FTO[row['ID'] + '_' + 'transformation'])
+        elif row['CharacterAttribute'].strip() == 'Tragic':
+            g.add((char_arch, FTO.hasAttribute, FTO.Tragic))
 
-        g.add((fairytale_uri, FTO.hasNarrativeStructure, departure_uri))
-        g.add((departure_uri, RDF.type, FTO.Departure))
-        g.add((departure_uri, FTO.hasValue, Literal(row['Departure'])))
+    if row['PublicAttitude'] != "" or row['PublicAttitude'] != np.nan:
+        if row['PublicAttitude'] == 'MixedReception':
+            g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.MixedReception))
 
-        g.add((fairytale_uri, FTO.hasNarrativeStructure, magicalaid_uri))
-        g.add((magicalaid_uri, RDF.type, FTO.MagicalAid))
-        g.add((magicalaid_uri, FTO.hasValue, Literal(row['MagicalAid'])))
+        elif row['PublicAttitude'] == 'NegativeReception':
+            g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.NegativeReception))
 
-        g.add((fairytale_uri, FTO.hasNarrativeStructure, returnandreward_uri))
-        g.add((returnandreward_uri, RDF.type, FTO.ReturnAndReward))
-        g.add((departure_uri, FTO.hasValue, Literal(row['ReturnAndReward'])))
+        elif row['PublicAttitude'] == 'PositiveReception':
+            g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.PositiveReception))
 
-        g.add((fairytale_uri, FTO.hasNarrativeStructure, testortrial_uri))
-        g.add((testortrial_uri, RDF.type, FTO.TestOrTrial))
-        g.add((testortrial_uri, FTO.hasValue, Literal(row['TestOrTrial'])))
+    # Define RecurrentNarrativeStructure instances
+    departure_uri = URIRef(FTO[str(row['ID']) + '_' + 'departure'])
+    magicaid_uri = URIRef(FTO[str(row['ID']) + '_' + 'magicaid'])
+    returnandreward_uri = URIRef(FTO[str(row['ID']) + '_' + 'returnandreward'])
+    testortrial_uri = URIRef(FTO[str(row['ID']) + '_' + 'testortrial'])
+    transformation_uri = URIRef(FTO[str(row['ID']) + '_' + 'transformation'])
 
-        g.add((fairytale_uri, FTO.hasNarrativeStructure, transformation_uri))
-        g.add((transformation_uri, RDF.type, FTO.Transformation))
-        g.add((transformation_uri, FTO.hasValue, Literal(row['Transformation'])))
+    g.add((fairytale_uri, FTO.hasNarrativeStructure, departure_uri))
+    g.add((departure_uri, RDF.type, FTO.Departure))
+    g.add((departure_uri, FTO.hasValue, Literal(row['Departure'])))
 
+    g.add((fairytale_uri, FTO.hasNarrativeStructure, magicaid_uri))
+    g.add((magicaid_uri, RDF.type, FTO.MagicalAid))
+    g.add((magicaid_uri, FTO.hasValue, Literal(row['MagicAid'])))
 
+    g.add((fairytale_uri, FTO.hasNarrativeStructure, returnandreward_uri))
+    g.add((returnandreward_uri, RDF.type, FTO.ReturnAndReward))
+    g.add((departure_uri, FTO.hasValue, Literal(row['ReturnAndReward'])))
 
+    g.add((fairytale_uri, FTO.hasNarrativeStructure, testortrial_uri))
+    g.add((testortrial_uri, RDF.type, FTO.TestOrTrial))
+    g.add((testortrial_uri, FTO.hasValue, Literal(row['TestOrTrial'])))
+
+    g.add((fairytale_uri, FTO.hasNarrativeStructure, transformation_uri))
+    g.add((transformation_uri, RDF.type, FTO.Transformation))
+    g.add((transformation_uri, FTO.hasValue, Literal(row['Transformation'])))
+
+# Serialize the graph to a Turtle file
+with open("fairytale_graph.ttl", "w", encoding="utf-8") as f:
+    f.write(g.serialize(format="turtle"))
 
 
 
