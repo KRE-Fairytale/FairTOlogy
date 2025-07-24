@@ -1036,7 +1036,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAdaptation"/>
-        <Class IRI="#LiteraryForm"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAttribute"/>
@@ -1044,7 +1044,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAudienceAttitude"/>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCharacter"/>
@@ -1056,7 +1056,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEndingType"/>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLiteraryMode"/>
@@ -1080,7 +1080,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPromotedAspect"/>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#receivedBy"/>
@@ -1144,7 +1144,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAdaptation"/>
-        <Class IRI="#CinematicAdaptation"/>
+        <Class IRI="#Medium"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAttribute"/>
