@@ -1056,7 +1056,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEndingType"/>
-        <Class IRI="#CinematicAdaptation"/>
+        <Class IRI="#Medium"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLiteraryMode"/>
