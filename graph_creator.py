@@ -1,3 +1,5 @@
+import re
+
 import pandas as pd
 import rdflib
 from rdflib import URIRef, Literal, Namespace, RDF, RDFS, OWL, Graph, XSD
@@ -154,16 +156,25 @@ char_df = pd.read_csv("data/characters_full.csv")
 plt_df = pd.read_csv("data/plot.csv")
 full_df = base_df.merge(char_df, how= 'outer', on='ID').merge(plt_df, how='outer', on='ID')
 
+# Omit unwanted elements from the strings
+def normalize_string(string):
+    rep = {"'":"_", " ":"_", "(":"", ")":"", "/":"_", "’":"_"}
+    string.strip()
+    rep = dict((re.escape(k), v) for k, v in rep.items())
+    pattern = re.compile("|".join(rep.keys()))
+    text = pattern.sub(lambda m: rep[re.escape(m.group(0))], string)
+    return text
+
 # Iterate over the rows
 for index, row in full_df.iterrows():
 
     # Create and Add Fairy tale uri
-    fairytale_uri = URIRef(FTO[str(row['ID'])+'_'+row['Fairytale'].strip().lower().replace(" ","_").replace("'","_")])
+    fairytale_uri = URIRef(FTO[str(row['ID'])+'_'+ normalize_string(row['Fairytale'])])
     g.add((fairytale_uri, RDF.type, FTO.Fairytale))
     g.add((fairytale_uri, FTO.hasValue, Literal(row['Fairytale'])))
 
     # Create and add creator uri
-    creator_uri = URIRef(FTO[row['Creator'].strip().lower().replace(" ", "_").replace("'","_")])
+    creator_uri = URIRef(FTO[normalize_string(row['Creator'])])
     g.add((creator_uri, RDF.type, FTO.Creator))
     g.add((fairytale_uri, FTO.createdBy, creator_uri))
     g.add((creator_uri, FTO.hasValue, Literal(row['Creator'])))
@@ -221,7 +232,7 @@ for index, row in full_df.iterrows():
     g.add((fairytale_uri, FTO.hasPromotedAspect, activepromotion_uri))
 
     # Add character
-    character_uri = URIRef(FTO[row['Character'].replace("'","_").replace(" ","_").strip()])
+    character_uri = URIRef(FTO[normalize_string(row['Character'])])
     g.add((character_uri, RDF.type, FTO.Chracter))
     g.add((fairytale_uri, FTO.hasCharacter, character_uri))
     g.add((character_uri, FTO.hasValue, Literal(row['Character'].strip())))
@@ -297,11 +308,3 @@ for index, row in full_df.iterrows():
 # Serialize the graph to a Turtle file
 with open("fairytale_graph.ttl", "w", encoding="utf-8") as f:
     f.write(g.serialize(format="turtle"))
-
-
-
-
-
-
-
-
