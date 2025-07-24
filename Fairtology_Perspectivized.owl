@@ -217,9 +217,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
     </Declaration>
     <Declaration>
@@ -687,7 +684,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NarrativeUnit"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NegativeReception"/>
@@ -979,10 +976,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
     </ObjectPropertyDomain>
@@ -1093,10 +1086,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="#receivedBy"/>
         <Class IRI="#Medium"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in"/>
-        <Class IRI="#RecurringNarrativeStructure"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
         <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
@@ -1360,18 +1349,6 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </HasKey>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in</IRI>
-        <Literal>In GOLEM, indicates that a character is involved in a social relationship.
-
-The composition of d-uses and played-by relations: a description d-uses a role that is played by an endurant (DOLCE-Lite-Plus, 2005).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://www.ontologydesignpatterns.org/ont/dlp/ExtendedDnS.owl#involved-in</IRI>
-        <Literal>GOLEM Ontology: Graphs and Ontologies for Literary Evolution Models</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <IRI>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude</IRI>
