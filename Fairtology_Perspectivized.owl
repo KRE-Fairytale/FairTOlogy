@@ -1032,7 +1032,7 @@ This ontology is developed as a domain-specific extension of the Perspectivisati
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#createdBy"/>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Fairytale"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAdaptation"/>
