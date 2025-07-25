@@ -1,9 +1,8 @@
-import re
-
+import numpy as np
 import pandas as pd
 import rdflib
 from rdflib import URIRef, Literal, Namespace, RDF, RDFS, OWL, Graph, XSD
-import numpy as np
+import re
 
 # Define namespaces
 FTO = Namespace("http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#")
@@ -49,13 +48,39 @@ g.add((FTO.hasLiteraryMode, RDF.type, OWL.ObjectProperty))
 # Specify Domains
 g.add((FTO.hasCharacterType, RDFS.domain, FTO.Character))
 g.add((FTO.hasAttribute, RDFS.domain, FTO.CharacterArchetype))
-g.add((FTO.hasAdaptation, RDFS.domain, FTO.LiteraryForm))
-
+g.add((FTO.hasAdaptation, RDFS.domain, FTO.Fairytale))
+g.add((FTO.receivedBy, RDFS.domain, FTO.Fairytale))
+g.add((FTO.createdBy, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasAudienceAtitude, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasCharacter, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasEndingType, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasLiteraryMode, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasMedium, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasMoralTheme, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasNarrativeStructure, RDFS.domain, FTO.Plot))
+g.add((FTO.hasPlot, RDFS.domain, FTO.Fairytale))
+g.add((FTO.hasPromotedAspect, RDFS.domain, FTO.Fairytale))
+g.add((FTO.has, RDFS.domain, FTO.Fairytale))
+g.add((FTO.has, RDFS.domain, FTO.Fairytale))
 
 # Specify Ranges
 g.add((FTO.hasCharacterType, RDFS.range, FTO.CharacterArchetype))
 g.add((FTO.hasAttribute, RDFS.range, FTO.CharacterAttribute))
 g.add((FTO.hasValue, RDFS.range, RDFS.Literal))
+g.add((FTO.receivedBy, RDFS.range, FTO.Audience))
+g.add((FTO.createdBy, RDFS.range, FTO.Creator))
+g.add((FTO.hasAdaptation, RDFS.range, FTO.Medium))
+g.add((FTO.hasAudienceAtitude, RDFS.range, FTO.PublicAttitude))
+g.add((FTO.hasCharacter, RDFS.range, FTO.Character))
+g.add((FTO.hasEndingType, RDFS.range, FTO.EndingType))
+g.add((FTO.hasLiteraryMode, RDFS.range, FTO.LiteraryMode))
+g.add((FTO.hasMedium, RDFS.range, FTO.Medium))
+g.add((FTO.hasMoralTheme, RDFS.range, FTO.MoralTheme))
+g.add((FTO.hasNarrativeStructure, RDFS.range, FTO.RecurringNarrativeStructure))
+g.add((FTO.hasPlot, RDFS.range, FTO.Plot))
+g.add((FTO.hasPromotedAspect, RDFS.range, FTO.ActivePromotion))
+g.add((FTO.has, RDFS.range, FTO.PublicAttitude))
+g.add((FTO.has, RDFS.range, FTO.PublicAttitude))
 
 # Specify the type of properties (namespaces)
 g.add((FTO.hasValue, RDF.type, OWL.DatatypeProperty))
@@ -81,7 +106,6 @@ g.add((FTO['MythicMode'], RDF.type, OWL.Class))
 g.add((FTO['RomanticMode'], RDF.type, OWL.Class))
 g.add((FTO['TragicMode'], RDF.type, OWL.Class))
 g.add((FTO['TricksterMode'], RDF.type, OWL.Class))
-
 g.add((FTO['MoralTheme'], RDF.type, OWL.Class))
 g.add((FTO['NarrativeUnit'], RDF.type, OWL.Class))
 g.add((FTO['RecurringNarrativeStructure'], RDF.type, OWL.Class))
@@ -105,49 +129,39 @@ g.add((FTO['VirtueRewardedTheme'], RDF.type, OWL.Class))
 g.add((FTO['Medium'], RDF.type, OWL.Class))
 g.add((FTO['LiteraryForm'], RDF.type, OWL.Class))
 g.add((FTO['CinematicAdaptation'], RDF.type, OWL.Class))
-
 g.add((FTO['MixedReception'], RDF.type, OWL.Class))
 g.add((FTO['PositiveReception'], RDF.type, OWL.Class))
 g.add((FTO['NegativeReception'], RDF.type, OWL.Class))
-
 
 # Define subclasses
 g.add((FTO['Helper'], RDFS.subClassOf, FTO.CharacterArchetype))
 g.add((FTO['Hero'], RDFS.subClassOf, FTO.CharacterArchetype))
 g.add((FTO['Trickster'], RDFS.subClassOf, FTO.CharacterArchetype))
 g.add((FTO['Villain'], RDFS.subClassOf, FTO.CharacterArchetype))
-
 g.add((FTO['BittersweetEnding'], RDFS.subClassOf, FTO.EndingType))
 g.add((FTO['HappilyEverAfter'], RDFS.subClassOf, FTO.EndingType))
 g.add((FTO['TragicEnding'], RDFS.subClassOf, FTO.EndingType))
-
 g.add((FTO['IronicMode'], RDFS.subClassOf, FTO.LiteraryMode))
 g.add((FTO['MythicMode'], RDFS.subClassOf, FTO.LiteraryMode))
 g.add((FTO['RomanticMode'], RDFS.subClassOf, FTO.LiteraryMode))
 g.add((FTO['TragicMode'], RDFS.subClassOf, FTO.LiteraryMode))
 g.add((FTO['Trickster'], RDFS.subClassOf, FTO.LiteraryMode))
-
 g.add((FTO['Departure'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['MagicalAid'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['ReturnAndReward'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['TestOrTrial'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['Transformation'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
-
 g.add((FTO['PublicAttitude'], RDFS.subClassOf, PERS.Attitude))
-
 g.add((FTO.Innocent, RDFS.subClassOf, FTO.CharacterAttribute))
 g.add((FTO.Evil, RDFS.subClassOf, FTO.CharacterAttribute))
 g.add((FTO.Rebel, RDFS.subClassOf, FTO.CharacterAttribute))
 g.add((FTO.Tragic, RDFS.subClassOf, FTO.CharacterAttribute))
-
 g.add((FTO.EmpowermentTheme, RDFS.subClassOf, FTO.MoralTheme))
 g.add((FTO.IdentityAndInclusionTheme, RDFS.subClassOf, FTO.MoralTheme))
 g.add((FTO.MoralAmbiguityTheme, RDFS.subClassOf, FTO.MoralTheme))
 g.add((FTO.VirtueRewardedTheme, RDFS.subClassOf, FTO.MoralTheme))
-
 g.add((FTO['LiteraryForm'], RDFS.subClassOf, FTO.Medium))
 g.add((FTO['CinematicAdaptation'], RDF.type, OWL.Class))
-
 g.add((FTO.RecurringNarrativeStructure, OWL.sameAs, FTO.NarrativeUnit))
 
 # Read the datasets
@@ -168,10 +182,10 @@ def normalize_string(string):
 # Iterate over the rows
 for index, row in full_df.iterrows():
 
-    # Create and Add Fairy tale uri
+    # Create and Add Fairytale uri
     fairytale_uri = URIRef(FTO[str(row['ID'])+'_'+ normalize_string(row['Fairytale'])])
     g.add((fairytale_uri, RDF.type, FTO.Fairytale))
-    g.add((fairytale_uri, FTO.hasValue, Literal(row['Fairytale'])))
+    g.add((fairytale_uri, RDFS.label, Literal(row['Fairytale'])))
 
     # Create and add creator uri
     creator_uri = URIRef(FTO[normalize_string(row['Creator'])])
@@ -285,23 +299,23 @@ for index, row in full_df.iterrows():
     testortrial_uri = URIRef(FTO[str(row['ID']) + '_' + 'testortrial'])
     transformation_uri = URIRef(FTO[str(row['ID']) + '_' + 'transformation'])
 
-    g.add((fairytale_uri, FTO.hasNarrativeStructure, departure_uri))
+    g.add((plot_uri, FTO.hasNarrativeStructure, departure_uri))
     g.add((departure_uri, RDF.type, FTO.Departure))
     g.add((departure_uri, FTO.hasValue, Literal(row['Departure'])))
 
-    g.add((fairytale_uri, FTO.hasNarrativeStructure, magicaid_uri))
+    g.add((plot_uri, FTO.hasNarrativeStructure, magicaid_uri))
     g.add((magicaid_uri, RDF.type, FTO.MagicalAid))
     g.add((magicaid_uri, FTO.hasValue, Literal(row['MagicAid'])))
 
-    g.add((fairytale_uri, FTO.hasNarrativeStructure, returnandreward_uri))
+    g.add((plot_uri, FTO.hasNarrativeStructure, returnandreward_uri))
     g.add((returnandreward_uri, RDF.type, FTO.ReturnAndReward))
     g.add((departure_uri, FTO.hasValue, Literal(row['ReturnAndReward'])))
 
-    g.add((fairytale_uri, FTO.hasNarrativeStructure, testortrial_uri))
+    g.add((plot_uri, FTO.hasNarrativeStructure, testortrial_uri))
     g.add((testortrial_uri, RDF.type, FTO.TestOrTrial))
     g.add((testortrial_uri, FTO.hasValue, Literal(row['TestOrTrial'])))
 
-    g.add((fairytale_uri, FTO.hasNarrativeStructure, transformation_uri))
+    g.add((plot_uri, FTO.hasNarrativeStructure, transformation_uri))
     g.add((transformation_uri, RDF.type, FTO.Transformation))
     g.add((transformation_uri, FTO.hasValue, Literal(row['Transformation'])))
 
