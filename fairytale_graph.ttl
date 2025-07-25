@@ -5,22 +5,18 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 fto:10_The_Little_Match_Girl a fto:Fairytale ;
+    rdfs:label "The Little Match Girl" ;
     fto:createdBy fto:Russian-oral_tradition ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Grandmother_s_Spirit,
         fto:Match_Girl ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:10_departure,
-        fto:10_magicaid,
-        fto:10_returnandreward,
-        fto:10_testortrial,
-        fto:10_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Little Match Girl" ;
     rdf:hasPlot fto:10_Plot .
 
 fto:11_The_Twelve_Dancing_Princesses a fto:Fairytale ;
+    rdfs:label "The Twelve Dancing Princesses" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Eldest_Princess,
@@ -29,16 +25,11 @@ fto:11_The_Twelve_Dancing_Princesses a fto:Fairytale ;
         fto:Soldier ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:11_departure,
-        fto:11_magicaid,
-        fto:11_returnandreward,
-        fto:11_testortrial,
-        fto:11_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Twelve Dancing Princesses" ;
     rdf:hasPlot fto:11_Plot .
 
 fto:12_Snow_White a fto:Fairytale ;
+    rdfs:label "Snow White" ;
     fto:createdBy fto:DreamWorks ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Evil_Queen,
@@ -48,16 +39,11 @@ fto:12_Snow_White a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:12_departure,
-        fto:12_magicaid,
-        fto:12_returnandreward,
-        fto:12_testortrial,
-        fto:12_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Snow White" ;
     rdf:hasPlot fto:12_Plot .
 
 fto:13_The_Juniper_Tree a fto:Fairytale ;
+    rdfs:label "The Juniper Tree" ;
     fto:createdBy fto:DreamWorks ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Bird_Spirit,
@@ -67,16 +53,11 @@ fto:13_The_Juniper_Tree a fto:Fairytale ;
         fto:Stepmother ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:13_departure,
-        fto:13_magicaid,
-        fto:13_returnandreward,
-        fto:13_testortrial,
-        fto:13_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Juniper Tree" ;
     rdf:hasPlot fto:13_Plot .
 
 fto:14_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
+    rdfs:label "Why Mosquitoes Buzz in People's Ears" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Iguana,
@@ -85,16 +66,11 @@ fto:14_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
         fto:Mother_Owl ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:14_departure,
-        fto:14_magicaid,
-        fto:14_returnandreward,
-        fto:14_testortrial,
-        fto:14_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Why Mosquitoes Buzz in People's Ears" ;
     rdf:hasPlot fto:14_Plot .
 
 fto:15_The_Tale_of_Genji a fto:Fairytale ;
+    rdfs:label "The Tale of Genji" ;
     fto:createdBy fto:Disney ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Fujitsubo,
@@ -104,16 +80,11 @@ fto:15_The_Tale_of_Genji a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:15_departure,
-        fto:15_magicaid,
-        fto:15_returnandreward,
-        fto:15_testortrial,
-        fto:15_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Tale of Genji" ;
     rdf:hasPlot fto:15_Plot .
 
 fto:16_The_Firebird a fto:Fairytale ;
+    rdfs:label "The Firebird" ;
     fto:createdBy fto:Zulu-oral_tradition ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Firebird,
@@ -123,16 +94,11 @@ fto:16_The_Firebird a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:16_departure,
-        fto:16_magicaid,
-        fto:16_returnandreward,
-        fto:16_testortrial,
-        fto:16_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Firebird" ;
     rdf:hasPlot fto:16_Plot .
 
 fto:17_The_Bremen_Town_Musicians a fto:Fairytale ;
+    rdfs:label "The Bremen Town Musicians" ;
     fto:createdBy fto:Mexican-oral_tradition ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Cat,
@@ -143,16 +109,11 @@ fto:17_The_Bremen_Town_Musicians a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:17_departure,
-        fto:17_magicaid,
-        fto:17_returnandreward,
-        fto:17_testortrial,
-        fto:17_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Bremen Town Musicians" ;
     rdf:hasPlot fto:17_Plot .
 
 fto:18_The_Bamboo_Cutter a fto:Fairytale ;
+    rdfs:label "The Bamboo Cutter" ;
     fto:createdBy fto:Disney ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Bamboo_Cutter_s_Wife,
@@ -161,16 +122,11 @@ fto:18_The_Bamboo_Cutter a fto:Fairytale ;
         fto:Princess_Kaguya ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:18_departure,
-        fto:18_magicaid,
-        fto:18_returnandreward,
-        fto:18_testortrial,
-        fto:18_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Bamboo Cutter" ;
     rdf:hasPlot fto:18_Plot .
 
 fto:19_How_the_Sun_Was_Made a fto:Fairytale ;
+    rdfs:label "How the Sun Was Made" ;
     fto:createdBy fto:Hans_Christian_Andersen ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Animals,
@@ -178,16 +134,11 @@ fto:19_How_the_Sun_Was_Made a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:19_departure,
-        fto:19_magicaid,
-        fto:19_returnandreward,
-        fto:19_testortrial,
-        fto:19_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "How the Sun Was Made" ;
     rdf:hasPlot fto:19_Plot .
 
 fto:1_The_Singing_Bone a fto:Fairytale ;
+    rdfs:label "The Singing Bone" ;
     fto:createdBy fto:Grimm_Brothers ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Dwarf,
@@ -197,16 +148,11 @@ fto:1_The_Singing_Bone a fto:Fairytale ;
         fto:Younger_Brother ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:1_departure,
-        fto:1_magicaid,
-        fto:1_returnandreward,
-        fto:1_testortrial,
-        fto:1_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Singing Bone" ;
     rdf:hasPlot fto:1_Plot .
 
 fto:20_Cinderella a fto:Fairytale ;
+    rdfs:label "Cinderella" ;
     fto:createdBy fto:Indian-oral_tradition ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Cinderella,
@@ -217,16 +163,11 @@ fto:20_Cinderella a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:20_departure,
-        fto:20_magicaid,
-        fto:20_returnandreward,
-        fto:20_testortrial,
-        fto:20_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Cinderella" ;
     rdf:hasPlot fto:20_Plot .
 
 fto:21_Beauty_and_the_Beast a fto:Fairytale ;
+    rdfs:label "Beauty and the Beast" ;
     fto:createdBy fto:Japanese-oral_tradition ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Beast,
@@ -237,16 +178,11 @@ fto:21_Beauty_and_the_Beast a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:21_departure,
-        fto:21_magicaid,
-        fto:21_returnandreward,
-        fto:21_testortrial,
-        fto:21_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Beauty and the Beast" ;
     rdf:hasPlot fto:21_Plot .
 
 fto:22_The_Bamboo_Cutter a fto:Fairytale ;
+    rdfs:label "The Bamboo Cutter" ;
     fto:createdBy fto:Studio_Ghibli ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Bamboo_Cutter_s_Wife,
@@ -255,32 +191,22 @@ fto:22_The_Bamboo_Cutter a fto:Fairytale ;
         fto:Princess_Kaguya ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:22_departure,
-        fto:22_magicaid,
-        fto:22_returnandreward,
-        fto:22_testortrial,
-        fto:22_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Bamboo Cutter" ;
     rdf:hasPlot fto:22_Plot .
 
 fto:23_How_the_Sun_Was_Made a fto:Fairytale ;
+    rdfs:label "How the Sun Was Made" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Animals,
         fto:Trickster_Figure ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:23_departure,
-        fto:23_magicaid,
-        fto:23_returnandreward,
-        fto:23_testortrial,
-        fto:23_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "How the Sun Was Made" ;
     rdf:hasPlot fto:23_Plot .
 
 fto:24_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
+    rdfs:label "Why Mosquitoes Buzz in People's Ears" ;
     fto:createdBy fto:Perrault ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Iguana,
@@ -290,16 +216,11 @@ fto:24_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:24_departure,
-        fto:24_magicaid,
-        fto:24_returnandreward,
-        fto:24_testortrial,
-        fto:24_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Why Mosquitoes Buzz in People's Ears" ;
     rdf:hasPlot fto:24_Plot .
 
 fto:25_Little_Red_Riding_Hood a fto:Fairytale ;
+    rdfs:label "Little Red Riding Hood" ;
     fto:createdBy fto:Italian-oral_tradition ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Big_Bad_Wolf,
@@ -309,16 +230,11 @@ fto:25_Little_Red_Riding_Hood a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:25_departure,
-        fto:25_magicaid,
-        fto:25_returnandreward,
-        fto:25_testortrial,
-        fto:25_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Little Red Riding Hood" ;
     rdf:hasPlot fto:25_Plot .
 
 fto:26_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
+    rdfs:label "Why Mosquitoes Buzz in People's Ears" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Iguana,
@@ -328,16 +244,11 @@ fto:26_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:26_departure,
-        fto:26_magicaid,
-        fto:26_returnandreward,
-        fto:26_testortrial,
-        fto:26_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Why Mosquitoes Buzz in People's Ears" ;
     rdf:hasPlot fto:26_Plot .
 
 fto:27_The_Peasant_and_the_Devil a fto:Fairytale ;
+    rdfs:label "The Peasant and the Devil" ;
     fto:createdBy fto:Netflix ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Devil,
@@ -345,16 +256,11 @@ fto:27_The_Peasant_and_the_Devil a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:27_departure,
-        fto:27_magicaid,
-        fto:27_returnandreward,
-        fto:27_testortrial,
-        fto:27_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Peasant and the Devil" ;
     rdf:hasPlot fto:27_Plot .
 
 fto:28_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
+    rdfs:label "East of the Sun and West of the Moon" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Girl,
@@ -364,16 +270,11 @@ fto:28_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:28_departure,
-        fto:28_magicaid,
-        fto:28_returnandreward,
-        fto:28_testortrial,
-        fto:28_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "East of the Sun and West of the Moon" ;
     rdf:hasPlot fto:28_Plot .
 
 fto:29_La_Llorona a fto:Fairytale ;
+    rdfs:label "La Llorona" ;
     fto:createdBy fto:Italian-oral_tradition ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Children,
@@ -382,16 +283,11 @@ fto:29_La_Llorona a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:29_departure,
-        fto:29_magicaid,
-        fto:29_returnandreward,
-        fto:29_testortrial,
-        fto:29_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "La Llorona" ;
     rdf:hasPlot fto:29_Plot .
 
 fto:2_The_Fisherman_and_His_Wife a fto:Fairytale ;
+    rdfs:label "The Fisherman and His Wife" ;
     fto:createdBy fto:Mexican-oral_tradition ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Fisherman,
@@ -400,16 +296,11 @@ fto:2_The_Fisherman_and_His_Wife a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:2_departure,
-        fto:2_magicaid,
-        fto:2_returnandreward,
-        fto:2_testortrial,
-        fto:2_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Fisherman and His Wife" ;
     rdf:hasPlot fto:2_Plot .
 
 fto:30_The_Monkey_King a fto:Fairytale ;
+    rdfs:label "The Monkey King" ;
     fto:createdBy fto:DreamWorks ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Heavenly_Court,
@@ -420,16 +311,11 @@ fto:30_The_Monkey_King a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:30_departure,
-        fto:30_magicaid,
-        fto:30_returnandreward,
-        fto:30_testortrial,
-        fto:30_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Monkey King" ;
     rdf:hasPlot fto:30_Plot .
 
 fto:31_The_Juniper_Tree a fto:Fairytale ;
+    rdfs:label "The Juniper Tree" ;
     fto:createdBy fto:Perrault ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Bird_Spirit,
@@ -440,16 +326,11 @@ fto:31_The_Juniper_Tree a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:31_departure,
-        fto:31_magicaid,
-        fto:31_returnandreward,
-        fto:31_testortrial,
-        fto:31_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Juniper Tree" ;
     rdf:hasPlot fto:31_Plot .
 
 fto:32_The_Crane_Wife a fto:Fairytale ;
+    rdfs:label "The Crane Wife" ;
     fto:createdBy fto:Disney ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Crane_Wife,
@@ -457,16 +338,11 @@ fto:32_The_Crane_Wife a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:32_departure,
-        fto:32_magicaid,
-        fto:32_returnandreward,
-        fto:32_testortrial,
-        fto:32_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Crane Wife" ;
     rdf:hasPlot fto:32_Plot .
 
 fto:33_Vasilisa_the_Beautiful a fto:Fairytale ;
+    rdfs:label "Vasilisa the Beautiful" ;
     fto:createdBy fto:DreamWorks ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Baba_Yaga,
@@ -476,32 +352,22 @@ fto:33_Vasilisa_the_Beautiful a fto:Fairytale ;
         fto:Vasilisa ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:33_departure,
-        fto:33_magicaid,
-        fto:33_returnandreward,
-        fto:33_testortrial,
-        fto:33_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Vasilisa the Beautiful" ;
     rdf:hasPlot fto:33_Plot .
 
 fto:34_The_Crane_Wife a fto:Fairytale ;
+    rdfs:label "The Crane Wife" ;
     fto:createdBy fto:Russian-oral_tradition ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Crane_Wife,
         fto:Husband ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:34_departure,
-        fto:34_magicaid,
-        fto:34_returnandreward,
-        fto:34_testortrial,
-        fto:34_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Crane Wife" ;
     rdf:hasPlot fto:34_Plot .
 
 fto:35_The_Camel_and_the_Jackal a fto:Fairytale ;
+    rdfs:label "The Camel and the Jackal" ;
     fto:createdBy fto:Studio_Ghibli ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Camel,
@@ -509,16 +375,11 @@ fto:35_The_Camel_and_the_Jackal a fto:Fairytale ;
         fto:Jackal ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:35_departure,
-        fto:35_magicaid,
-        fto:35_returnandreward,
-        fto:35_testortrial,
-        fto:35_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Camel and the Jackal" ;
     rdf:hasPlot fto:35_Plot .
 
 fto:36_Little_Red_Riding_Hood a fto:Fairytale ;
+    rdfs:label "Little Red Riding Hood" ;
     fto:createdBy fto:Italian-oral_tradition ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Big_Bad_Wolf,
@@ -528,16 +389,11 @@ fto:36_Little_Red_Riding_Hood a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:36_departure,
-        fto:36_magicaid,
-        fto:36_returnandreward,
-        fto:36_testortrial,
-        fto:36_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Little Red Riding Hood" ;
     rdf:hasPlot fto:36_Plot .
 
 fto:37_Beauty_and_the_Beast a fto:Fairytale ;
+    rdfs:label "Beauty and the Beast" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Beast,
@@ -547,16 +403,11 @@ fto:37_Beauty_and_the_Beast a fto:Fairytale ;
         fto:Mrs._Potts ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:37_departure,
-        fto:37_magicaid,
-        fto:37_returnandreward,
-        fto:37_testortrial,
-        fto:37_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Beauty and the Beast" ;
     rdf:hasPlot fto:37_Plot .
 
 fto:38_The_Pied_Piper a fto:Fairytale ;
+    rdfs:label "The Pied Piper" ;
     fto:createdBy fto:Netflix ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Children,
@@ -566,16 +417,11 @@ fto:38_The_Pied_Piper a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:38_departure,
-        fto:38_magicaid,
-        fto:38_returnandreward,
-        fto:38_testortrial,
-        fto:38_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Pied Piper" ;
     rdf:hasPlot fto:38_Plot .
 
 fto:39_The_Feathered_Serpent a fto:Fairytale ;
+    rdfs:label "The Feathered Serpent" ;
     fto:createdBy fto:Grimm_Brothers ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Feathered_Serpent,
@@ -584,32 +430,22 @@ fto:39_The_Feathered_Serpent a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:39_departure,
-        fto:39_magicaid,
-        fto:39_returnandreward,
-        fto:39_testortrial,
-        fto:39_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Feathered Serpent" ;
     rdf:hasPlot fto:39_Plot .
 
 fto:3_The_Crane_Wife a fto:Fairytale ;
+    rdfs:label "The Crane Wife" ;
     fto:createdBy fto:Mexican-oral_tradition ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Crane_Wife,
         fto:Husband ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:3_departure,
-        fto:3_magicaid,
-        fto:3_returnandreward,
-        fto:3_testortrial,
-        fto:3_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Crane Wife" ;
     rdf:hasPlot fto:3_Plot .
 
 fto:40_The_Rainbow_Serpent a fto:Fairytale ;
+    rdfs:label "The Rainbow Serpent" ;
     fto:createdBy fto:Indian-oral_tradition ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Rainbow_Serpent,
@@ -618,16 +454,11 @@ fto:40_The_Rainbow_Serpent a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:40_departure,
-        fto:40_magicaid,
-        fto:40_returnandreward,
-        fto:40_testortrial,
-        fto:40_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Rainbow Serpent" ;
     rdf:hasPlot fto:40_Plot .
 
 fto:41_Baba_Yaga a fto:Fairytale ;
+    rdfs:label "Baba Yaga" ;
     fto:createdBy fto:Studio_Ghibli ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Baba_Yaga,
@@ -637,16 +468,11 @@ fto:41_Baba_Yaga a fto:Fairytale ;
         fto:Vasilisa ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:41_departure,
-        fto:41_magicaid,
-        fto:41_returnandreward,
-        fto:41_testortrial,
-        fto:41_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Baba Yaga" ;
     rdf:hasPlot fto:41_Plot .
 
 fto:42_The_Rainbow_Serpent a fto:Fairytale ;
+    rdfs:label "The Rainbow Serpent" ;
     fto:createdBy fto:Perrault ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Rainbow_Serpent,
@@ -654,32 +480,22 @@ fto:42_The_Rainbow_Serpent a fto:Fairytale ;
         fto:Trickster_Animals ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:42_departure,
-        fto:42_magicaid,
-        fto:42_returnandreward,
-        fto:42_testortrial,
-        fto:42_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Rainbow Serpent" ;
     rdf:hasPlot fto:42_Plot .
 
 fto:43_The_Crane_Wife a fto:Fairytale ;
+    rdfs:label "The Crane Wife" ;
     fto:createdBy fto:Netflix ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Crane_Wife,
         fto:Husband ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:43_departure,
-        fto:43_magicaid,
-        fto:43_returnandreward,
-        fto:43_testortrial,
-        fto:43_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Crane Wife" ;
     rdf:hasPlot fto:43_Plot .
 
 fto:44_Beauty_and_the_Beast a fto:Fairytale ;
+    rdfs:label "Beauty and the Beast" ;
     fto:createdBy fto:Pixar ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Beast,
@@ -690,16 +506,11 @@ fto:44_Beauty_and_the_Beast a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:44_departure,
-        fto:44_magicaid,
-        fto:44_returnandreward,
-        fto:44_testortrial,
-        fto:44_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Beauty and the Beast" ;
     rdf:hasPlot fto:44_Plot .
 
 fto:45_The_Rainbow_Serpent a fto:Fairytale ;
+    rdfs:label "The Rainbow Serpent" ;
     fto:createdBy fto:Japanese-oral_tradition ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Rainbow_Serpent,
@@ -707,16 +518,11 @@ fto:45_The_Rainbow_Serpent a fto:Fairytale ;
         fto:Trickster_Animals ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:45_departure,
-        fto:45_magicaid,
-        fto:45_returnandreward,
-        fto:45_testortrial,
-        fto:45_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Rainbow Serpent" ;
     rdf:hasPlot fto:45_Plot .
 
 fto:46_The_Red_Shoes a fto:Fairytale ;
+    rdfs:label "The Red Shoes" ;
     fto:createdBy fto:Mexican-oral_tradition ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Adoptive_Mother,
@@ -726,16 +532,11 @@ fto:46_The_Red_Shoes a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:46_departure,
-        fto:46_magicaid,
-        fto:46_returnandreward,
-        fto:46_testortrial,
-        fto:46_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Red Shoes" ;
     rdf:hasPlot fto:46_Plot .
 
 fto:47_Snow_White a fto:Fairytale ;
+    rdfs:label "Snow White" ;
     fto:createdBy fto:Pixar ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Evil_Queen,
@@ -745,16 +546,11 @@ fto:47_Snow_White a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:47_departure,
-        fto:47_magicaid,
-        fto:47_returnandreward,
-        fto:47_testortrial,
-        fto:47_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Snow White" ;
     rdf:hasPlot fto:47_Plot .
 
 fto:48_Aladdin a fto:Fairytale ;
+    rdfs:label "Aladdin" ;
     fto:createdBy fto:Studio_Ghibli ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Aladdin,
@@ -765,16 +561,11 @@ fto:48_Aladdin a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:48_departure,
-        fto:48_magicaid,
-        fto:48_returnandreward,
-        fto:48_testortrial,
-        fto:48_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Aladdin" ;
     rdf:hasPlot fto:48_Plot .
 
 fto:49_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
+    rdfs:label "East of the Sun and West of the Moon" ;
     fto:createdBy fto:Hans_Christian_Andersen ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Girl,
@@ -783,16 +574,11 @@ fto:49_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
         fto:White_Bear_Prince ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasNarrativeStructure fto:49_departure,
-        fto:49_magicaid,
-        fto:49_returnandreward,
-        fto:49_testortrial,
-        fto:49_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "East of the Sun and West of the Moon" ;
     rdf:hasPlot fto:49_Plot .
 
 fto:4_Baba_Yaga a fto:Fairytale ;
+    rdfs:label "Baba Yaga" ;
     fto:createdBy fto:Disney ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Baba_Yaga,
@@ -803,16 +589,11 @@ fto:4_Baba_Yaga a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasNarrativeStructure fto:4_departure,
-        fto:4_magicaid,
-        fto:4_returnandreward,
-        fto:4_testortrial,
-        fto:4_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Baba Yaga" ;
     rdf:hasPlot fto:4_Plot .
 
 fto:50_The_Bamboo_Cutter a fto:Fairytale ;
+    rdfs:label "The Bamboo Cutter" ;
     fto:createdBy fto:Zulu-oral_tradition ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Bamboo_Cutter_s_Wife,
@@ -822,16 +603,11 @@ fto:50_The_Bamboo_Cutter a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:50_departure,
-        fto:50_magicaid,
-        fto:50_returnandreward,
-        fto:50_testortrial,
-        fto:50_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "The Bamboo Cutter" ;
     rdf:hasPlot fto:50_Plot .
 
 fto:5_The_Crane_Wife a fto:Fairytale ;
+    rdfs:label "The Crane Wife" ;
     fto:createdBy fto:Disney ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Crane_Wife,
@@ -839,16 +615,11 @@ fto:5_The_Crane_Wife a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:5_departure,
-        fto:5_magicaid,
-        fto:5_returnandreward,
-        fto:5_testortrial,
-        fto:5_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Crane Wife" ;
     rdf:hasPlot fto:5_Plot .
 
 fto:6_Tenali_Raman_and_the_Thieves a fto:Fairytale ;
+    rdfs:label "Tenali Raman and the Thieves" ;
     fto:createdBy fto:Disney ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Tenali_Raman,
@@ -856,16 +627,11 @@ fto:6_Tenali_Raman_and_the_Thieves a fto:Fairytale ;
         fto:Thieves ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:6_departure,
-        fto:6_magicaid,
-        fto:6_returnandreward,
-        fto:6_testortrial,
-        fto:6_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Tenali Raman and the Thieves" ;
     rdf:hasPlot fto:6_Plot .
 
 fto:7_Chang_e_Flies_to_the_Moon a fto:Fairytale ;
+    rdfs:label "Chang'e Flies to the Moon" ;
     fto:createdBy fto:Universal_Pictures ;
     fto:hasAudienceAttitude fto:PositiveReception ;
     fto:hasCharacter fto:Chang_e,
@@ -873,16 +639,11 @@ fto:7_Chang_e_Flies_to_the_Moon a fto:Fairytale ;
         fto:Jade_Rabbit ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:7_departure,
-        fto:7_magicaid,
-        fto:7_returnandreward,
-        fto:7_testortrial,
-        fto:7_transformation ;
     fto:hasPromotedAspect fto:InnerSelf ;
-    fto:hasValue "Chang'e Flies to the Moon" ;
     rdf:hasPlot fto:7_Plot .
 
 fto:8_The_Tinderbox a fto:Fairytale ;
+    rdfs:label "The Tinderbox" ;
     fto:createdBy fto:Persian-oral_tradition ;
     fto:hasAudienceAttitude fto:NegativeReception ;
     fto:hasCharacter fto:Dogs_with_Eyes,
@@ -892,16 +653,11 @@ fto:8_The_Tinderbox a fto:Fairytale ;
     fto:hasEndingType fto:HappilyEverAfter ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasNarrativeStructure fto:8_departure,
-        fto:8_magicaid,
-        fto:8_returnandreward,
-        fto:8_testortrial,
-        fto:8_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "The Tinderbox" ;
     rdf:hasPlot fto:8_Plot .
 
 fto:9_Vasilisa_the_Beautiful a fto:Fairytale ;
+    rdfs:label "Vasilisa the Beautiful" ;
     fto:createdBy fto:Netflix ;
     fto:hasAudienceAttitude fto:MixedReception ;
     fto:hasCharacter fto:Baba_Yaga,
@@ -912,70 +668,95 @@ fto:9_Vasilisa_the_Beautiful a fto:Fairytale ;
     fto:hasEndingType fto:TragicEnding ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasNarrativeStructure fto:9_departure,
-        fto:9_magicaid,
-        fto:9_returnandreward,
-        fto:9_testortrial,
-        fto:9_transformation ;
     fto:hasPromotedAspect fto:OuterWorld ;
-    fto:hasValue "Vasilisa the Beautiful" ;
     rdf:hasPlot fto:9_Plot .
-
-fto:Audience a owl:Class .
 
 fto:BittersweetEnding a owl:Class ;
     rdfs:subClassOf fto:EndingType .
 
 fto:CinematicAdaptation a owl:Class .
 
-fto:PublicAttitude a owl:Class ;
-    rdfs:subClassOf pers:Attitude .
+fto:LiteraryForm a owl:Class ;
+    rdfs:subClassOf fto:Medium .
 
 fto:ReceivedBy a owl:ObjectProperty .
 
 fto:TricksterMode a owl:Class .
 
-fto:createdBy a owl:ObjectProperty .
+fto:createdBy a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Creator .
 
 fto:creates a owl:ObjectProperty .
 
+fto:has rdfs:domain fto:Fairytale ;
+    rdfs:range fto:PublicAttitude .
+
 fto:hasAdaptation a owl:ObjectProperty ;
-    rdfs:domain fto:LiteraryForm .
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Medium .
 
 fto:hasAttribute a owl:ObjectProperty ;
     rdfs:domain fto:CharacterArchetype ;
     rdfs:range fto:CharacterAttribute .
 
+fto:hasAudienceAtitude rdfs:domain fto:Fairytale ;
+    rdfs:range fto:PublicAttitude .
+
 fto:hasAudienceAttitude a owl:ObjectProperty .
 
-fto:hasCharacter a owl:ObjectProperty .
+fto:hasCharacter a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Character .
 
 fto:hasCharacterType a owl:ObjectProperty ;
     rdfs:domain fto:Character ;
     rdfs:range fto:CharacterArchetype .
 
-fto:hasEndingType a owl:ObjectProperty .
+fto:hasEndingType a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:EndingType .
 
-fto:hasLiteraryMode a owl:ObjectProperty .
+fto:hasLiteraryMode a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:LiteraryMode .
 
-fto:hasMedium a owl:ObjectProperty .
+fto:hasMedium a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Medium .
 
-fto:hasMoralTheme a owl:ObjectProperty .
+fto:hasMoralTheme a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:MoralTheme .
 
-fto:hasNarrativeStructure a owl:ObjectProperty .
+fto:hasNarrativeStructure a owl:ObjectProperty ;
+    rdfs:domain fto:Plot ;
+    rdfs:range fto:RecurringNarrativeStructure .
 
-fto:hasPlot a owl:ObjectProperty .
+fto:hasPlot a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Plot .
 
-fto:hasPromotedAspect a owl:ObjectProperty .
+fto:hasPromotedAspect a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:ActivePromotion .
 
 fto:hasValue a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal .
+
+fto:receivedBy rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Audience .
 
 fto:recievedBy a owl:ObjectProperty .
 
 pers:Attitude a owl:Class .
 
 fto:10_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:10_departure,
+        fto:10_magicaid,
+        fto:10_returnandreward,
+        fto:10_testortrial,
+        fto:10_transformation ;
     fto:hasValue "A girl visits her sick grandmother, encounters a wolf disguised as her, but is saved by a huntsman who kills the wolf." .
 
 fto:10_departure a fto:Departure ;
@@ -994,6 +775,11 @@ fto:10_transformation a fto:Transformation ;
     fto:hasValue "Transcends suffering through visions." .
 
 fto:11_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:11_departure,
+        fto:11_magicaid,
+        fto:11_returnandreward,
+        fto:11_testortrial,
+        fto:11_transformation ;
     fto:hasValue "An animated retelling where Red Riding Hood outsmarts the wolf with the huntsman’s help and they save her grandmother." .
 
 fto:11_departure a fto:Departure ;
@@ -1012,6 +798,11 @@ fto:11_transformation a fto:Transformation ;
     fto:hasValue "Truth about secret dances is revealed." .
 
 fto:12_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:12_departure,
+        fto:12_magicaid,
+        fto:12_returnandreward,
+        fto:12_testortrial,
+        fto:12_transformation ;
     fto:hasValue "A poor woodcutter finds a magical tree that rewards kindness and punishes greed when his wife’s selfishness destroys their blessings." .
 
 fto:12_departure a fto:Departure ;
@@ -1030,6 +821,11 @@ fto:12_transformation a fto:Transformation ;
     fto:hasValue "Snow White is revived by prince." .
 
 fto:13_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:13_departure,
+        fto:13_magicaid,
+        fto:13_returnandreward,
+        fto:13_testortrial,
+        fto:13_transformation ;
     fto:hasValue "An adaptation where a humble woodcutter gains fortune from a magical tree while his greedy wife is punished for her arrogance." .
 
 fto:13_departure a fto:Departure ;
@@ -1048,6 +844,11 @@ fto:13_transformation a fto:Transformation ;
     fto:hasValue "Boy returns as bird, enacts revenge." .
 
 fto:14_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:14_departure,
+        fto:14_magicaid,
+        fto:14_returnandreward,
+        fto:14_testortrial,
+        fto:14_transformation ;
     fto:hasValue "A prince cursed to live as a beast learns love and humility from a maiden who sacrifices herself for him; her love breaks the spell." .
 
 fto:14_departure a fto:Departure ;
@@ -1066,6 +867,11 @@ fto:14_transformation a fto:Transformation ;
     fto:hasValue "Consequences of mosquito’s lie unfold." .
 
 fto:15_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:15_departure,
+        fto:15_magicaid,
+        fto:15_returnandreward,
+        fto:15_testortrial,
+        fto:15_transformation ;
     fto:hasValue "Disney’s adaptation where Belle sacrifices herself for her father, befriends enchanted objects, falls in love with the Beast, and breaks the spell." .
 
 fto:15_departure a fto:Departure ;
@@ -1084,6 +890,11 @@ fto:15_transformation a fto:Transformation ;
     fto:hasValue "Genji matures through loss and longing." .
 
 fto:16_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:16_departure,
+        fto:16_magicaid,
+        fto:16_returnandreward,
+        fto:16_testortrial,
+        fto:16_transformation ;
     fto:hasValue "A poor girl endures hardship under her stepmother, is helped by the spirit of her mother through a magical tree, and marries the king." .
 
 fto:16_departure a fto:Departure ;
@@ -1102,6 +913,11 @@ fto:16_transformation a fto:Transformation ;
     fto:hasValue "Firebird helps overcome evil." .
 
 fto:17_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:17_departure,
+        fto:17_magicaid,
+        fto:17_returnandreward,
+        fto:17_testortrial,
+        fto:17_transformation ;
     fto:hasValue "A cinematic adaptation where Cinderella is mistreated by her stepfamily but wins the prince’s heart with inner beauty and kindness." .
 
 fto:17_departure a fto:Departure ;
@@ -1120,6 +936,11 @@ fto:17_transformation a fto:Transformation ;
     fto:hasValue "Animals find new purpose." .
 
 fto:18_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:18_departure,
+        fto:18_magicaid,
+        fto:18_returnandreward,
+        fto:18_testortrial,
+        fto:18_transformation ;
     fto:hasValue "A young boy defeats an ogre with cunning, steals his treasures, and climbs down the beanstalk, securing fortune for his family." .
 
 fto:18_departure a fto:Departure ;
@@ -1138,6 +959,11 @@ fto:18_transformation a fto:Transformation ;
     fto:hasValue "Kaguya’s true origins are revealed." .
 
 fto:19_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:19_departure,
+        fto:19_magicaid,
+        fto:19_returnandreward,
+        fto:19_testortrial,
+        fto:19_transformation ;
     fto:hasValue "An animated version where Jack climbs the beanstalk, outwits the ogre, and escapes with gold, ensuring his mother’s prosperity." .
 
 fto:19_departure a fto:Departure ;
@@ -1156,6 +982,11 @@ fto:19_transformation a fto:Transformation ;
     fto:hasValue "Sun is brought into the sky." .
 
 fto:1_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:1_departure,
+        fto:1_magicaid,
+        fto:1_returnandreward,
+        fto:1_testortrial,
+        fto:1_transformation ;
     fto:hasValue "A bone from a slain brother sings the truth, revealing fratricide and resulting in the murderer’s execution, ending in tragic justice." .
 
 fto:1_departure a fto:Departure ;
@@ -1174,6 +1005,11 @@ fto:1_transformation a fto:Transformation ;
     fto:hasValue "The truth is revealed through the singing bone." .
 
 fto:20_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:20_departure,
+        fto:20_magicaid,
+        fto:20_returnandreward,
+        fto:20_testortrial,
+        fto:20_transformation ;
     fto:hasValue "A princess forced to marry a beggar learns humility through hardship, only to discover he is King Thrushbeard in disguise testing her pride." .
 
 fto:20_departure a fto:Departure ;
@@ -1192,6 +1028,11 @@ fto:20_transformation a fto:Transformation ;
     fto:hasValue "Cinderella is recognized by prince." .
 
 fto:21_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:21_departure,
+        fto:21_magicaid,
+        fto:21_returnandreward,
+        fto:21_testortrial,
+        fto:21_transformation ;
     fto:hasValue "An adaptation of King Thrushbeard where the princess learns humility as a beggar’s wife before happily reuniting with her disguised husband." .
 
 fto:21_departure a fto:Departure ;
@@ -1210,6 +1051,11 @@ fto:21_transformation a fto:Transformation ;
     fto:hasValue "Beast transforms into a prince." .
 
 fto:22_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:22_departure,
+        fto:22_magicaid,
+        fto:22_returnandreward,
+        fto:22_testortrial,
+        fto:22_transformation ;
     fto:hasValue "A mermaid saves a prince and sacrifices her life for his happiness when he marries another, dissolving into sea foam but gaining a soul." .
 
 fto:22_departure a fto:Departure ;
@@ -1228,6 +1074,11 @@ fto:22_transformation a fto:Transformation ;
     fto:hasValue "Kaguya’s true origins are revealed." .
 
 fto:23_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:23_departure,
+        fto:23_magicaid,
+        fto:23_returnandreward,
+        fto:23_testortrial,
+        fto:23_transformation ;
     fto:hasValue "Disney’s adaptation where Ariel trades her voice for legs, defeats Ursula, regains her voice, and marries Prince Eric happily ever after." .
 
 fto:23_departure a fto:Departure ;
@@ -1246,6 +1097,11 @@ fto:23_transformation a fto:Transformation ;
     fto:hasValue "Sun is brought into the sky." .
 
 fto:24_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:24_departure,
+        fto:24_magicaid,
+        fto:24_returnandreward,
+        fto:24_testortrial,
+        fto:24_transformation ;
     fto:hasValue "A girl sacrifices herself to save her siblings turned into swans by their stepmother, enduring silence for years to break their curse." .
 
 fto:24_departure a fto:Departure ;
@@ -1264,6 +1120,11 @@ fto:24_transformation a fto:Transformation ;
     fto:hasValue "Consequences of mosquito’s lie unfold." .
 
 fto:25_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:25_departure,
+        fto:25_magicaid,
+        fto:25_returnandreward,
+        fto:25_testortrial,
+        fto:25_transformation ;
     fto:hasValue "An animated adaptation where a sister rescues her six brothers cursed as swans by enduring trials in silence to weave them shirts of nettles." .
 
 fto:25_departure a fto:Departure ;
@@ -1282,6 +1143,11 @@ fto:25_transformation a fto:Transformation ;
     fto:hasValue "Saved by huntsman." .
 
 fto:26_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:26_departure,
+        fto:26_magicaid,
+        fto:26_returnandreward,
+        fto:26_testortrial,
+        fto:26_transformation ;
     fto:hasValue "A poor shoemaker receives mysterious help at night from elves who craft fine shoes, making him prosperous; he thanks them with gifts of clothes." .
 
 fto:26_departure a fto:Departure ;
@@ -1300,6 +1166,11 @@ fto:26_transformation a fto:Transformation ;
     fto:hasValue "Consequences of mosquito’s lie unfold." .
 
 fto:27_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:27_departure,
+        fto:27_magicaid,
+        fto:27_returnandreward,
+        fto:27_testortrial,
+        fto:27_transformation ;
     fto:hasValue "An animated adaptation showing elves secretly helping a shoemaker become wealthy, until he gratefully gifts them clothes and they disappear happily." .
 
 fto:27_departure a fto:Departure ;
@@ -1318,6 +1189,11 @@ fto:27_transformation a fto:Transformation ;
     fto:hasValue "Uses devil's own trick against him" .
 
 fto:28_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:28_departure,
+        fto:28_magicaid,
+        fto:28_returnandreward,
+        fto:28_testortrial,
+        fto:28_transformation ;
     fto:hasValue "A girl with long hair is imprisoned by a witch but escapes with the help of a prince, finding love and freedom after hardship." .
 
 fto:28_departure a fto:Departure ;
@@ -1336,6 +1212,11 @@ fto:28_transformation a fto:Transformation ;
     fto:hasValue "Learns patience and resilience; completes impossible journey" .
 
 fto:29_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:29_departure,
+        fto:29_magicaid,
+        fto:29_returnandreward,
+        fto:29_testortrial,
+        fto:29_transformation ;
     fto:hasValue "Disney’s Tangled adaptation where Rapunzel leaves her tower, discovers her identity, defeats Mother Gothel, and reunites with her royal family." .
 
 fto:29_departure a fto:Departure ;
@@ -1354,6 +1235,11 @@ fto:29_transformation a fto:Transformation ;
     fto:hasValue "Becomes weeping ghostwoman" .
 
 fto:2_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:2_departure,
+        fto:2_magicaid,
+        fto:2_returnandreward,
+        fto:2_testortrial,
+        fto:2_transformation ;
     fto:hasValue "A poor fisherman catches a magical flounder who grants wishes, but his wife's growing greed leads to their ruin as they are returned to poverty." .
 
 fto:2_departure a fto:Departure ;
@@ -1372,6 +1258,11 @@ fto:2_transformation a fto:Transformation ;
     fto:hasValue "Each wish transforms their status." .
 
 fto:30_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:30_departure,
+        fto:30_magicaid,
+        fto:30_returnandreward,
+        fto:30_testortrial,
+        fto:30_transformation ;
     fto:hasValue "A white bear takes a girl to his castle; after her curiosity breaks his curse, she quests to save him from trolls East of the Sun and West of the Moon." .
 
 fto:30_departure a fto:Departure ;
@@ -1390,6 +1281,11 @@ fto:30_transformation a fto:Transformation ;
     fto:hasValue "Learns humility under Xuanzang's guidance" .
 
 fto:31_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:31_departure,
+        fto:31_magicaid,
+        fto:31_returnandreward,
+        fto:31_testortrial,
+        fto:31_transformation ;
     fto:hasValue "An animated retelling where a girl rescues her prince from trolls after traveling to East of the Sun and West of the Moon to redeem her mistake." .
 
 fto:31_departure a fto:Departure ;
@@ -1408,6 +1304,11 @@ fto:31_transformation a fto:Transformation ;
     fto:hasValue "Boy returns as bird, enacts revenge." .
 
 fto:32_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:32_departure,
+        fto:32_magicaid,
+        fto:32_returnandreward,
+        fto:32_testortrial,
+        fto:32_transformation ;
     fto:hasValue "A magical flounder grants a fisherman's wife increasingly grand wishes until their greed returns them to their original poverty." .
 
 fto:32_departure a fto:Departure ;
@@ -1426,6 +1327,11 @@ fto:32_transformation a fto:Transformation ;
     fto:hasValue "Her true nature is revealed." .
 
 fto:33_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:33_departure,
+        fto:33_magicaid,
+        fto:33_returnandreward,
+        fto:33_testortrial,
+        fto:33_transformation ;
     fto:hasValue "An animated retelling where a fisherman's wife grows greedy, forcing her husband to demand more from a magic fish, ending in their return to poverty." .
 
 fto:33_departure a fto:Departure ;
@@ -1444,6 +1350,11 @@ fto:33_transformation a fto:Transformation ;
     fto:hasValue "Vasilisa survives Baba Yaga’s tests." .
 
 fto:34_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:34_departure,
+        fto:34_magicaid,
+        fto:34_returnandreward,
+        fto:34_testortrial,
+        fto:34_transformation ;
     fto:hasValue "A proud princess mocks her suitors and is forced to marry a beggar; through hardship, she learns humility and discovers he is King Thrushbeard." .
 
 fto:34_departure a fto:Departure ;
@@ -1462,6 +1373,11 @@ fto:34_transformation a fto:Transformation ;
     fto:hasValue "Her true nature is revealed." .
 
 fto:35_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:35_departure,
+        fto:35_magicaid,
+        fto:35_returnandreward,
+        fto:35_testortrial,
+        fto:35_transformation ;
     fto:hasValue "In this 1954 adaptation, a spoiled princess learns humility after marrying a disguised king and living a hard life before finding true love." .
 
 fto:35_departure a fto:Departure ;
@@ -1480,6 +1396,11 @@ fto:35_transformation a fto:Transformation ;
     fto:hasValue "Camel survives, learns betrayal" .
 
 fto:36_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:36_departure,
+        fto:36_magicaid,
+        fto:36_returnandreward,
+        fto:36_testortrial,
+        fto:36_transformation ;
     fto:hasValue "A Romanian princess marries a pig prince; after breaking his curse through forbidden curiosity, she undergoes trials to win him back forever." .
 
 fto:36_departure a fto:Departure ;
@@ -1498,6 +1419,11 @@ fto:36_transformation a fto:Transformation ;
     fto:hasValue "Saved by huntsman." .
 
 fto:37_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:37_departure,
+        fto:37_magicaid,
+        fto:37_returnandreward,
+        fto:37_testortrial,
+        fto:37_transformation ;
     fto:hasValue "A Norwegian girl journeys to East of the Sun and West of the Moon to rescue her prince from trolls, breaking his curse with courage and loyalty." .
 
 fto:37_departure a fto:Departure ;
@@ -1516,6 +1442,11 @@ fto:37_transformation a fto:Transformation ;
     fto:hasValue "Beast transforms into a prince." .
 
 fto:38_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:38_departure,
+        fto:38_magicaid,
+        fto:38_returnandreward,
+        fto:38_testortrial,
+        fto:38_transformation ;
     fto:hasValue "A fairy-tale princess is thrust into modern New York City where she learns real-world love and defeats an evil queen with sincerity and courage." .
 
 fto:38_departure a fto:Departure ;
@@ -1534,6 +1465,11 @@ fto:38_transformation a fto:Transformation ;
     fto:hasValue "Piper uses pipe to lead away the children" .
 
 fto:39_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:39_departure,
+        fto:39_magicaid,
+        fto:39_returnandreward,
+        fto:39_testortrial,
+        fto:39_transformation ;
     fto:hasValue "Four aging animals form a band and journey to Bremen; they outsmart robbers, claim a cottage, and live happily together in solidarity." .
 
 fto:39_departure a fto:Departure ;
@@ -1552,6 +1488,11 @@ fto:39_transformation a fto:Transformation ;
     fto:hasValue "Balance in society established" .
 
 fto:3_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:3_departure,
+        fto:3_magicaid,
+        fto:3_returnandreward,
+        fto:3_testortrial,
+        fto:3_transformation ;
     fto:hasValue "A crane marries a man, weaving beautiful cloth from her own feathers to support him, but flies away forever when he discovers her secret." .
 
 fto:3_departure a fto:Departure ;
@@ -1570,6 +1511,11 @@ fto:3_transformation a fto:Transformation ;
     fto:hasValue "Her true nature is revealed." .
 
 fto:40_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:40_departure,
+        fto:40_magicaid,
+        fto:40_returnandreward,
+        fto:40_testortrial,
+        fto:40_transformation ;
     fto:hasValue "A piper removes rats from Hamelin but leads away the children when unpaid, teaching a haunting lesson about broken promises and greed." .
 
 fto:40_departure a fto:Departure ;
@@ -1588,6 +1534,11 @@ fto:40_transformation a fto:Transformation ;
     fto:hasValue "Serpent enforces balance; life appears" .
 
 fto:41_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:41_departure,
+        fto:41_magicaid,
+        fto:41_returnandreward,
+        fto:41_testortrial,
+        fto:41_transformation ;
     fto:hasValue "A Soviet cartoon retells the tale of the magic fish and greedy wife, ending in the couple’s return to their humble hut as a moral lesson." .
 
 fto:41_departure a fto:Departure ;
@@ -1606,6 +1557,11 @@ fto:41_transformation a fto:Transformation ;
     fto:hasValue "Outsmarts Baba Yaga with help." .
 
 fto:42_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:42_departure,
+        fto:42_magicaid,
+        fto:42_returnandreward,
+        fto:42_testortrial,
+        fto:42_transformation ;
     fto:hasValue "A prince cursed into a bear by day marries a princess; when she breaks a taboo, he is taken by trolls until she rescues him with perseverance." .
 
 fto:42_departure a fto:Departure ;
@@ -1624,6 +1580,11 @@ fto:42_transformation a fto:Transformation ;
     fto:hasValue "Its body carves rivers and valleys; life begins to flourish" .
 
 fto:43_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:43_departure,
+        fto:43_magicaid,
+        fto:43_returnandreward,
+        fto:43_testortrial,
+        fto:43_transformation ;
     fto:hasValue "An adaptation where a cursed prince as a bear is saved by his wife’s brave quest to free him from the trolls' castle far to the north." .
 
 fto:43_departure a fto:Departure ;
@@ -1642,6 +1603,11 @@ fto:43_transformation a fto:Transformation ;
     fto:hasValue "Her true nature is revealed." .
 
 fto:44_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:44_departure,
+        fto:44_magicaid,
+        fto:44_returnandreward,
+        fto:44_testortrial,
+        fto:44_transformation ;
     fto:hasValue "A Japanese folktale where a crane becomes a wife and weaves cloth from her feathers, but leaves forever when her secret is discovered." .
 
 fto:44_departure a fto:Departure ;
@@ -1660,6 +1626,11 @@ fto:44_transformation a fto:Transformation ;
     fto:hasValue "Beast transforms into a prince." .
 
 fto:45_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:45_departure,
+        fto:45_magicaid,
+        fto:45_returnandreward,
+        fto:45_testortrial,
+        fto:45_transformation ;
     fto:hasValue "A cinematic retelling of The Crane Wife emphasizing sacrifice, hidden identity, and love lost due to human curiosity and betrayal." .
 
 fto:45_departure a fto:Departure ;
@@ -1677,6 +1648,11 @@ fto:45_transformation a fto:Transformation ;
     fto:hasValue "Unknown" .
 
 fto:46_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:46_departure,
+        fto:46_magicaid,
+        fto:46_returnandreward,
+        fto:46_testortrial,
+        fto:46_transformation ;
     fto:hasValue "A proud girl rejects suitors and is forced to marry a minstrel, who is revealed as a king testing her arrogance before their happy reunion." .
 
 fto:46_departure a fto:Departure ;
@@ -1695,6 +1671,11 @@ fto:46_transformation a fto:Transformation ;
     fto:hasValue "She is consumed and mutilated by vanity" .
 
 fto:47_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:47_departure,
+        fto:47_magicaid,
+        fto:47_returnandreward,
+        fto:47_testortrial,
+        fto:47_transformation ;
     fto:hasValue "An animated adaptation where King Thrushbeard teaches the proud princess humility by disguising himself as a minstrel before revealing his identity." .
 
 fto:47_departure a fto:Departure ;
@@ -1713,6 +1694,11 @@ fto:47_transformation a fto:Transformation ;
     fto:hasValue "Snow White is revived by prince." .
 
 fto:48_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:48_departure,
+        fto:48_magicaid,
+        fto:48_returnandreward,
+        fto:48_testortrial,
+        fto:48_transformation ;
     fto:hasValue "A turtle wins a race against a rabbit by slow, steady perseverance, teaching the moral that consistency defeats arrogance and haste." .
 
 fto:48_departure a fto:Departure ;
@@ -1731,6 +1717,11 @@ fto:48_transformation a fto:Transformation ;
     fto:hasValue "Uses resourcefulness to defeat sorcerer" .
 
 fto:49_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:49_departure,
+        fto:49_magicaid,
+        fto:49_returnandreward,
+        fto:49_testortrial,
+        fto:49_transformation ;
     fto:hasValue "An animated retelling of the Tortoise and the Hare where the boastful hare loses due to overconfidence and distraction, highlighting humility." .
 
 fto:49_departure a fto:Departure ;
@@ -1748,6 +1739,11 @@ fto:49_transformation a fto:Transformation ;
     fto:hasValue "Unknown" .
 
 fto:4_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:4_departure,
+        fto:4_magicaid,
+        fto:4_returnandreward,
+        fto:4_testortrial,
+        fto:4_transformation ;
     fto:hasValue "Baba Yaga, a fearsome witch, tests a girl’s courage and diligence; with kindness and bravery, the girl escapes with magical help." .
 
 fto:4_departure a fto:Departure ;
@@ -1766,6 +1762,11 @@ fto:4_transformation a fto:Transformation ;
     fto:hasValue "Outsmarts Baba Yaga with help." .
 
 fto:50_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:50_departure,
+        fto:50_magicaid,
+        fto:50_returnandreward,
+        fto:50_testortrial,
+        fto:50_transformation ;
     fto:hasValue "A wise girl saves her village from drought by discovering a hidden river with the help of forest spirits, bringing prosperity and harmony." .
 
 fto:50_departure a fto:Departure ;
@@ -1784,6 +1785,11 @@ fto:50_transformation a fto:Transformation ;
     fto:hasValue "Kaguya’s true origins are revealed." .
 
 fto:5_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:5_departure,
+        fto:5_magicaid,
+        fto:5_returnandreward,
+        fto:5_testortrial,
+        fto:5_transformation ;
     fto:hasValue "In this adaptation, a crane wife turns into a woman who weaves cloth from her feathers, but disappears when her husband spies on her secret work." .
 
 fto:5_departure a fto:Departure ;
@@ -1802,6 +1808,11 @@ fto:5_transformation a fto:Transformation ;
     fto:hasValue "Her true nature is revealed." .
 
 fto:6_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:6_departure,
+        fto:6_magicaid,
+        fto:6_returnandreward,
+        fto:6_testortrial,
+        fto:6_transformation ;
     fto:hasValue "A young girl trades her voice for legs to win a prince’s love but he marries another, and she dissolves into sea foam out of heartbreak." .
 
 fto:6_departure a fto:Departure ;
@@ -1820,6 +1831,11 @@ fto:6_transformation a fto:Transformation ;
     fto:hasValue "Tenali’s cleverness is revealed." .
 
 fto:7_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:7_departure,
+        fto:7_magicaid,
+        fto:7_returnandreward,
+        fto:7_testortrial,
+        fto:7_transformation ;
     fto:hasValue "Disney’s adaptation where Ariel trades her voice for legs, defeats Ursula with Eric's help, regains her voice, and marries Eric happily." .
 
 fto:7_departure a fto:Departure ;
@@ -1838,6 +1854,11 @@ fto:7_transformation a fto:Transformation ;
     fto:hasValue "Chang'e transforms into the moon goddess." .
 
 fto:8_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:8_departure,
+        fto:8_magicaid,
+        fto:8_returnandreward,
+        fto:8_testortrial,
+        fto:8_transformation ;
     fto:hasValue "A vain emperor is tricked by swindlers who sell him 'invisible clothes'; his pride blinds him until a child points out his nakedness." .
 
 fto:8_departure a fto:Departure ;
@@ -1856,6 +1877,11 @@ fto:8_transformation a fto:Transformation ;
     fto:hasValue "Soldier uses the tinderbox's magic." .
 
 fto:9_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:9_departure,
+        fto:9_magicaid,
+        fto:9_returnandreward,
+        fto:9_testortrial,
+        fto:9_transformation ;
     fto:hasValue "An animated adaptation of The Emperor’s New Clothes where the emperor parades naked until a child reveals the truth, highlighting vanity." .
 
 fto:9_departure a fto:Departure ;
@@ -1885,6 +1911,8 @@ fto:Angel a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Angel" .
 
+fto:Audience a owl:Class .
+
 fto:Camel a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
     fto:hasValue "Camel" .
@@ -1896,8 +1924,6 @@ fto:Cat a fto:Chracter ;
 fto:Chang_e a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
     fto:hasValue "Chang'e" .
-
-fto:Character a owl:Class .
 
 fto:Cinderella a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
@@ -2002,9 +2028,6 @@ fto:La_Llorona a fto:Chracter ;
     fto:hasCharacterType fto:Villain ;
     fto:hasValue "La Llorona" .
 
-fto:LiteraryForm a owl:Class ;
-    rdfs:subClassOf fto:Medium .
-
 fto:Magic_Carpet a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Magic Carpet" .
@@ -2016,8 +2039,6 @@ fto:Magic_Flounder a fto:Chracter ;
 fto:Match_Girl a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
     fto:hasValue "Match Girl" .
-
-fto:Medium a owl:Class .
 
 fto:Murasaki a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
@@ -2136,8 +2157,6 @@ fto:Younger_Brother a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
     fto:hasValue "Younger Brother" .
 
-fto:ActivePromotion a owl:Class .
-
 fto:Animals a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
     fto:hasValue "Animals" .
@@ -2153,6 +2172,8 @@ fto:Bird_Spirit a fto:Chracter ;
 fto:Boy a fto:Chracter ;
     fto:hasCharacterType fto:Hero ;
     fto:hasValue "Boy" .
+
+fto:Character a owl:Class .
 
 fto:Children a fto:Chracter ;
     fto:hasCharacterType fto:Helper,
@@ -2209,6 +2230,9 @@ fto:North_Wind a fto:Chracter ;
 fto:Pixar a fto:Creator ;
     fto:hasValue "Pixar" .
 
+fto:PublicAttitude a owl:Class ;
+    rdfs:subClassOf pers:Attitude .
+
 fto:Russian-oral_tradition a fto:Creator ;
     fto:hasValue "Russian-oral tradition" .
 
@@ -2243,6 +2267,8 @@ fto:White_Bear_Prince a fto:Chracter ;
 fto:Zulu-oral_tradition a fto:Creator ;
     fto:hasValue "Zulu-oral tradition" .
 
+fto:ActivePromotion a owl:Class .
+
 fto:Bamboo_Cutter_s_Wife a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Bamboo Cutter's Wife" .
@@ -2258,8 +2284,6 @@ fto:Belle a fto:Chracter ;
 fto:Emperor a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Emperor" .
-
-fto:EndingType a owl:Class .
 
 fto:Gaston a fto:Chracter ;
     fto:hasCharacterType fto:Villain ;
@@ -2279,6 +2303,8 @@ fto:Lion_King a fto:Chracter ;
 fto:Lumière a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Lumière" .
+
+fto:Medium a owl:Class .
 
 fto:Mosquito a fto:Chracter ;
     fto:hasCharacterType fto:Villain ;
@@ -2337,14 +2363,14 @@ fto:Baba_Yaga a fto:Chracter ;
 fto:DreamWorks a fto:Creator ;
     fto:hasValue "DreamWorks" .
 
+fto:EndingType a owl:Class .
+
 fto:Magical_Doll a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Magical Doll" .
 
 fto:Mexican-oral_tradition a fto:Creator ;
     fto:hasValue "Mexican-oral tradition" .
-
-fto:MoralTheme a owl:Class .
 
 fto:Netflix a fto:Creator ;
     fto:hasValue "Netflix" .
@@ -2364,10 +2390,7 @@ fto:Husband a fto:Chracter ;
     fto:hasCharacterType fto:Helper ;
     fto:hasValue "Husband" .
 
-fto:LiteraryMode a owl:Class .
-
-fto:RecurringNarrativeStructure a owl:Class ;
-    owl:sameAs fto:NarrativeUnit .
+fto:MoralTheme a owl:Class .
 
 fto:Stepsisters a fto:Chracter ;
     fto:hasCharacterType fto:Villain ;
@@ -2377,6 +2400,11 @@ fto:CharacterArchetype a owl:Class .
 
 fto:Disney a fto:Creator ;
     fto:hasValue "Disney" .
+
+fto:LiteraryMode a owl:Class .
+
+fto:RecurringNarrativeStructure a owl:Class ;
+    owl:sameAs fto:NarrativeUnit .
 
 fto:Stepmother a fto:Chracter ;
     fto:hasCharacterType fto:Villain ;
@@ -2447,12 +2475,8 @@ fto:Helper a owl:Class ;
 fto:Departure a owl:Class ;
     rdfs:subClassOf fto:RecurringNarrativeStructure .
 
-fto:Fairytale a owl:Class .
-
 fto:MagicalAid a owl:Class ;
     rdfs:subClassOf fto:RecurringNarrativeStructure .
-
-fto:Plot a owl:Class .
 
 fto:ReturnAndReward a owl:Class ;
     rdfs:subClassOf fto:RecurringNarrativeStructure .
@@ -2462,4 +2486,8 @@ fto:TestOrTrial a owl:Class ;
 
 fto:Transformation a owl:Class ;
     rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:Plot a owl:Class .
+
+fto:Fairytale a owl:Class .
 
