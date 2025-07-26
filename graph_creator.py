@@ -3,6 +3,7 @@ import pandas as pd
 import rdflib
 from rdflib import URIRef, Literal, Namespace, RDF, RDFS, OWL, Graph, XSD
 import re
+from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 
 # Define namespaces
 FTO = Namespace("http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#")
@@ -132,6 +133,37 @@ g.add((FTO['CinematicAdaptation'], RDF.type, OWL.Class))
 g.add((FTO['MixedReception'], RDF.type, OWL.Class))
 g.add((FTO['PositiveReception'], RDF.type, OWL.Class))
 g.add((FTO['NegativeReception'], RDF.type, OWL.Class))
+g.add((FTO['InnerSelf'], RDF.type, OWL.Class))
+g.add((FTO['OuterWorld'], RDF.type, OWL.Class))
+g.add((FTO['Character'], RDF.type, OWL.Class))
+
+
+# Define Labels
+g.add((FTO['EmpowermentTheme'], RDFS.label, Literal('Empowerment Theme')))
+g.add((FTO['IdentityAndInclusionTheme'], RDFS.label, Literal('Identity and Inclusion Theme')))
+g.add((FTO['MoralAmbiguityTheme'], RDFS.label, Literal('Moral Ambiguity Theme')))
+g.add((FTO['VirtueRewardedTheme'], RDFS.label, Literal('Virtue Rewarded Theme')))
+g.add((FTO['Innocent'], RDFS.label, Literal('Innocent')))
+g.add((FTO['Evil'], RDFS.label, Literal('Evil')))
+g.add((FTO['Rebel'], RDFS.label, Literal('Rebel')))
+g.add((FTO['Tragic'], RDFS.label, Literal('Tragic')))
+g.add((FTO['MixedReception'], RDFS.label, Literal('Mixed Reception')))
+g.add((FTO['PositiveReception'], RDFS.label, Literal('Positive Reception')))
+g.add((FTO['NegativeReception'], RDFS.label, Literal('Negative Reception')))
+g.add((FTO['Helper'], RDFS.label, Literal('Helper')))
+g.add((FTO['Hero'], RDFS.label, Literal('Hero')))
+g.add((FTO['Trickster'], RDFS.label, Literal('Trickster')))
+g.add((FTO['Villain'], RDFS.label, Literal('Villain')))
+g.add((FTO['BittersweetEnding'], RDFS.label, Literal('Bittersweet Ending')))
+g.add((FTO['HappilyEverAfter'], RDFS.label, Literal('Happily Ever After')))
+g.add((FTO['TragicEnding'], RDFS.label, Literal('Tragic Ending')))
+g.add((FTO['IronicMode'], RDFS.label, Literal('Ironic Mode')))
+g.add((FTO['MythicMode'], RDFS.label, Literal('Mythic Mode')))
+g.add((FTO['RomanticMode'], RDFS.label, Literal('Romantic Mode')))
+g.add((FTO['TragicMode'], RDFS.label, Literal('Tragic Mode')))
+g.add((FTO['TricksterMode'], RDFS.label, Literal('Trickster Mode')))
+g.add((FTO['InnerSelf'], RDFS.label, Literal('Inner Self')))
+g.add((FTO['OuterWorld'], RDFS.label, Literal('Outer World')))
 
 # Define subclasses
 g.add((FTO['Helper'], RDFS.subClassOf, FTO.CharacterArchetype))
@@ -161,7 +193,9 @@ g.add((FTO.IdentityAndInclusionTheme, RDFS.subClassOf, FTO.MoralTheme))
 g.add((FTO.MoralAmbiguityTheme, RDFS.subClassOf, FTO.MoralTheme))
 g.add((FTO.VirtueRewardedTheme, RDFS.subClassOf, FTO.MoralTheme))
 g.add((FTO['LiteraryForm'], RDFS.subClassOf, FTO.Medium))
-g.add((FTO['CinematicAdaptation'], RDF.type, OWL.Class))
+g.add((FTO['InnerSelf'], RDFS.subClassOf, FTO.ActivePromotion))
+g.add((FTO['OuterWorld'], RDFS.subClassOf, FTO.ActivePromotion))
+
 g.add((FTO.RecurringNarrativeStructure, OWL.sameAs, FTO.NarrativeUnit))
 
 # Read the datasets
@@ -200,97 +234,116 @@ for index, row in full_df.iterrows():
     g.add((plot_uri, FTO.hasValue, Literal(row['Plot'])))
 
     # Add EndingTypes
-    if row['EndingType'] != '' or row['EndingType'] != np.nan:
-        if row['EndingType'].strip() == 'BitterSweetEnding':
+    value = str(row['EndingType']).strip()
+    if value and value != 'nan':
+        if value == 'BittersweetEnding':
             g.add((fairytale_uri, FTO.hasEndingType, FTO.BittersweetEnding))
 
-        elif row['EndingType'].strip() == 'HappilyEverAfter':
+        elif value == 'HappilyEverAfter':
             g.add((fairytale_uri, FTO.hasEndingType, FTO.HappilyEverAfter))
 
-        elif row['EndingType'].strip() == 'TragicEnding':
+        elif value == 'TragicEnding':
             g.add((fairytale_uri, FTO.hasEndingType, FTO.TragicEnding))
 
     # Add different LiteraryModes
-    if row['LiteraryMode'] != '' or row['LiteraryMode'] != np.nan:
-        if row['LiteraryMode'].strip() == 'IronicMode':
+    value = str(row['LiteraryMode']).strip()
+    if value and value != 'nan':
+        if value == 'IronicMode':
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.IronicMode))
 
-        elif row['LiteraryMode'].strip() == 'MythicMode':
+        elif value == 'MythicMode':
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.MythicMode))
 
-        elif row['LiteraryMode'].strip() == 'RomanticMode':
+        elif value == 'RomanticMode':
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.RomanticMode))
 
-        elif row['LiteraryMode'].strip() == 'TragicMode':
+        elif value == 'TragicMode':
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TragicMode))
 
-        elif row['LiteraryMode'].strip() == 'TricksterMode':
+        elif value == 'TricksterMode':
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TricksterMode))
 
     # Add MoralThemes
-    if row['MoralTheme'] != '' or row['MoralTheme'] != np.nan:
-        if row['MoralTheme'].strip() == 'EmpowermentTheme':
+    value = str(row['MoralTheme']).strip()
+    if value and value != 'nan':
+        if value == 'EmpowermentTheme':
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.EmpowermentTheme))
 
-        elif row['MoralTheme'].strip() == 'IdentityAndInclusionTheme':
+        elif value == 'IdentityAndInclusionTheme':
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.IdentityAndInclusionTheme))
 
-        elif row['MoralTheme'].strip() == 'MoralAmbiguityTheme':
+        elif value == 'MoralAmbiguityTheme':
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.MoralAmbiguityTheme))
 
-        elif row['MoralTheme'].strip() == 'VirtueRewardedTheme':
+        elif value == 'VirtueRewardedTheme':
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.VirtueRewardedTheme))
 
-    activepromotion_uri = URIRef(FTO[row['ActivePromotion'].replace("'","_").replace(" ","_").strip()])
-    g.add((activepromotion_uri, RDF.type, FTO.ActivePromotion))
-    g.add((fairytale_uri, FTO.hasPromotedAspect, activepromotion_uri))
+    value = str(row['ActivePromotion']).strip()
+    if value and value != 'nan':
+        if value == 'InnerSelf':
+            g.add((fairytale_uri, FTO.hasPromotedAspect, FTO.InnerSelf))
+
+        elif value == 'OuterWorld':
+            g.add((fairytale_uri, FTO.hasPromotedAspect, FTO.OuterWorld))
 
     # Add character
-    character_uri = URIRef(FTO[normalize_string(row['Character'])])
-    g.add((character_uri, RDF.type, FTO.Chracter))
+    character_uri = URIRef(FTO[normalize_string(str(row['ID']) + row['Character'])])
+    g.add((character_uri, RDF.type, FTO.Character))
     g.add((fairytale_uri, FTO.hasCharacter, character_uri))
-    g.add((character_uri, FTO.hasValue, Literal(row['Character'].strip())))
+    g.add((character_uri, RDFS.label, Literal(row['Character'].strip())))
 
     char_arch = ''
-    if row['CharacterArchetype'] != "" or row['CharacterArchetype'] != np.nan:
-        if row['CharacterArchetype'].strip() == 'Hero':
+    value = str(row['CharacterArchetype']).strip()
+    if value and value != 'nan':
+        if value == 'Hero':
             g.add((character_uri, FTO.hasCharacterType, FTO.Hero))
             char_arch = FTO.Hero
 
-        elif row['CharacterArchetype'].strip() == 'Helper':
+        elif value == 'Helper':
             g.add((character_uri, FTO.hasCharacterType, FTO.Helper))
             char_arch = FTO.Helper
 
-        elif row['CharacterArchetype'].strip() == 'Villain':
+        elif value == 'Villain':
             g.add((character_uri, FTO.hasCharacterType, FTO.Villain))
             char_arch = FTO.Villain
 
-        elif row['CharacterArchetype'].strip() == 'Trickster':
+        elif value == 'Trickster':
             g.add((character_uri, FTO.hasCharacterType, FTO.Trickster))
             char_arch = FTO.Trickster
 
-    if row['CharacterAttribute'] != "" or row['CharacterAttribute'] != np.nan:
-        if row['CharacterAttribute'].strip() == 'Innocent':
+    value = str(row['CharacterAttribute']).strip()
+    if value and value != 'nan':
+        if value == 'Innocent':
             g.add((char_arch, FTO.hasAttribute, FTO.Innocent))
 
-        elif row['CharacterAttribute'].strip() == 'Evil':
+        elif value == 'Evil':
             g.add((char_arch, FTO.hasAttribute, FTO.Evil))
 
-        elif row['CharacterAttribute'].strip() == 'Rebel':
+        elif value == 'Rebel':
             g.add((char_arch, FTO.hasAttribute, FTO.Rebel))
 
-        elif row['CharacterAttribute'].strip() == 'Tragic':
+        elif value == 'Tragic':
             g.add((char_arch, FTO.hasAttribute, FTO.Tragic))
 
-    if row['PublicAttitude'] != "" or row['PublicAttitude'] != np.nan:
-        if row['PublicAttitude'] == 'MixedReception':
+    value = str(row['PublicAttitude']).strip()
+    if value and value != 'nan':
+        if value == 'MixedReception':
             g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.MixedReception))
 
-        elif row['PublicAttitude'] == 'NegativeReception':
+        elif value == 'NegativeReception':
             g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.NegativeReception))
 
-        elif row['PublicAttitude'] == 'PositiveReception':
+        elif value == 'PositiveReception':
             g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.PositiveReception))
+
+    #Add medium
+    value = str(row['Medium']).strip()
+    if value and value != 'nan':
+        if value == 'LiteraryForm':
+            g.add((fairytale_uri, FTO.hasMedium, FTO.LiteraryForm))
+
+        elif value == 'CinematicAdaptation':
+            g.add((fairytale_uri, FTO.hasMedium, FTO.CinematicAdaptation))
 
     # Define RecurrentNarrativeStructure instances
     departure_uri = URIRef(FTO[str(row['ID']) + '_' + 'departure'])
@@ -322,3 +375,18 @@ for index, row in full_df.iterrows():
 # Serialize the graph to a Turtle file
 with open("fairytale_graph.ttl", "w", encoding="utf-8") as f:
     f.write(g.serialize(format="turtle"))
+
+# Add to graph database (blazegraph)
+store = SPARQLUpdateStore()
+endpoint = "http://127.0.0.1:9999/blazegraph/sparql"
+store.open((endpoint, endpoint))
+
+for triple in g.triples((None, None, None)):
+    # Check if the triple already exists
+    query = f"ASK {{ {triple[0].n3()} {triple[1].n3()} {triple[2].n3()} }}"  # Construct the ASK query
+    result = store.query(query)
+
+    if not bool(result):  # If the triple doesn't exist, add it
+        store.add(triple)
+
+store.close()
