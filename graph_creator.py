@@ -218,72 +218,76 @@ for index, row in full_df.iterrows():
 
     # Create and Add Fairytale uri
     fairytale_uri = URIRef(FTO[str(row['ID'])+'_'+ normalize_string(row['Fairytale'])])
-    g.add((fairytale_uri, RDF.type, FTO.Fairytale))
-    g.add((fairytale_uri, RDFS.label, Literal(row['Fairytale'])))
+    if (fairytale_uri, RDF.type, FTO.Fairytale) not in g:
+        g.add((fairytale_uri, RDF.type, FTO.Fairytale))
+        g.add((fairytale_uri, RDFS.label, Literal(row['Fairytale'])))
 
     # Create and add creator uri
     creator_uri = URIRef(FTO[normalize_string(row['Creator'])])
-    g.add((creator_uri, RDF.type, FTO.Creator))
-    g.add((fairytale_uri, FTO.createdBy, creator_uri))
-    g.add((creator_uri, FTO.hasValue, Literal(row['Creator'])))
+    if (fairytale_uri, FTO.createdBy, creator_uri) not in g:
+        g.add((fairytale_uri, FTO.createdBy, creator_uri))
+        g.add((creator_uri, RDF.type, FTO.Creator))
+        g.add((creator_uri, FTO.hasValue, Literal(row['Creator'])))
 
     # Add Plot
     plot_uri = URIRef(FTO[str(row['ID'])+'_'+'Plot'])
-    g.add((plot_uri, RDF.type, FTO.Plot))
-    g.add((fairytale_uri, RDF.hasPlot, plot_uri))
-    g.add((plot_uri, FTO.hasValue, Literal(row['Plot'])))
+    if (fairytale_uri, RDF.hasPlot, plot_uri) not in g: # Check if the triple for plot already added to the graph
+        g.add((fairytale_uri, FTO.hasPlot, plot_uri))
+        g.add((plot_uri, RDF.type, FTO.Plot))
+        g.add((plot_uri, FTO.hasValue, Literal(row['Plot'])))
 
     # Add EndingTypes
     value = str(row['EndingType']).strip()
     if value and value != 'nan':
-        if value == 'BittersweetEnding':
+        if value == 'BittersweetEnding' and (fairytale_uri, FTO.hasEndingType, FTO.BittersweetEnding) not in g:
             g.add((fairytale_uri, FTO.hasEndingType, FTO.BittersweetEnding))
 
-        elif value == 'HappilyEverAfter':
+        elif value == 'HappilyEverAfter' and (fairytale_uri, FTO.hasEndingType, FTO.HappilyEverAfter) not in g:
             g.add((fairytale_uri, FTO.hasEndingType, FTO.HappilyEverAfter))
 
-        elif value == 'TragicEnding':
+        elif value == 'TragicEnding' and (fairytale_uri, FTO.hasEndingType, FTO.TragicEnding) not in g:
             g.add((fairytale_uri, FTO.hasEndingType, FTO.TragicEnding))
 
     # Add different LiteraryModes
     value = str(row['LiteraryMode']).strip()
     if value and value != 'nan':
-        if value == 'IronicMode':
-            g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.IronicMode))
+        if value == 'IronicMode' and (fairytale_uri, FTO.hasLiteraryMode, FTO.IronicMode) not in g:
+                g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.IronicMode))
 
-        elif value == 'MythicMode':
+        elif value == 'MythicMode' and (fairytale_uri, FTO.hasLiteraryMode, FTO.MythicMode) not in g:
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.MythicMode))
 
-        elif value == 'RomanticMode':
+        elif value == 'RomanticMode' and (fairytale_uri, FTO.hasLiteraryMode, FTO.RomanticMode) not in g:
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.RomanticMode))
 
-        elif value == 'TragicMode':
+        elif value == 'TragicMode' and (fairytale_uri, FTO.hasLiteraryMode, FTO.TragicMode) not in g:
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TragicMode))
 
-        elif value == 'TricksterMode':
+        elif value == 'TricksterMode' and (fairytale_uri, FTO.hasLiteraryMode, FTO.TricksterMode) not in g:
             g.add((fairytale_uri, FTO.hasLiteraryMode, FTO.TricksterMode))
 
     # Add MoralThemes
     value = str(row['MoralTheme']).strip()
     if value and value != 'nan':
-        if value == 'EmpowermentTheme':
+        if value == 'EmpowermentTheme' and (fairytale_uri, FTO.hasMoralTheme, FTO.EmpowermentTheme) not in g:
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.EmpowermentTheme))
 
-        elif value == 'IdentityAndInclusionTheme':
+        elif value == 'IdentityAndInclusionTheme' and (fairytale_uri, FTO.hasMoralTheme,
+                                                       FTO.IdentityAndInclusionTheme) not in g:
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.IdentityAndInclusionTheme))
 
-        elif value == 'MoralAmbiguityTheme':
+        elif value == 'MoralAmbiguityTheme' and (fairytale_uri, FTO.hasMoralTheme, FTO.MoralAmbiguityTheme) not in g:
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.MoralAmbiguityTheme))
 
-        elif value == 'VirtueRewardedTheme':
+        elif value == 'VirtueRewardedTheme' and (fairytale_uri, FTO.hasMoralTheme, FTO.VirtueRewardedTheme) not in g:
             g.add((fairytale_uri, FTO.hasMoralTheme, FTO.VirtueRewardedTheme))
 
     value = str(row['ActivePromotion']).strip()
     if value and value != 'nan':
-        if value == 'InnerSelf':
+        if value == 'InnerSelf' and (fairytale_uri, FTO.hasPromotedAspect, FTO.InnerSelf) not in g:
             g.add((fairytale_uri, FTO.hasPromotedAspect, FTO.InnerSelf))
 
-        elif value == 'OuterWorld':
+        elif value == 'OuterWorld' and (fairytale_uri, FTO.hasPromotedAspect, FTO.OuterWorld) not in g:
             g.add((fairytale_uri, FTO.hasPromotedAspect, FTO.OuterWorld))
 
     # Add character
@@ -296,20 +300,28 @@ for index, row in full_df.iterrows():
     value = str(row['CharacterArchetype']).strip()
     if value and value != 'nan':
         if value == 'Hero':
-            g.add((character_uri, FTO.hasCharacterType, FTO.Hero))
-            char_arch = FTO.Hero
+            hero_uri = URIRef(FTO[str(row['ID']) + '_' + 'Hero'])
+            g.add((hero_uri, RDF.type, FTO.Hero))
+            g.add((character_uri, FTO.hasCharacterType, hero_uri))
+            char_arch = hero_uri
 
         elif value == 'Helper':
-            g.add((character_uri, FTO.hasCharacterType, FTO.Helper))
-            char_arch = FTO.Helper
+            helper_uri = URIRef(FTO[str(row['ID']) + '_' + 'Helper'])
+            g.add((helper_uri, RDF.type, FTO.Helper))
+            g.add((character_uri, FTO.hasCharacterType, helper_uri))
+            char_arch = helper_uri
 
         elif value == 'Villain':
-            g.add((character_uri, FTO.hasCharacterType, FTO.Villain))
-            char_arch = FTO.Villain
+            villain_uri = URIRef(FTO[str(row['ID']) + '_' + 'Villain'])
+            g.add((villain_uri, RDF.type, FTO.Villain))
+            g.add((character_uri, FTO.hasCharacterType, villain_uri))
+            char_arch = villain_uri
 
         elif value == 'Trickster':
-            g.add((character_uri, FTO.hasCharacterType, FTO.Trickster))
-            char_arch = FTO.Trickster
+            trickster_uri = URIRef(FTO[str(row['ID']) + '_' + 'Trickster'])
+            g.add((trickster_uri, RDF.type, FTO.Trickster))
+            g.add((character_uri, FTO.hasCharacterType, trickster_uri))
+            char_arch = trickster_uri
 
     value = str(row['CharacterAttribute']).strip()
     if value and value != 'nan':
@@ -327,22 +339,22 @@ for index, row in full_df.iterrows():
 
     value = str(row['PublicAttitude']).strip()
     if value and value != 'nan':
-        if value == 'MixedReception':
+        if value == 'MixedReception' and (fairytale_uri, FTO.hasAudienceAttitude, FTO.MixedReception) not in g:
             g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.MixedReception))
 
-        elif value == 'NegativeReception':
+        elif value == 'NegativeReception' and (fairytale_uri, FTO.hasAudienceAttitude, FTO.NegativeReception) not in g:
             g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.NegativeReception))
 
-        elif value == 'PositiveReception':
+        elif value == 'PositiveReception' and (fairytale_uri, FTO.hasAudienceAttitude, FTO.PositiveReception) not in g:
             g.add((fairytale_uri, FTO.hasAudienceAttitude, FTO.PositiveReception))
 
     #Add medium
     value = str(row['Medium']).strip()
     if value and value != 'nan':
-        if value == 'LiteraryForm':
+        if value == 'LiteraryForm' and (fairytale_uri, FTO.hasMedium, FTO.LiteraryForm) not in g:
             g.add((fairytale_uri, FTO.hasMedium, FTO.LiteraryForm))
 
-        elif value == 'CinematicAdaptation':
+        elif value == 'CinematicAdaptation' and (fairytale_uri, FTO.hasMedium, FTO.CinematicAdaptation) not in g:
             g.add((fairytale_uri, FTO.hasMedium, FTO.CinematicAdaptation))
 
     # Define RecurrentNarrativeStructure instances
@@ -352,25 +364,30 @@ for index, row in full_df.iterrows():
     testortrial_uri = URIRef(FTO[str(row['ID']) + '_' + 'testortrial'])
     transformation_uri = URIRef(FTO[str(row['ID']) + '_' + 'transformation'])
 
-    g.add((plot_uri, FTO.hasNarrativeStructure, departure_uri))
-    g.add((departure_uri, RDF.type, FTO.Departure))
-    g.add((departure_uri, FTO.hasValue, Literal(row['Departure'])))
+    if (plot_uri, FTO.hasNarrativeStructure, departure_uri) not in g:
+        g.add((plot_uri, FTO.hasNarrativeStructure, departure_uri))
+        g.add((departure_uri, RDF.type, FTO.Departure))
+        g.add((departure_uri, FTO.hasValue, Literal(row['Departure'])))
 
-    g.add((plot_uri, FTO.hasNarrativeStructure, magicaid_uri))
-    g.add((magicaid_uri, RDF.type, FTO.MagicalAid))
-    g.add((magicaid_uri, FTO.hasValue, Literal(row['MagicAid'])))
+    if (plot_uri, FTO.hasNarrativeStructure, magicaid_uri) not in g:
+        g.add((plot_uri, FTO.hasNarrativeStructure, magicaid_uri))
+        g.add((magicaid_uri, RDF.type, FTO.MagicalAid))
+        g.add((magicaid_uri, FTO.hasValue, Literal(row['MagicAid'])))
 
-    g.add((plot_uri, FTO.hasNarrativeStructure, returnandreward_uri))
-    g.add((returnandreward_uri, RDF.type, FTO.ReturnAndReward))
-    g.add((departure_uri, FTO.hasValue, Literal(row['ReturnAndReward'])))
+    if (plot_uri, FTO.hasNarrativeStructure, returnandreward_uri) not in g:
+        g.add((plot_uri, FTO.hasNarrativeStructure, returnandreward_uri))
+        g.add((returnandreward_uri, RDF.type, FTO.ReturnAndReward))
+        g.add((departure_uri, FTO.hasValue, Literal(row['ReturnAndReward'])))
 
-    g.add((plot_uri, FTO.hasNarrativeStructure, testortrial_uri))
-    g.add((testortrial_uri, RDF.type, FTO.TestOrTrial))
-    g.add((testortrial_uri, FTO.hasValue, Literal(row['TestOrTrial'])))
+    if (plot_uri, FTO.hasNarrativeStructure, testortrial_uri) not in g:
+        g.add((plot_uri, FTO.hasNarrativeStructure, testortrial_uri))
+        g.add((testortrial_uri, RDF.type, FTO.TestOrTrial))
+        g.add((testortrial_uri, FTO.hasValue, Literal(row['TestOrTrial'])))
 
-    g.add((plot_uri, FTO.hasNarrativeStructure, transformation_uri))
-    g.add((transformation_uri, RDF.type, FTO.Transformation))
-    g.add((transformation_uri, FTO.hasValue, Literal(row['Transformation'])))
+    if (plot_uri, FTO.hasNarrativeStructure, transformation_uri) not in g:
+        g.add((plot_uri, FTO.hasNarrativeStructure, transformation_uri))
+        g.add((transformation_uri, RDF.type, FTO.Transformation))
+        g.add((transformation_uri, FTO.hasValue, Literal(row['Transformation'])))
 
 # Serialize the graph to a Turtle file
 with open("fairytale_graph.ttl", "w", encoding="utf-8") as f:
