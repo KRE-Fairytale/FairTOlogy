@@ -1,234 +1,225 @@
-ID,Character,CharacterArchetype,CharacterAttribute,,,,,,,,,,,,,,,
-1,Younger Brother,Hero,Innocent,,,,,,,,,,,,,,,
-1,Older Brother,Villain,Evil,,,,,,,,,,,,,,,
-1,Dwarf,Helper,Innocent,,,,,,,,,,,,,,,
-1,Shepherd,Helper,Innocent,,,,,,,,,,,,,,,
-1,King,Helper,Innocent,,,,,,,,,,,,,,,
-2,Fisherman,Hero,Innocent,,,,,,,,,,,,,,,
-2,Fisherman’s Wife,Villain,Rebel,,,,,,,,,,,,,,,
-2,Magic Flounder,Helper,Innocent,,,,,,,,,,,,,,,
-3,Crane Wife,Hero,Tragic,,,,,,,,,,,,,,,
-3,Husband,Helper,Innocent,,,,,,,,,,,,,,,
-4,Vasilisa,Hero,Innocent,,,,,,,,,,,,,,,
-4,Baba Yaga,Villain,Evil,,,,,,,,,,,,,,,
-4,Magical Doll,Helper,Innocent,,,,,,,,,,,,,,,
-4,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-4,Stepsisters,Villain,Evil,,,,,,,,,,,,,,,
-5,Crane Wife,Hero,Tragic,,,,,,,,,,,,,,,
-5,Husband,Helper,Innocent,,,,,,,,,,,,,,,
-6,Tenali Raman,Hero,Rebel,,,,,,,,,,,,,,,
-6,Thieves,Villain,Evil,,,,,,,,,,,,,,,
-6,Tenali's Wife,Helper,Innocent,,,,,,,,,,,,,,,
-7,Chang'e,Hero,Tragic,,,,,,,,,,,,,,,
-7,Houyi,Helper,Innocent,,,,,,,,,,,,,,,
-7,Jade Rabbit,Helper,Innocent,,,,,,,,,,,,,,,
-8,Soldier,Hero,Rebel,,,,,,,,,,,,,,,
-8,Witch,Villain,Evil,,,,,,,,,,,,,,,
-8,Princess,Helper,Innocent,,,,,,,,,,,,,,,
-8,Dogs with Eyes,Helper,Innocent,,,,,,,,,,,,,,,
-9,Vasilisa,Hero,Innocent,,,,,,,,,,,,,,,
-9,Baba Yaga,Villain,Evil,,,,,,,,,,,,,,,
-9,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-9,Stepsisters,Villain,Evil,,,,,,,,,,,,,,,
-9,Magical Doll,Helper,Innocent,,,,,,,,,,,,,,,
-10,Match Girl,Hero,Tragic,,,,,,,,,,,,,,,
-10,Grandmother's Spirit,Helper,Innocent,,,,,,,,,,,,,,,
-11,Eldest Princess,Hero,Rebel,,,,,,,,,,,,,,,
-11,Other Princesses,Helper,Innocent,,,,,,,,,,,,,,,
-11,Soldier,Hero,Innocent,,,,,,,,,,,,,,,
-11,King,Helper,Innocent,,,,,,,,,,,,,,,
-12,Snow White,Hero,Innocent,,,,,,,,,,,,,,,
-12,Evil Queen,Villain,Evil,,,,,,,,,,,,,,,
-12,Seven Dwarfs,Helper,Innocent,,,,,,,,,,,,,,,
-12,Prince,Helper,Innocent,,,,,,,,,,,,,,,
-13,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-13,Boy,Hero,Tragic,,,,,,,,,,,,,,,
-13,Sister,Helper,Innocent,,,,,,,,,,,,,,,
-13,Father,Helper,Innocent,,,,,,,,,,,,,,,
-13,Bird Spirit,Helper,Innocent,,,,,,,,,,,,,,,
-14,Mosquito,Villain,Rebel,,,,,,,,,,,,,,,
-14,Iguana,Helper,Innocent,,,,,,,,,,,,,,,
-14,Mother Owl,Hero,Tragic,,,,,,,,,,,,,,,
-14,Lion (King),Helper,Innocent,,,,,,,,,,,,,,,
-15,Genji,Hero,Rebel,,,,,,,,,,,,,,,
-15,Murasaki,Helper,Innocent,,,,,,,,,,,,,,,
-15,Fujitsubo,Helper,Tragic,,,,,,,,,,,,,,,
-15,Rokujo Lady,Villain,Evil,,,,,,,,,,,,,,,
-16,Prince Ivan,Hero,Innocent,,,,,,,,,,,,,,,
-16,Firebird,Helper,Innocent,,,,,,,,,,,,,,,
-16,Koshchei,Villain,Evil,,,,,,,,,,,,,,,
-16,Princess Elena,Helper,Innocent,,,,,,,,,,,,,,,
-17,Donkey,Hero,Innocent,,,,,,,,,,,,,,,
-17,Dog,Hero,Innocent,,,,,,,,,,,,,,,
-17,Cat,Hero,Innocent,,,,,,,,,,,,,,,
-17,Rooster,Hero,Innocent,,,,,,,,,,,,,,,
-17,Robbers,Villain,Evil,,,,,,,,,,,,,,,
-18,Princess Kaguya,Hero,Tragic,,,,,,,,,,,,,,,
-18,Old Bamboo Cutter,Helper,Innocent,,,,,,,,,,,,,,,
-18,Bamboo Cutter's Wife,Helper,Innocent,,,,,,,,,,,,,,,
-18,Emperor,Helper,Innocent,,,,,,,,,,,,,,,
-19,Animals,Hero,Innocent,,,,,,,,,,,,,,,
-19,Trickster Figure,Trickster,Rebel,,,,,,,,,,,,,,,
-20,Cinderella,Hero,Innocent,,,,,,,,,,,,,,,
-20,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-20,Stepsisters,Villain,Evil,,,,,,,,,,,,,,,
-20,Fairy Godmother,Helper,Innocent,,,,,,,,,,,,,,,
-20,Prince,Helper,Innocent,,,,,,,,,,,,,,,
-21,Belle,Hero,Innocent,,,,,,,,,,,,,,,
-21,Beast,Hero,Tragic,,,,,,,,,,,,,,,
-21,Gaston,Villain,Evil,,,,,,,,,,,,,,,
-21,Lumière,Helper,Innocent,,,,,,,,,,,,,,,
-21,Mrs. Potts,Helper,Innocent,,,,,,,,,,,,,,,
-22,Princess Kaguya,Hero,Tragic,,,,,,,,,,,,,,,
-22,Old Bamboo Cutter,Helper,Innocent,,,,,,,,,,,,,,,
-22,Bamboo Cutter's Wife,Helper,Innocent,,,,,,,,,,,,,,,
-22,Emperor,Helper,Innocent,,,,,,,,,,,,,,,
-23,Animals,Hero,Innocent,,,,,,,,,,,,,,,
-23,Trickster Figure,Trickster,Rebel,,,,,,,,,,,,,,,
-24,Mosquito,Villain,Rebel,,,,,,,,,,,,,,,
-24,Iguana,Helper,Innocent,,,,,,,,,,,,,,,
-24,Mother Owl,Hero,Tragic,,,,,,,,,,,,,,,
-24,Lion (King),Helper,Innocent,,,,,,,,,,,,,,,
-25,Little Red Riding Hood,Hero,Innocent,,,,,,,,,,,,,,,
-25,Big Bad Wolf,Villain,Evil,,,,,,,,,,,,,,,
-25,Grandmother,Helper,Innocent,,,,,,,,,,,,,,,
-25,Huntsman,Helper,Innocent,,,,,,,,,,,,,,,
-26,Mosquito,Villain,Rebel,,,,,,,,,,,,,,,
-26,Iguana,Helper,Innocent,,,,,,,,,,,,,,,
-26,Mother Owl,Hero,Tragic,,,,,,,,,,,,,,,
-26,Lion (King),Helper,Innocent,,,,,,,,,,,,,,,
-27,Peasant,Hero,Innocent,,,,,,,,,,,,,,,
-27,Devil,Villain,Evil,,,,,,,,,,,,,,,
-28,Girl,Hero,Rebel,,,,,,,,,,,,,,,
-28,White Bear/Prince,Helper,Tragic,,,,,,,,,,,,,,,
-28,Troll Princess,Villain,Evil,,,,,,,,,,,,,,,
-28,North Wind,Helper,Innocent,,,,,,,,,,,,,,,
-29,La Llorona,Villain,Tragic,,,,,,,,,,,,,,,
-29,Children,Hero,Tragic,,,,,,,,,,,,,,,
-29,Villagers,Helper,Innocent,,,,,,,,,,,,,,,
-30,Sun Wukong,Hero,Rebel,,,,,,,,,,,,,,,
-30,Heavenly Court,Villain,Evil,,,,,,,,,,,,,,,
-30,Tripitaka,Helper,Innocent,,,,,,,,,,,,,,,
-30,Pigsy,Helper,Innocent,,,,,,,,,,,,,,,
-30,Sandy,Helper,Innocent,,,,,,,,,,,,,,,
-31,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-31,Boy,Hero,Tragic,,,,,,,,,,,,,,,
-31,Sister,Helper,Innocent,,,,,,,,,,,,,,,
-31,Father,Helper,Innocent,,,,,,,,,,,,,,,
-31,Bird Spirit,Helper,Innocent,,,,,,,,,,,,,,,
-32,Crane Wife,Hero,Tragic,,,,,,,,,,,,,,,
-32,Husband,Helper,Innocent,,,,,,,,,,,,,,,
-33,Vasilisa,Hero,Innocent,,,,,,,,,,,,,,,
-33,Baba Yaga,Villain,Evil,,,,,,,,,,,,,,,
-33,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-33,Stepsisters,Villain,Evil,,,,,,,,,,,,,,,
-33,Magical Doll,Helper,Innocent,,,,,,,,,,,,,,,
-34,Crane Wife,Hero,Tragic,,,,,,,,,,,,,,,
-34,Husband,Helper,Innocent,,,,,,,,,,,,,,,
-35,Jackal,Trickster,Rebel,,,,,,,,,,,,,,,
-35,Camel,Hero,Innocent,,,,,,,,,,,,,,,
-35,Crocodiles,Villain,Evil,,,,,,,,,,,,,,,
-36,Little Red Riding Hood,Hero,Innocent,,,,,,,,,,,,,,,
-36,Big Bad Wolf,Villain,Evil,,,,,,,,,,,,,,,
-36,Grandmother,Helper,Innocent,,,,,,,,,,,,,,,
-36,Huntsman,Helper,Innocent,,,,,,,,,,,,,,,
-37,Belle,Hero,Innocent,,,,,,,,,,,,,,,
-37,Beast,Hero,Tragic,,,,,,,,,,,,,,,
-37,Gaston,Villain,Evil,,,,,,,,,,,,,,,
-37,Lumière,Helper,Innocent,,,,,,,,,,,,,,,
-37,Mrs. Potts,Helper,Innocent,,,,,,,,,,,,,,,
-38,Pied Piper,Hero,Rebel,,,,,,,,,,,,,,,
-38,Town Mayor,Villain,Evil,,,,,,,,,,,,,,,
-38,Children,Helper,Innocent,,,,,,,,,,,,,,,
-38,Rats,Villain,Evil,,,,,,,,,,,,,,,
-39,Feathered Serpent,Hero,Innocent,,,,,,,,,,,,,,,
-39,Human Priests,Helper,Innocent,,,,,,,,,,,,,,,
-39,Rival Warriors,Villain,Evil,,,,,,,,,,,,,,,
-40,Rainbow Serpent,Hero,Innocent,,,,,,,,,,,,,,,
-40,Trickster Animals,Trickster,Rebel,,,,,,,,,,,,,,,
-40,Tribal Ancestors,Helper,Innocent,,,,,,,,,,,,,,,
-41,Vasilisa,Hero,Innocent,,,,,,,,,,,,,,,
-41,Baba Yaga,Villain,Evil,,,,,,,,,,,,,,,
-41,Magical Doll,Helper,Innocent,,,,,,,,,,,,,,,
-41,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-41,Stepsisters,Villain,Evil,,,,,,,,,,,,,,,
-42,Rainbow Serpent,Hero,Innocent,,,,,,,,,,,,,,,
-42,Trickster Animals,Trickster,Rebel,,,,,,,,,,,,,,,
-42,Tribal Ancestors,Helper,Innocent,,,,,,,,,,,,,,,
-43,Crane Wife,Hero,Tragic,,,,,,,,,,,,,,,
-43,Husband,Helper,Innocent,,,,,,,,,,,,,,,
-44,Belle,Hero,Innocent,,,,,,,,,,,,,,,
-44,Beast,Hero,Tragic,,,,,,,,,,,,,,,
-44,Gaston,Villain,Evil,,,,,,,,,,,,,,,
-44,Lumière,Helper,Innocent,,,,,,,,,,,,,,,
-44,Mrs. Potts,Helper,Innocent,,,,,,,,,,,,,,,
-45,Rainbow Serpent,Hero,Innocent,,,,,,,,,,,,,,,
-45,Trickster Animals,Trickster,Rebel,,,,,,,,,,,,,,,
-45,Tribal Ancestors,Helper,Innocent,,,,,,,,,,,,,,,
-46,Karen,Hero,Rebel,,,,,,,,,,,,,,,
-46,Red Shoes,Villain,Evil,,,,,,,,,,,,,,,
-46,Angel,Helper,Innocent,,,,,,,,,,,,,,,
-46,Adoptive Mother,Helper,Innocent,,,,,,,,,,,,,,,
-47,Snow White,Hero,Innocent,,,,,,,,,,,,,,,
-47,Evil Queen,Villain,Evil,,,,,,,,,,,,,,,
-47,Seven Dwarfs,Helper,Innocent,,,,,,,,,,,,,,,
-47,Prince,Helper,Innocent,,,,,,,,,,,,,,,
-48,Aladdin,Hero,Rebel,,,,,,,,,,,,,,,
-48,Genie,Helper,Innocent,,,,,,,,,,,,,,,
-48,Princess Badroulbadour,Helper,Innocent,,,,,,,,,,,,,,,
-48,Sorcerer,Villain,Evil,,,,,,,,,,,,,,,
-48,Magic Carpet,Helper,Innocent,,,,,,,,,,,,,,,
-49,Girl,Hero,Rebel,,,,,,,,,,,,,,,
-49,White Bear/Prince,Helper,Tragic,,,,,,,,,,,,,,,
-49,Troll Princess,Villain,Evil,,,,,,,,,,,,,,,
-49,North Wind,Helper,Innocent,,,,,,,,,,,,,,,
-50,Princess Kaguya,Hero,Tragic,,,,,,,,,,,,,,,
-50,Old Bamboo Cutter,Helper,Innocent,,,,,,,,,,,,,,,
-50,Bamboo Cutter's Wife,Helper,Innocent,,,,,,,,,,,,,,,
-50,Emperor,Helper,Innocent,,,,,,,,,,,,,,,
-51,The Little Mermaid,Hero,Innocent,,,,,,,,,,,,,,,
-51,Sea Witch,Villain,Evil,,,,,,,,,,,,,,,
-51,Prince,Helper,Innocent,,,,,,,,,,,,,,,
-52,Ariel,Hero,Innocent,,,,,,,,,,,,,,,
-52,Ursula,Villain,Evil,,,,,,,,,,,,,,,
-52,Sebastian,Helper,Tragic,,,,,,,,,,,,,,,
-53,Ariel,Hero,Innocent,,,,,,,,,,,,,,,
-53,Ursula,Villain,Evil,,,,,,,,,,,,,,,
-53,Scuttle,Trickster,Rebel,,,,,,,,,,,,,,,
-54,Chang�e,Hero,Tragic,,,,,,,,,,,,,,,
-54,Hou Yi,Helper,Innocent,,,,,,,,,,,,,,,
-54,Jade Emperor,Trickster,Rebel,,,,,,,,,,,,,,,
-55,Fei Fei,Hero,Innocent,,,,,,,,,,,,,,,
-55,Chang�e,Trickster,Tragic,,,,,,,,,,,,,,,
-55,Bungee (Rabbit),Helper,Innocent,,,,,,,,,,,,,,,
-55,Chin,Helper,Innocent,,,,,,,,,,,,,,,
-56,Cinderella,Hero,Innocent,,,,,,,,,,,,,,,
-56,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-56,Fairy Godmother,Helper,Innocent,,,,,,,,,,,,,,,
-57,Cinderella,Hero,Innocent,,,,,,,,,,,,,,,
-57,Stepmother,Villain,Evil,,,,,,,,,,,,,,,
-57,Prince,Helper,Innocent,,,,,,,,,,,,,,,
-58,Snow White,Hero,Innocent,,,,,,,,,,,,,,,
-58,Queen,Villain,Evil,,,,,,,,,,,,,,,
-58,Dwarfs,Helper,Innocent,,,,,,,,,,,,,,,
-59,Snow White,Hero,Innocent,,,,,,,,,,,,,,,
-59,Evil Queen,Villain,Evil,,,,,,,,,,,,,,,
-59,Animals,Helper,Innocent,,,,,,,,,,,,,,,
-60,Snow White,Hero,Rebel,,,,,,,,,,,,,,,
-60,Queen,Villain,Evil,,,,,,,,,,,,,,,
-60,Dwarfs,Helper,Innocent,,,,,,,,,,,,,,,
-61,Snow White,Hero,Tragic,,,,,,,,,,,,,,,
-61,Ravenna,Villain,Evil,,,,,,,,,,,,,,,
-61,Huntsman,Helper,Rebel,,,,,,,,,,,,,,,
-62,Cinderella,Hero,Innocent,,,,,,,,,,,,,,,
-62,Stepsisters,Villain,Evil,,,,,,,,,,,,,,,
-62,Fairy Godmother,Helper,Innocent,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
+ID,Character,CharacterArchetype,CharacterAttribute
+1,Younger Brother,Hero,Innocent
+1,Older Brother,Villain,Evil
+1,Dwarf,Helper,Innocent
+1,Shepherd,Helper,Innocent
+1,King,Helper,Innocent
+2,Fisherman,Hero,Innocent
+2,Fisherman’s Wife,Villain,Rebel
+2,Magic Flounder,Helper,Innocent
+3,Crane Wife,Hero,Tragic
+3,Husband,Helper,Innocent
+4,Vasilisa,Hero,Innocent
+4,Baba Yaga,Villain,Evil
+4,Magical Doll,Helper,Innocent
+4,Stepmother,Villain,Evil
+4,Stepsisters,Villain,Evil
+5,Crane Wife,Hero,Tragic
+5,Husband,Helper,Innocent
+6,Tenali Raman,Hero,Rebel
+6,Thieves,Villain,Evil
+6,Tenali's Wife,Helper,Innocent
+7,Chang'e,Hero,Tragic
+7,Houyi,Helper,Innocent
+7,Jade Rabbit,Helper,Innocent
+8,Soldier,Hero,Rebel
+8,Witch,Villain,Evil
+8,Princess,Helper,Innocent
+8,Dogs with Eyes,Helper,Innocent
+9,Vasilisa,Hero,Innocent
+9,Baba Yaga,Villain,Evil
+9,Stepmother,Villain,Evil
+9,Stepsisters,Villain,Evil
+9,Magical Doll,Helper,Innocent
+10,Match Girl,Hero,Tragic
+10,Grandmother's Spirit,Helper,Innocent
+11,Eldest Princess,Hero,Rebel
+11,Other Princesses,Helper,Innocent
+11,Soldier,Hero,Innocent
+11,King,Helper,Innocent
+12,Snow White,Hero,Innocent
+12,Evil Queen,Villain,Evil
+12,Seven Dwarfs,Helper,Innocent
+12,Prince,Helper,Innocent
+13,Stepmother,Villain,Evil
+13,Boy,Hero,Tragic
+13,Sister,Helper,Innocent
+13,Father,Helper,Innocent
+13,Bird Spirit,Helper,Innocent
+14,Mosquito,Villain,Rebel
+14,Iguana,Helper,Innocent
+14,Mother Owl,Hero,Tragic
+14,Lion (King),Helper,Innocent
+15,Genji,Hero,Rebel
+15,Murasaki,Helper,Innocent
+15,Fujitsubo,Helper,Tragic
+15,Rokujo Lady,Villain,Evil
+16,Prince Ivan,Hero,Innocent
+16,Firebird,Helper,Innocent
+16,Koshchei,Villain,Evil
+16,Princess Elena,Helper,Innocent
+17,Donkey,Hero,Innocent
+17,Dog,Hero,Innocent
+17,Cat,Hero,Innocent
+17,Rooster,Hero,Innocent
+17,Robbers,Villain,Evil
+18,Princess Kaguya,Hero,Tragic
+18,Old Bamboo Cutter,Helper,Innocent
+18,Bamboo Cutter's Wife,Helper,Innocent
+18,Emperor,Helper,Innocent
+19,Animals,Hero,Innocent
+19,Trickster Figure,Trickster,Rebel
+20,Cinderella,Hero,Innocent
+20,Stepmother,Villain,Evil
+20,Stepsisters,Villain,Evil
+20,Fairy Godmother,Helper,Innocent
+20,Prince,Helper,Innocent
+21,Belle,Hero,Innocent
+21,Beast,Hero,Tragic
+21,Gaston,Villain,Evil
+21,Lumière,Helper,Innocent
+21,Mrs. Potts,Helper,Innocent
+22,Princess Kaguya,Hero,Tragic
+22,Old Bamboo Cutter,Helper,Innocent
+22,Bamboo Cutter's Wife,Helper,Innocent
+22,Emperor,Helper,Innocent
+23,Animals,Hero,Innocent
+23,Trickster Figure,Trickster,Rebel
+24,Mosquito,Villain,Rebel
+24,Iguana,Helper,Innocent
+24,Mother Owl,Hero,Tragic
+24,Lion (King),Helper,Innocent
+25,Little Red Riding Hood,Hero,Innocent
+25,Big Bad Wolf,Villain,Evil
+25,Grandmother,Helper,Innocent
+25,Huntsman,Helper,Innocent
+26,Mosquito,Villain,Rebel
+26,Iguana,Helper,Innocent
+26,Mother Owl,Hero,Tragic
+26,Lion (King),Helper,Innocent
+27,Peasant,Hero,Innocent
+27,Devil,Villain,Evil
+28,Girl,Hero,Rebel
+28,White Bear/Prince,Helper,Tragic
+28,Troll Princess,Villain,Evil
+28,North Wind,Helper,Innocent
+29,La Llorona,Villain,Tragic
+29,Children,Hero,Tragic
+29,Villagers,Helper,Innocent
+30,Sun Wukong,Hero,Rebel
+30,Heavenly Court,Villain,Evil
+30,Tripitaka,Helper,Innocent
+30,Pigsy,Helper,Innocent
+30,Sandy,Helper,Innocent
+31,Stepmother,Villain,Evil
+31,Boy,Hero,Tragic
+31,Sister,Helper,Innocent
+31,Father,Helper,Innocent
+31,Bird Spirit,Helper,Innocent
+32,Crane Wife,Hero,Tragic
+32,Husband,Helper,Innocent
+33,Vasilisa,Hero,Innocent
+33,Baba Yaga,Villain,Evil
+33,Stepmother,Villain,Evil
+33,Stepsisters,Villain,Evil
+33,Magical Doll,Helper,Innocent
+34,Crane Wife,Hero,Tragic
+34,Husband,Helper,Innocent
+35,Jackal,Trickster,Rebel
+35,Camel,Hero,Innocent
+35,Crocodiles,Villain,Evil
+36,Little Red Riding Hood,Hero,Innocent
+36,Big Bad Wolf,Villain,Evil
+36,Grandmother,Helper,Innocent
+36,Huntsman,Helper,Innocent
+37,Belle,Hero,Innocent
+37,Beast,Hero,Tragic
+37,Gaston,Villain,Evil
+37,Lumière,Helper,Innocent
+37,Mrs. Potts,Helper,Innocent
+38,Pied Piper,Hero,Rebel
+38,Town Mayor,Villain,Evil
+38,Children,Helper,Innocent
+38,Rats,Villain,Evil
+39,Feathered Serpent,Hero,Innocent
+39,Human Priests,Helper,Innocent
+39,Rival Warriors,Villain,Evil
+40,Rainbow Serpent,Hero,Innocent
+40,Trickster Animals,Trickster,Rebel
+40,Tribal Ancestors,Helper,Innocent
+41,Vasilisa,Hero,Innocent
+41,Baba Yaga,Villain,Evil
+41,Magical Doll,Helper,Innocent
+41,Stepmother,Villain,Evil
+41,Stepsisters,Villain,Evil
+42,Rainbow Serpent,Hero,Innocent
+42,Trickster Animals,Trickster,Rebel
+42,Tribal Ancestors,Helper,Innocent
+43,Crane Wife,Hero,Tragic
+43,Husband,Helper,Innocent
+44,Belle,Hero,Innocent
+44,Beast,Hero,Tragic
+44,Gaston,Villain,Evil
+44,Lumière,Helper,Innocent
+44,Mrs. Potts,Helper,Innocent
+45,Rainbow Serpent,Hero,Innocent
+45,Trickster Animals,Trickster,Rebel
+45,Tribal Ancestors,Helper,Innocent
+46,Karen,Hero,Rebel
+46,Red Shoes,Villain,Evil
+46,Angel,Helper,Innocent
+46,Adoptive Mother,Helper,Innocent
+47,Snow White,Hero,Innocent
+47,Evil Queen,Villain,Evil
+47,Seven Dwarfs,Helper,Innocent
+47,Prince,Helper,Innocent
+48,Aladdin,Hero,Rebel
+48,Genie,Helper,Innocent
+48,Princess Badroulbadour,Helper,Innocent
+48,Sorcerer,Villain,Evil
+48,Magic Carpet,Helper,Innocent
+49,Girl,Hero,Rebel
+49,White Bear/Prince,Helper,Tragic
+49,Troll Princess,Villain,Evil
+49,North Wind,Helper,Innocent
+50,Princess Kaguya,Hero,Tragic
+50,Old Bamboo Cutter,Helper,Innocent
+50,Bamboo Cutter's Wife,Helper,Innocent
+50,Emperor,Helper,Innocent
+51,The Little Mermaid,Hero,Innocent
+51,Sea Witch,Villain,Evil
+51,Prince,Helper,Innocent
+52,Ariel,Hero,Innocent
+52,Ursula,Villain,Evil
+52,Sebastian,Helper,Tragic
+53,Ariel,Hero,Innocent
+53,Ursula,Villain,Evil
+53,Scuttle,Trickster,Rebel
+54,Chang’e,Hero,Tragic
+54,Hou Yi,Helper,Innocent
+54,Jade Emperor,Trickster,Rebel
+55,Fei Fei,Hero,Innocent
+55,Chang’e,Trickster,Tragic
+55,Bungee (Rabbit),Helper,Innocent
+55,Chin,Helper,Innocent
+56,Cinderella,Hero,Innocent
+56,Stepmother,Villain,Evil
+56,Fairy Godmother,Helper,Innocent
+57,Cinderella,Hero,Innocent
+57,Stepmother,Villain,Evil
+57,Prince,Helper,Innocent
+58,Snow White,Hero,Innocent
+58,Queen,Villain,Evil
+58,Dwarfs,Helper,Innocent
+59,Snow White,Hero,Innocent
+59,Evil Queen,Villain,Evil
+59,Animals,Helper,Innocent
+60,Snow White,Hero,Rebel
+60,Queen,Villain,Evil
+60,Dwarfs,Helper,Innocent
+61,Snow White,Hero,Tragic
+61,Ravenna,Villain,Evil
+61,Huntsman,Helper,Rebel
+62,Cinderella,Hero,Innocent
+62,Stepsisters,Villain,Evil
+62,Fairy Godmother,Helper,Innocent
