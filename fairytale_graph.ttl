@@ -668,6 +668,133 @@ fto:50_The_Bamboo_Cutter a fto:Fairytale ;
     fto:hasPlot fto:50_Plot ;
     fto:hasPromotedAspect fto:InnerSelf .
 
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#51_The_Little_Mermaid,_1837> a fto:Fairytale ;
+    rdfs:label "The Little Mermaid, 1837" ;
+    fto:createdBy fto:Hans_Christian_Andersen ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:51Prince,
+        fto:51Sea_Witch,
+        fto:51The_Little_Mermaid ;
+    fto:hasEndingType fto:BittersweetEnding ;
+    fto:hasLiteraryMode fto:TragicMode ;
+    fto:hasMedium fto:LiteraryForm ;
+    fto:hasMoralTheme fto:MoralAmbiguityTheme ;
+    fto:hasPlot fto:51_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#52_The_Little_Mermaid,_1989> a fto:Fairytale ;
+    rdfs:label "The Little Mermaid, 1989" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:52Ariel,
+        fto:52Sebastian,
+        fto:52Ursula ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:EmpowermentTheme ;
+    fto:hasPlot fto:52_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#53_The_Little_Mermaid,_2023> a fto:Fairytale ;
+    rdfs:label "The Little Mermaid, 2023" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:53Ariel,
+        fto:53Scuttle,
+        fto:53Ursula ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:MythicMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
+    fto:hasPlot fto:53_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#54_Chang_e_Flies_to_the_Moon,_1st_century_CE> a fto:Fairytale ;
+    rdfs:label "Chang'e Flies to the Moon, 1st century CE" ;
+    fto:createdBy fto:Chinese_mythology ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:54Chang_e,
+        fto:54Hou_Yi,
+        fto:54Jade_Emperor ;
+    fto:hasEndingType fto:BittersweetEnding ;
+    fto:hasLiteraryMode fto:MythicMode ;
+    fto:hasMedium fto:LiteraryForm ;
+    fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
+    fto:hasPlot fto:54_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#55_Over_the_Moon,_2020> a fto:Fairytale ;
+    rdfs:label "Over the Moon, 2020" ;
+    fto:createdBy fto:Netflix_Animation ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:55Bungee_Rabbit,
+        fto:55Chang_e,
+        fto:55Chin,
+        fto:55Fei_Fei ;
+    fto:hasEndingType fto:BittersweetEnding ;
+    fto:hasLiteraryMode fto:MythicMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:EmpowermentTheme ;
+    fto:hasPlot fto:55_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#56_Cinderella,_1950> a fto:Fairytale ;
+    rdfs:label "Cinderella, 1950" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:56Cinderella,
+        fto:56Fairy_Godmother,
+        fto:56Stepmother ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:VirtueRewardedTheme ;
+    fto:hasPlot fto:56_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#57_Cinderella,_2015> a fto:Fairytale ;
+    rdfs:label "Cinderella, 2015" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:57Cinderella,
+        fto:57Prince,
+        fto:57Stepmother ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:EmpowermentTheme ;
+    fto:hasPlot fto:57_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#58_Snow_White,_1812> a fto:Fairytale ;
+    rdfs:label "Snow White, 1812" ;
+    fto:createdBy fto:Brothers_Grimm ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:58Dwarfs,
+        fto:58Queen,
+        fto:58Snow_White ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:LiteraryForm ;
+    fto:hasMoralTheme fto:VirtueRewardedTheme ;
+    fto:hasPlot fto:58_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#59_Snow_White_and_the_Seven_Dwarfs,_1937> a fto:Fairytale ;
+    rdfs:label "Snow White and the Seven Dwarfs, 1937" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:59Animals,
+        fto:59Evil_Queen,
+        fto:59Snow_White ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:VirtueRewardedTheme ;
+    fto:hasPlot fto:59_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
+
 fto:5_The_Crane_Wife a fto:Fairytale ;
     rdfs:label "The Crane Wife" ;
     fto:createdBy fto:Disney ;
@@ -679,6 +806,48 @@ fto:5_The_Crane_Wife a fto:Fairytale ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
     fto:hasPlot fto:5_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#60_Mirror_Mirror,_2012> a fto:Fairytale ;
+    rdfs:label "Mirror Mirror, 2012" ;
+    fto:createdBy fto:Universal_Pictures ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:60Dwarfs,
+        fto:60Queen,
+        fto:60Snow_White ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
+    fto:hasPlot fto:60_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#61_Snow_White_and_the_Huntsman,_2012> a fto:Fairytale ;
+    rdfs:label "Snow White and the Huntsman, 2012" ;
+    fto:createdBy fto:Universal_Pictures ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:61Huntsman,
+        fto:61Ravenna,
+        fto:61Snow_White ;
+    fto:hasEndingType fto:BittersweetEnding ;
+    fto:hasLiteraryMode fto:TragicMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:EmpowermentTheme ;
+    fto:hasPlot fto:61_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+<http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#62_Cinderella,_1697> a fto:Fairytale ;
+    rdfs:label "Cinderella, 1697" ;
+    fto:createdBy fto:Charles_Perrault ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:62Cinderella,
+        fto:62Fairy_Godmother,
+        fto:62Stepsisters ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:LiteraryForm ;
+    fto:hasMoralTheme fto:VirtueRewardedTheme ;
+    fto:hasPlot fto:62_Plot ;
     fto:hasPromotedAspect fto:OuterWorld .
 
 fto:6_Tenali_Raman_and_the_Thieves a fto:Fairytale ;
@@ -2233,7 +2402,7 @@ fto:3_Plot a fto:Plot ;
         fto:3_returnandreward,
         fto:3_testortrial,
         fto:3_transformation ;
-    fto:hasValue "A crane marries a man, weaving beautiful cloth from her own feathers to support him, but flies away forever when he discovers her secret." .
+    fto:hasValue "A crane marries a man  weaving beautiful cloth from her own feathers to support him. but flies away forever when he discovers her secret.\"" .
 
 fto:3_departure a fto:Departure ;
     fto:hasValue "A crane is rescued and later marries the man.",
@@ -2787,6 +2956,403 @@ fto:50_testortrial a fto:TestOrTrial ;
 fto:50_transformation a fto:Transformation ;
     fto:hasValue "Kaguya’s true origins are revealed." .
 
+fto:51Prince a fto:Character ;
+    rdfs:label "Prince" ;
+    fto:hasCharacterType fto:51_Helper .
+
+fto:51Sea_Witch a fto:Character ;
+    rdfs:label "Sea Witch" ;
+    fto:hasCharacterType fto:51_Villain .
+
+fto:51The_Little_Mermaid a fto:Character ;
+    rdfs:label "The Little Mermaid" ;
+    fto:hasCharacterType fto:51_Hero .
+
+fto:51_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:51_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:51_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:51_departure,
+        fto:51_magicaid,
+        fto:51_returnandreward,
+        fto:51_testortrial,
+        fto:51_transformation ;
+    fto:hasValue "The Little Mermaid  saves a human prince  and longs for an immortal soul. She sacrifices her voice to the Sea Witch  in exchange for legs. The prince marries another woman, and the mermaid chooses to die rather than harm him. She dissolves into sea foam but is granted spiritual ascension as a daughter of the air." .
+
+fto:51_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:51_departure a fto:Departure ;
+    fto:hasValue "No romantic reward; gains moral growth and eternal spirit, aligning with tragic and moral themes.",
+        "The little mermaid dreams of the human world and disobeys her father, leaving the sea behind to pursue love on land." .
+
+fto:51_magicaid a fto:MagicalAid ;
+    fto:hasValue "She bargains with the Sea Witch for legs in exchange for her voice, a magical transformation." .
+
+fto:51_returnandreward a fto:ReturnAndReward .
+
+fto:51_testortrial a fto:TestOrTrial ;
+    fto:hasValue "The little mermaid must win the prince's love without her voice, while the Sea Witch interferes." .
+
+fto:51_transformation a fto:Transformation ;
+    fto:hasValue "The little mermaid sacrifices herself, ultimately transforming into sea foam, suggesting spiritual transcendence." .
+
+fto:52Ariel a fto:Character ;
+    rdfs:label "Ariel" ;
+    fto:hasCharacterType fto:52_Hero .
+
+fto:52Sebastian a fto:Character ;
+    rdfs:label "Sebastian" ;
+    fto:hasCharacterType fto:52_Helper .
+
+fto:52Ursula a fto:Character ;
+    rdfs:label "Ursula" ;
+    fto:hasCharacterType fto:52_Villain .
+
+fto:52_Helper a fto:Helper ;
+    fto:hasAttribute fto:Tragic .
+
+fto:52_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:52_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:52_departure,
+        fto:52_magicaid,
+        fto:52_returnandreward,
+        fto:52_testortrial,
+        fto:52_transformation ;
+    fto:hasValue "Ariel, a curious mermaid princess, falls in love with Prince Eric and trades her voice to Ursula for legs. With help from Sebastian and Flounder, she regains her voice and defeats Ursula. Ariel marries Eric and becomes human, fulfilling her dream." .
+
+fto:52_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:52_departure a fto:Departure ;
+    fto:hasValue "Ariel longs for freedom and a life on land, rescuing the prince and setting her heart on change.",
+        "Marries the prince; gains agency and happiness, fulfilling empowerment and OuterWorld promotion." .
+
+fto:52_magicaid a fto:MagicalAid ;
+    fto:hasValue "She makes a deal with Ursula to gain legs, losing her voice in the process." .
+
+fto:52_returnandreward a fto:ReturnAndReward .
+
+fto:52_testortrial a fto:TestOrTrial ;
+    fto:hasValue "She must make the prince fall in love and defeat Ursula's schemes." .
+
+fto:52_transformation a fto:Transformation ;
+    fto:hasValue "With help from friends, Ariel defeats Ursula and regains her voice and freedom." .
+
+fto:53Ariel a fto:Character ;
+    rdfs:label "Ariel" ;
+    fto:hasCharacterType fto:53_Hero .
+
+fto:53Scuttle a fto:Character ;
+    rdfs:label "Scuttle" ;
+    fto:hasCharacterType fto:53_Trickster .
+
+fto:53Ursula a fto:Character ;
+    rdfs:label "Ursula" ;
+    fto:hasCharacterType fto:53_Villain .
+
+fto:53_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:53_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:53_departure,
+        fto:53_magicaid,
+        fto:53_returnandreward,
+        fto:53_testortrial,
+        fto:53_transformation ;
+    fto:hasValue "Ariel, driven by curiosity and longing for freedom, makes a pact with Ursula, sacrificing her voice to explore the human world. With Prince Eric and support from both sea and land allies, she overcomes Ursula and helps bridge their two worlds. Ariel chooses love and agency, reshaping her own destiny." .
+
+fto:53_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
+
+fto:53_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:53_departure a fto:Departure ;
+    fto:hasValue "Ariel feels stifled in her undersea world and saves Eric, sparking her journey to the human world.",
+        "Wins both love and a new place in the world, symbolizing empowerment and transformation." .
+
+fto:53_magicaid a fto:MagicalAid ;
+    fto:hasValue "She trades her voice for legs to find love and selfhood." .
+
+fto:53_returnandreward a fto:ReturnAndReward .
+
+fto:53_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Faces deception and Ursula's manipulations, must find her true voice." .
+
+fto:53_transformation a fto:Transformation ;
+    fto:hasValue "Ariel asserts her identity, confronts Ursula, and reclaims her agency." .
+
+fto:54Chang_e a fto:Character ;
+    rdfs:label "Chang’e" ;
+    fto:hasCharacterType fto:54_Hero .
+
+fto:54Hou_Yi a fto:Character ;
+    rdfs:label "Hou Yi" ;
+    fto:hasCharacterType fto:54_Helper .
+
+fto:54Jade_Emperor a fto:Character ;
+    rdfs:label "Jade Emperor" ;
+    fto:hasCharacterType fto:54_Trickster .
+
+fto:54_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:54_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
+
+fto:54_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:54_departure,
+        fto:54_magicaid,
+        fto:54_returnandreward,
+        fto:54_testortrial,
+        fto:54_transformation ;
+    fto:hasValue "Chang'e ascends to the Moon after drinking an immortality potion. Houyi  remains on Earth grieving. In mythic isolation she becomes the Moon Goddess." .
+
+fto:54_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
+
+fto:54_departure a fto:Departure ;
+    fto:hasValue "Chang'e gains immortality but loses her earthly love'resulting in eternal separation.",
+        "Hou Yi receives the elixir as a reward, but Chang'e secretly consumes it to protect or preserve it." .
+
+fto:54_magicaid a fto:MagicalAid ;
+    fto:hasValue "The divine elixir of immortality gifted by the Queen Mother of the West." .
+
+fto:54_returnandreward a fto:ReturnAndReward .
+
+fto:54_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Chang'e must choose whether to share the elixir or use it, facing isolation as a result." .
+
+fto:54_transformation a fto:Transformation ;
+    fto:hasValue "She drinks it and ascends alone to the moon, transformed into a distant goddess." .
+
+fto:55Bungee_Rabbit a fto:Character ;
+    rdfs:label "Bungee (Rabbit)" ;
+    fto:hasCharacterType fto:55_Helper .
+
+fto:55Chang_e a fto:Character ;
+    rdfs:label "Chang’e" ;
+    fto:hasCharacterType fto:55_Trickster .
+
+fto:55Chin a fto:Character ;
+    rdfs:label "Chin" ;
+    fto:hasCharacterType fto:55_Helper .
+
+fto:55Fei_Fei a fto:Character ;
+    rdfs:label "Fei Fei" ;
+    fto:hasCharacterType fto:55_Hero .
+
+fto:55_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:55_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:55_departure,
+        fto:55_magicaid,
+        fto:55_returnandreward,
+        fto:55_testortrial,
+        fto:55_transformation ;
+    fto:hasValue "Fei Fei  builds a rocket to meet Chang'e  on the Moon. Along with her stepfamily, she uncovers ancestral myths, confronts personal grief, and returns grounded in hope and memory." .
+
+fto:55_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Tragic .
+
+fto:55_departure a fto:Departure ;
+    fto:hasValue "Fei Fei builds a rocket to find Chang'e, hoping to prove her mother's stories true.",
+        "Fei Fei returns to Earth with emotional closure; Chang'e allows herself to heal and move on." .
+
+fto:55_magicaid a fto:MagicalAid ;
+    fto:hasValue "Her belief, her technical ingenuity, and a mystical gift she brings to Lunaria." .
+
+fto:55_returnandreward a fto:ReturnAndReward .
+
+fto:55_testortrial a fto:TestOrTrial ;
+    fto:hasValue "She must deliver the gift to Chang'e while navigating emotional grief and change." .
+
+fto:55_transformation a fto:Transformation ;
+    fto:hasValue "Fei Fei overcomes her sorrow, and Chang'e lets go of her past love." .
+
+fto:56Cinderella a fto:Character ;
+    rdfs:label "Cinderella" ;
+    fto:hasCharacterType fto:56_Hero .
+
+fto:56Fairy_Godmother a fto:Character ;
+    rdfs:label "Fairy Godmother" ;
+    fto:hasCharacterType fto:56_Helper .
+
+fto:56Stepmother a fto:Character ;
+    rdfs:label "Stepmother" ;
+    fto:hasCharacterType fto:56_Villain .
+
+fto:56_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:56_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:56_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:56_departure,
+        fto:56_magicaid,
+        fto:56_returnandreward,
+        fto:56_testortrial,
+        fto:56_transformation ;
+    fto:hasValue "Cinderella  is helped by her Fairy Godmother  to attend the ball. Her Stepmother  tries to keep her oppressed. The Prince finds her after the slipper search. They marry, and she is freed from her life of hardship." .
+
+fto:56_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:56_departure a fto:Departure ;
+    fto:hasValue "Cinderella is mistreated and overworked after her father's death.",
+        "She marries the prince and escapes oppression, signaling outer reward and personal vindication." .
+
+fto:56_magicaid a fto:MagicalAid ;
+    fto:hasValue "The Fairy Godmother gives her a magical dress and carriage." .
+
+fto:56_returnandreward a fto:ReturnAndReward .
+
+fto:56_testortrial a fto:TestOrTrial ;
+    fto:hasValue "She must return by midnight and face the Stepmother's obstacles." .
+
+fto:56_transformation a fto:Transformation ;
+    fto:hasValue "Her identity is revealed through the glass slipper." .
+
+fto:57Cinderella a fto:Character ;
+    rdfs:label "Cinderella" ;
+    fto:hasCharacterType fto:57_Hero .
+
+fto:57Prince a fto:Character ;
+    rdfs:label "Prince" ;
+    fto:hasCharacterType fto:57_Helper .
+
+fto:57Stepmother a fto:Character ;
+    rdfs:label "Stepmother" ;
+    fto:hasCharacterType fto:57_Villain .
+
+fto:57_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:57_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:57_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:57_departure,
+        fto:57_magicaid,
+        fto:57_returnandreward,
+        fto:57_testortrial,
+        fto:57_transformation ;
+    fto:hasValue "Ella is tormented by her Stepmother  but remains kind. With help from a Fairy Godmother, she meets the Prince  at the ball. Her identity is revealed, and they marry." .
+
+fto:57_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:57_departure a fto:Departure ;
+    fto:hasValue "Ella chooses kindness in the face of abuse and injustice.",
+        "Rewarded with love and freedom; story emphasizes inner strength and social transformation." .
+
+fto:57_magicaid a fto:MagicalAid ;
+    fto:hasValue "She receives magical help for the royal ball from her godmother." .
+
+fto:57_returnandreward a fto:ReturnAndReward .
+
+fto:57_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Faces sabotage and humiliation by her stepfamily." .
+
+fto:57_transformation a fto:Transformation ;
+    fto:hasValue "The prince recognizes her true identity despite social status." .
+
+fto:58Dwarfs a fto:Character ;
+    rdfs:label "Dwarfs" ;
+    fto:hasCharacterType fto:58_Helper .
+
+fto:58Queen a fto:Character ;
+    rdfs:label "Queen" ;
+    fto:hasCharacterType fto:58_Villain .
+
+fto:58Snow_White a fto:Character ;
+    rdfs:label "Snow White" ;
+    fto:hasCharacterType fto:58_Hero .
+
+fto:58_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:58_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:58_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:58_departure,
+        fto:58_magicaid,
+        fto:58_returnandreward,
+        fto:58_testortrial,
+        fto:58_transformation ;
+    fto:hasValue "Snow White, a young princess, is envied by her Stepmother, the Queen, for her beauty. In the beginning, the Queen orders a Huntsman  to kill Snow White, but he spares her. In the middle, Snow White finds refuge with Seven Dwarfs  who protect her. The Queen tries to kill her with a poisoned apple. In the end, a Prince  revives Snow White with a kiss, and the Queen faces a fitting punishment." .
+
+fto:58_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:58_departure a fto:Departure ;
+    fto:hasValue "Driven away by her jealous stepmother, Snow White finds refuge with dwarfs.",
+        "Rewarded with royal marriage; queen is punished'justice and virtue prevail." .
+
+fto:58_magicaid a fto:MagicalAid ;
+    fto:hasValue "Receives shelter but is targeted with magical tricks like the poisoned apple." .
+
+fto:58_returnandreward a fto:ReturnAndReward .
+
+fto:58_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Faces three murder attempts orchestrated by the Queen." .
+
+fto:58_transformation a fto:Transformation ;
+    fto:hasValue "Falls into a deathlike sleep; revived by prince's intervention." .
+
+fto:59Animals a fto:Character ;
+    rdfs:label "Animals" ;
+    fto:hasCharacterType fto:59_Helper .
+
+fto:59Evil_Queen a fto:Character ;
+    rdfs:label "Evil Queen" ;
+    fto:hasCharacterType fto:59_Villain .
+
+fto:59Snow_White a fto:Character ;
+    rdfs:label "Snow White" ;
+    fto:hasCharacterType fto:59_Hero .
+
+fto:59_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:59_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:59_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:59_departure,
+        fto:59_magicaid,
+        fto:59_returnandreward,
+        fto:59_testortrial,
+        fto:59_transformation ;
+    fto:hasValue "Snow White escapes from the Evil Queen and finds shelter with Seven Dwarfs. As in the tale, the Queen disguises herself and gives Snow White a poisoned apple. The Prince  awakens her with a kiss, and good triumphs over evil." .
+
+fto:59_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:59_departure a fto:Departure ;
+    fto:hasValue "Fleeing the Queen, Snow White takes refuge with seven dwarfs.",
+        "She marries the prince; harmony restored, evil defeated." .
+
+fto:59_magicaid a fto:MagicalAid ;
+    fto:hasValue "The Queen uses magic to disguise herself and poison the apple." .
+
+fto:59_returnandreward a fto:ReturnAndReward .
+
+fto:59_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Snow White is tricked and falls into a deep sleep." .
+
+fto:59_transformation a fto:Transformation ;
+    fto:hasValue "Awakened by a kiss from the prince, signaling restoration." .
+
 fto:5Crane_Wife a fto:Character ;
     rdfs:label "Crane Wife" ;
     fto:hasCharacterType fto:5_Hero .
@@ -2823,6 +3389,138 @@ fto:5_testortrial a fto:TestOrTrial ;
 
 fto:5_transformation a fto:Transformation ;
     fto:hasValue "Her true nature is revealed." .
+
+fto:60Dwarfs a fto:Character ;
+    rdfs:label "Dwarfs" ;
+    fto:hasCharacterType fto:60_Helper .
+
+fto:60Queen a fto:Character ;
+    rdfs:label "Queen" ;
+    fto:hasCharacterType fto:60_Villain .
+
+fto:60Snow_White a fto:Character ;
+    rdfs:label "Snow White" ;
+    fto:hasCharacterType fto:60_Hero .
+
+fto:60_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:60_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
+
+fto:60_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:60_departure,
+        fto:60_magicaid,
+        fto:60_returnandreward,
+        fto:60_testortrial,
+        fto:60_transformation ;
+    fto:hasValue "Snow White reclaims her kingdom from the Evil Queen with help from Seven Dwarfs  and a brave Prince. The Queen uses trickery and magic to maintain power, but Snow White defeats her using wit and courage." .
+
+fto:60_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:60_departure a fto:Departure ;
+    fto:hasValue "Defeats the Queen, restores justice'emphasizing empowerment.",
+        "Snow White is imprisoned by her stepmother, who controls the kingdom." .
+
+fto:60_magicaid a fto:MagicalAid ;
+    fto:hasValue "Escapes with help and trains with outlaws in the forest." .
+
+fto:60_returnandreward a fto:ReturnAndReward .
+
+fto:60_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Snow leads a rebellion against the Queen." .
+
+fto:60_transformation a fto:Transformation ;
+    fto:hasValue "Transforms from passive royal to proactive heroine." .
+
+fto:61Huntsman a fto:Character ;
+    rdfs:label "Huntsman" ;
+    fto:hasCharacterType fto:61_Helper .
+
+fto:61Ravenna a fto:Character ;
+    rdfs:label "Ravenna" ;
+    fto:hasCharacterType fto:61_Villain .
+
+fto:61Snow_White a fto:Character ;
+    rdfs:label "Snow White" ;
+    fto:hasCharacterType fto:61_Hero .
+
+fto:61_Helper a fto:Helper ;
+    fto:hasAttribute fto:Rebel .
+
+fto:61_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
+
+fto:61_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:61_departure,
+        fto:61_magicaid,
+        fto:61_returnandreward,
+        fto:61_testortrial,
+        fto:61_transformation ;
+    fto:hasValue "Snow White is trained in combat and leads a rebellion against Queen Ravenna. The Huntsman  helps her survive the forest. In the end, Snow White defeats the Queen and is crowned." .
+
+fto:61_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:61_departure a fto:Departure ;
+    fto:hasValue "Snow White escapes captivity after years of imprisonment.",
+        "Wins back the throne, shifts from victim to ruler." .
+
+fto:61_magicaid a fto:MagicalAid ;
+    fto:hasValue "Encounters magical forest creatures and learns her destiny." .
+
+fto:61_returnandreward a fto:ReturnAndReward .
+
+fto:61_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Fights Ravenna with an army and personal courage." .
+
+fto:61_transformation a fto:Transformation ;
+    fto:hasValue "Transforms into warrior-queen figure." .
+
+fto:62Cinderella a fto:Character ;
+    rdfs:label "Cinderella" ;
+    fto:hasCharacterType fto:62_Hero .
+
+fto:62Fairy_Godmother a fto:Character ;
+    rdfs:label "Fairy Godmother" ;
+    fto:hasCharacterType fto:62_Helper .
+
+fto:62Stepsisters a fto:Character ;
+    rdfs:label "Stepsisters" ;
+    fto:hasCharacterType fto:62_Villain .
+
+fto:62_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:62_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:62_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:62_departure,
+        fto:62_magicaid,
+        fto:62_returnandreward,
+        fto:62_testortrial,
+        fto:62_transformation ;
+    fto:hasValue "Cinderella is mistreated by her Stepmother and stepsisters. With help from her Fairy Godmother, she attends a royal ball. The Prince  finds her via the glass slipper. In the end, they marry, and Cinderella escapes her life of servitude." .
+
+fto:62_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:62_departure a fto:Departure ;
+    fto:hasValue "Cinderella is mistreated by stepfamily but remains humble.",
+        "Marries prince'virtue rewarded, story of uplift." .
+
+fto:62_magicaid a fto:MagicalAid ;
+    fto:hasValue "Magic enables her to attend the ball, but only until midnight." .
+
+fto:62_returnandreward a fto:ReturnAndReward .
+
+fto:62_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Loses slipper and must prove her identity." .
+
+fto:62_transformation a fto:Transformation ;
+    fto:hasValue "Revealed by the slipper fit; social order reversed." .
 
 fto:6Tenali_Raman a fto:Character ;
     rdfs:label "Tenali Raman" ;
@@ -3002,7 +3700,19 @@ fto:9_transformation a fto:Transformation ;
 
 fto:Audience a owl:Class .
 
+fto:Brothers_Grimm a fto:Creator ;
+    fto:hasValue "Brothers Grimm" .
+
+fto:Charles_Perrault a fto:Creator ;
+    fto:hasValue "Charles Perrault" .
+
+fto:Chinese_mythology a fto:Creator ;
+    fto:hasValue "Chinese mythology" .
+
 fto:NarrativeUnit a owl:Class .
+
+fto:Netflix_Animation a fto:Creator ;
+    fto:hasValue "Netflix Animation" .
 
 fto:Persian-oral_tradition a fto:Creator ;
     fto:hasValue "Persian-oral tradition" .
@@ -3083,6 +3793,9 @@ fto:49_Helper a fto:Helper ;
     fto:hasAttribute fto:Innocent,
         fto:Tragic .
 
+fto:55_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
 fto:7_Helper a fto:Helper ;
     fto:hasAttribute fto:Innocent .
 
@@ -3091,9 +3804,6 @@ fto:8_Helper a fto:Helper ;
 
 fto:Grimm_Brothers a fto:Creator ;
     fto:hasValue "Grimm Brothers" .
-
-fto:Hans_Christian_Andersen a fto:Creator ;
-    fto:hasValue "Hans Christian Andersen" .
 
 fto:Indian-oral_tradition a fto:Creator ;
     fto:hasValue "Indian-oral tradition" .
@@ -3151,6 +3861,9 @@ fto:9_Villain a fto:Villain ;
 
 fto:ActivePromotion a owl:Class .
 
+fto:Hans_Christian_Andersen a fto:Creator ;
+    fto:hasValue "Hans Christian Andersen" .
+
 fto:Italian-oral_tradition a fto:Creator ;
     fto:hasValue "Italian-oral tradition" .
 
@@ -3180,9 +3893,6 @@ fto:MoralTheme a owl:Class .
 
 fto:CharacterArchetype a owl:Class .
 
-fto:Disney a fto:Creator ;
-    fto:hasValue "Disney" .
-
 fto:LiteraryMode a owl:Class .
 
 fto:RecurringNarrativeStructure a owl:Class ;
@@ -3196,6 +3906,9 @@ fto:Trickster a owl:Class ;
 fto:Universal_Pictures a fto:Creator ;
     fto:hasValue "Universal Pictures" .
 
+fto:Disney a fto:Creator ;
+    fto:hasValue "Disney" .
+
 fto:IdentityAndInclusionTheme a owl:Class ;
     rdfs:label "Identity and Inclusion Theme" ;
     rdfs:subClassOf fto:MoralTheme .
@@ -3204,24 +3917,12 @@ fto:MoralAmbiguityTheme a owl:Class ;
     rdfs:label "Moral Ambiguity Theme" ;
     rdfs:subClassOf fto:MoralTheme .
 
-fto:RomanticMode a owl:Class ;
-    rdfs:label "Romantic Mode" ;
-    rdfs:subClassOf fto:LiteraryMode .
-
 fto:TragicEnding a owl:Class ;
     rdfs:label "Tragic Ending" ;
     rdfs:subClassOf fto:EndingType .
 
-fto:VirtueRewardedTheme a owl:Class ;
-    rdfs:label "Virtue Rewarded Theme" ;
-    rdfs:subClassOf fto:MoralTheme .
-
 fto:IronicMode a owl:Class ;
     rdfs:label "Ironic Mode" ;
-    rdfs:subClassOf fto:LiteraryMode .
-
-fto:MythicMode a owl:Class ;
-    rdfs:label "Mythic Mode" ;
     rdfs:subClassOf fto:LiteraryMode .
 
 fto:NegativeReception a owl:Class ;
@@ -3231,14 +3932,22 @@ fto:TragicMode a owl:Class ;
     rdfs:label "Tragic Mode" ;
     rdfs:subClassOf fto:LiteraryMode .
 
-fto:MixedReception a owl:Class ;
-    rdfs:label "Mixed Reception" .
+fto:MythicMode a owl:Class ;
+    rdfs:label "Mythic Mode" ;
+    rdfs:subClassOf fto:LiteraryMode .
+
+fto:VirtueRewardedTheme a owl:Class ;
+    rdfs:label "Virtue Rewarded Theme" ;
+    rdfs:subClassOf fto:MoralTheme .
+
+fto:RomanticMode a owl:Class ;
+    rdfs:label "Romantic Mode" ;
+    rdfs:subClassOf fto:LiteraryMode .
 
 fto:Creator a owl:Class .
 
-fto:HappilyEverAfter a owl:Class ;
-    rdfs:label "Happily Ever After" ;
-    rdfs:subClassOf fto:EndingType .
+fto:MixedReception a owl:Class ;
+    rdfs:label "Mixed Reception" .
 
 fto:BittersweetEnding a owl:Class ;
     rdfs:label "Bittersweet Ending" ;
@@ -3252,25 +3961,29 @@ fto:Rebel a owl:Class ;
     rdfs:label "Rebel" ;
     rdfs:subClassOf fto:CharacterAttribute .
 
-fto:PositiveReception a owl:Class ;
-    rdfs:label "Positive Reception" .
+fto:HappilyEverAfter a owl:Class ;
+    rdfs:label "Happily Ever After" ;
+    rdfs:subClassOf fto:EndingType .
 
 fto:LiteraryForm a owl:Class ;
     rdfs:subClassOf fto:Medium .
-
-fto:OuterWorld a owl:Class ;
-    rdfs:label "Outer World" ;
-    rdfs:subClassOf fto:ActivePromotion .
 
 fto:Tragic a owl:Class ;
     rdfs:label "Tragic" ;
     rdfs:subClassOf fto:CharacterAttribute .
 
-fto:CinematicAdaptation a owl:Class .
+fto:OuterWorld a owl:Class ;
+    rdfs:label "Outer World" ;
+    rdfs:subClassOf fto:ActivePromotion .
+
+fto:PositiveReception a owl:Class ;
+    rdfs:label "Positive Reception" .
 
 fto:InnerSelf a owl:Class ;
     rdfs:label "Inner Self" ;
     rdfs:subClassOf fto:ActivePromotion .
+
+fto:CinematicAdaptation a owl:Class .
 
 fto:Evil a owl:Class ;
     rdfs:label "Evil" ;
