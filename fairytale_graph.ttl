@@ -1,7 +1,6 @@
 @prefix fto: <http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pers: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 fto:10_The_Little_Match_Girl a fto:Fairytale ;
@@ -14,8 +13,8 @@ fto:10_The_Little_Match_Girl a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:10_Plot .
+    fto:hasPlot fto:10_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:11_The_Twelve_Dancing_Princesses a fto:Fairytale ;
     rdfs:label "The Twelve Dancing Princesses" ;
@@ -29,8 +28,8 @@ fto:11_The_Twelve_Dancing_Princesses a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:11_Plot .
+    fto:hasPlot fto:11_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:12_Snow_White a fto:Fairytale ;
     rdfs:label "Snow White" ;
@@ -44,8 +43,8 @@ fto:12_Snow_White a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:12_Plot .
+    fto:hasPlot fto:12_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:13_The_Juniper_Tree a fto:Fairytale ;
     rdfs:label "The Juniper Tree" ;
@@ -60,8 +59,8 @@ fto:13_The_Juniper_Tree a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:13_Plot .
+    fto:hasPlot fto:13_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:14_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     rdfs:label "Why Mosquitoes Buzz in People's Ears" ;
@@ -75,8 +74,8 @@ fto:14_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:14_Plot .
+    fto:hasPlot fto:14_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:15_The_Tale_of_Genji a fto:Fairytale ;
     rdfs:label "The Tale of Genji" ;
@@ -90,8 +89,8 @@ fto:15_The_Tale_of_Genji a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:15_Plot .
+    fto:hasPlot fto:15_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:16_The_Firebird a fto:Fairytale ;
     rdfs:label "The Firebird" ;
@@ -105,8 +104,8 @@ fto:16_The_Firebird a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:16_Plot .
+    fto:hasPlot fto:16_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:17_The_Bremen_Town_Musicians a fto:Fairytale ;
     rdfs:label "The Bremen Town Musicians" ;
@@ -121,8 +120,8 @@ fto:17_The_Bremen_Town_Musicians a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:17_Plot .
+    fto:hasPlot fto:17_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:18_The_Bamboo_Cutter a fto:Fairytale ;
     rdfs:label "The Bamboo Cutter" ;
@@ -136,8 +135,8 @@ fto:18_The_Bamboo_Cutter a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:18_Plot .
+    fto:hasPlot fto:18_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:19_How_the_Sun_Was_Made a fto:Fairytale ;
     rdfs:label "How the Sun Was Made" ;
@@ -149,8 +148,8 @@ fto:19_How_the_Sun_Was_Made a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:19_Plot .
+    fto:hasPlot fto:19_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:1_The_Singing_Bone a fto:Fairytale ;
     rdfs:label "The Singing Bone" ;
@@ -165,8 +164,8 @@ fto:1_The_Singing_Bone a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:1_Plot .
+    fto:hasPlot fto:1_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:20_Cinderella a fto:Fairytale ;
     rdfs:label "Cinderella" ;
@@ -181,8 +180,8 @@ fto:20_Cinderella a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:20_Plot .
+    fto:hasPlot fto:20_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:21_Beauty_and_the_Beast a fto:Fairytale ;
     rdfs:label "Beauty and the Beast" ;
@@ -197,8 +196,8 @@ fto:21_Beauty_and_the_Beast a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:21_Plot .
+    fto:hasPlot fto:21_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:22_The_Bamboo_Cutter a fto:Fairytale ;
     rdfs:label "The Bamboo Cutter" ;
@@ -212,8 +211,8 @@ fto:22_The_Bamboo_Cutter a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:22_Plot .
+    fto:hasPlot fto:22_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:23_How_the_Sun_Was_Made a fto:Fairytale ;
     rdfs:label "How the Sun Was Made" ;
@@ -225,8 +224,8 @@ fto:23_How_the_Sun_Was_Made a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:23_Plot .
+    fto:hasPlot fto:23_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:24_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     rdfs:label "Why Mosquitoes Buzz in People's Ears" ;
@@ -240,8 +239,8 @@ fto:24_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:24_Plot .
+    fto:hasPlot fto:24_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:25_Little_Red_Riding_Hood a fto:Fairytale ;
     rdfs:label "Little Red Riding Hood" ;
@@ -255,8 +254,8 @@ fto:25_Little_Red_Riding_Hood a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:25_Plot .
+    fto:hasPlot fto:25_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:26_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     rdfs:label "Why Mosquitoes Buzz in People's Ears" ;
@@ -270,8 +269,8 @@ fto:26_Why_Mosquitoes_Buzz_in_People_s_Ears a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:26_Plot .
+    fto:hasPlot fto:26_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:27_The_Peasant_and_the_Devil a fto:Fairytale ;
     rdfs:label "The Peasant and the Devil" ;
@@ -283,8 +282,8 @@ fto:27_The_Peasant_and_the_Devil a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:27_Plot .
+    fto:hasPlot fto:27_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:28_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
     rdfs:label "East of the Sun and West of the Moon" ;
@@ -298,8 +297,8 @@ fto:28_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:28_Plot .
+    fto:hasPlot fto:28_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:29_La_Llorona a fto:Fairytale ;
     rdfs:label "La Llorona" ;
@@ -312,8 +311,8 @@ fto:29_La_Llorona a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:29_Plot .
+    fto:hasPlot fto:29_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:2_The_Fisherman_and_His_Wife a fto:Fairytale ;
     rdfs:label "The Fisherman and His Wife" ;
@@ -326,8 +325,8 @@ fto:2_The_Fisherman_and_His_Wife a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:2_Plot .
+    fto:hasPlot fto:2_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:30_The_Monkey_King a fto:Fairytale ;
     rdfs:label "The Monkey King" ;
@@ -342,8 +341,8 @@ fto:30_The_Monkey_King a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:30_Plot .
+    fto:hasPlot fto:30_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:31_The_Juniper_Tree a fto:Fairytale ;
     rdfs:label "The Juniper Tree" ;
@@ -358,8 +357,8 @@ fto:31_The_Juniper_Tree a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:31_Plot .
+    fto:hasPlot fto:31_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:32_The_Crane_Wife a fto:Fairytale ;
     rdfs:label "The Crane Wife" ;
@@ -371,8 +370,8 @@ fto:32_The_Crane_Wife a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:32_Plot .
+    fto:hasPlot fto:32_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:33_Vasilisa_the_Beautiful a fto:Fairytale ;
     rdfs:label "Vasilisa the Beautiful" ;
@@ -387,8 +386,8 @@ fto:33_Vasilisa_the_Beautiful a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:33_Plot .
+    fto:hasPlot fto:33_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:34_The_Crane_Wife a fto:Fairytale ;
     rdfs:label "The Crane Wife" ;
@@ -400,8 +399,8 @@ fto:34_The_Crane_Wife a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:34_Plot .
+    fto:hasPlot fto:34_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:35_The_Camel_and_the_Jackal a fto:Fairytale ;
     rdfs:label "The Camel and the Jackal" ;
@@ -414,8 +413,8 @@ fto:35_The_Camel_and_the_Jackal a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:35_Plot .
+    fto:hasPlot fto:35_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:36_Little_Red_Riding_Hood a fto:Fairytale ;
     rdfs:label "Little Red Riding Hood" ;
@@ -429,8 +428,8 @@ fto:36_Little_Red_Riding_Hood a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:36_Plot .
+    fto:hasPlot fto:36_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:37_Beauty_and_the_Beast a fto:Fairytale ;
     rdfs:label "Beauty and the Beast" ;
@@ -445,8 +444,8 @@ fto:37_Beauty_and_the_Beast a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:37_Plot .
+    fto:hasPlot fto:37_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:38_The_Pied_Piper a fto:Fairytale ;
     rdfs:label "The Pied Piper" ;
@@ -460,8 +459,8 @@ fto:38_The_Pied_Piper a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:38_Plot .
+    fto:hasPlot fto:38_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:39_The_Feathered_Serpent a fto:Fairytale ;
     rdfs:label "The Feathered Serpent" ;
@@ -474,8 +473,8 @@ fto:39_The_Feathered_Serpent a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:39_Plot .
+    fto:hasPlot fto:39_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:3_The_Crane_Wife a fto:Fairytale ;
     rdfs:label "The Crane Wife" ;
@@ -487,8 +486,8 @@ fto:3_The_Crane_Wife a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:3_Plot .
+    fto:hasPlot fto:3_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:40_The_Rainbow_Serpent a fto:Fairytale ;
     rdfs:label "The Rainbow Serpent" ;
@@ -501,8 +500,8 @@ fto:40_The_Rainbow_Serpent a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:40_Plot .
+    fto:hasPlot fto:40_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:41_Baba_Yaga a fto:Fairytale ;
     rdfs:label "Baba Yaga" ;
@@ -517,8 +516,8 @@ fto:41_Baba_Yaga a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:41_Plot .
+    fto:hasPlot fto:41_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:42_The_Rainbow_Serpent a fto:Fairytale ;
     rdfs:label "The Rainbow Serpent" ;
@@ -531,8 +530,8 @@ fto:42_The_Rainbow_Serpent a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:42_Plot .
+    fto:hasPlot fto:42_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:43_The_Crane_Wife a fto:Fairytale ;
     rdfs:label "The Crane Wife" ;
@@ -544,8 +543,8 @@ fto:43_The_Crane_Wife a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:43_Plot .
+    fto:hasPlot fto:43_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:44_Beauty_and_the_Beast a fto:Fairytale ;
     rdfs:label "Beauty and the Beast" ;
@@ -560,8 +559,8 @@ fto:44_Beauty_and_the_Beast a fto:Fairytale ;
     fto:hasLiteraryMode fto:IronicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:44_Plot .
+    fto:hasPlot fto:44_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:45_The_Rainbow_Serpent a fto:Fairytale ;
     rdfs:label "The Rainbow Serpent" ;
@@ -574,8 +573,8 @@ fto:45_The_Rainbow_Serpent a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:45_Plot .
+    fto:hasPlot fto:45_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:46_The_Red_Shoes a fto:Fairytale ;
     rdfs:label "The Red Shoes" ;
@@ -589,8 +588,8 @@ fto:46_The_Red_Shoes a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:46_Plot .
+    fto:hasPlot fto:46_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:47_Snow_White a fto:Fairytale ;
     rdfs:label "Snow White" ;
@@ -604,8 +603,8 @@ fto:47_Snow_White a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:47_Plot .
+    fto:hasPlot fto:47_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:48_Aladdin a fto:Fairytale ;
     rdfs:label "Aladdin" ;
@@ -620,8 +619,8 @@ fto:48_Aladdin a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:48_Plot .
+    fto:hasPlot fto:48_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:49_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
     rdfs:label "East of the Sun and West of the Moon" ;
@@ -635,8 +634,8 @@ fto:49_East_of_the_Sun_and_West_of_the_Moon a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:49_Plot .
+    fto:hasPlot fto:49_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:4_Baba_Yaga a fto:Fairytale ;
     rdfs:label "Baba Yaga" ;
@@ -651,8 +650,8 @@ fto:4_Baba_Yaga a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:MoralAmbiguityTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:4_Plot .
+    fto:hasPlot fto:4_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:50_The_Bamboo_Cutter a fto:Fairytale ;
     rdfs:label "The Bamboo Cutter" ;
@@ -666,8 +665,8 @@ fto:50_The_Bamboo_Cutter a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:50_Plot .
+    fto:hasPlot fto:50_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:5_The_Crane_Wife a fto:Fairytale ;
     rdfs:label "The Crane Wife" ;
@@ -679,8 +678,8 @@ fto:5_The_Crane_Wife a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:5_Plot .
+    fto:hasPlot fto:5_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:6_Tenali_Raman_and_the_Thieves a fto:Fairytale ;
     rdfs:label "Tenali Raman and the Thieves" ;
@@ -693,8 +692,8 @@ fto:6_Tenali_Raman_and_the_Thieves a fto:Fairytale ;
     fto:hasLiteraryMode fto:TragicMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:6_Plot .
+    fto:hasPlot fto:6_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:7_Chang_e_Flies_to_the_Moon a fto:Fairytale ;
     rdfs:label "Chang'e Flies to the Moon" ;
@@ -707,8 +706,8 @@ fto:7_Chang_e_Flies_to_the_Moon a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:InnerSelf ;
-    rdf:hasPlot fto:7_Plot .
+    fto:hasPlot fto:7_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
 
 fto:8_The_Tinderbox a fto:Fairytale ;
     rdfs:label "The Tinderbox" ;
@@ -722,8 +721,8 @@ fto:8_The_Tinderbox a fto:Fairytale ;
     fto:hasLiteraryMode fto:MythicMode ;
     fto:hasMedium fto:LiteraryForm ;
     fto:hasMoralTheme fto:VirtueRewardedTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:8_Plot .
+    fto:hasPlot fto:8_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:9_Vasilisa_the_Beautiful a fto:Fairytale ;
     rdfs:label "Vasilisa the Beautiful" ;
@@ -738,8 +737,8 @@ fto:9_Vasilisa_the_Beautiful a fto:Fairytale ;
     fto:hasLiteraryMode fto:RomanticMode ;
     fto:hasMedium fto:CinematicAdaptation ;
     fto:hasMoralTheme fto:EmpowermentTheme ;
-    fto:hasPromotedAspect fto:OuterWorld ;
-    rdf:hasPlot fto:9_Plot .
+    fto:hasPlot fto:9_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
 
 fto:ReceivedBy a owl:ObjectProperty .
 
@@ -816,11 +815,17 @@ pers:Attitude a owl:Class .
 
 fto:10Grandmother_s_Spirit a fto:Character ;
     rdfs:label "Grandmother's Spirit" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:10_Helper .
 
 fto:10Match_Girl a fto:Character ;
     rdfs:label "Match Girl" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:10_Hero .
+
+fto:10_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:10_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:10_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:10_departure,
@@ -847,19 +852,19 @@ fto:10_transformation a fto:Transformation ;
 
 fto:11Eldest_Princess a fto:Character ;
     rdfs:label "Eldest Princess" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:11_Hero .
 
 fto:11King a fto:Character ;
     rdfs:label "King" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:11_Helper .
 
 fto:11Other_Princesses a fto:Character ;
     rdfs:label "Other Princesses" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:11_Helper .
 
 fto:11Soldier a fto:Character ;
     rdfs:label "Soldier" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:11_Hero .
 
 fto:11_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:11_departure,
@@ -886,19 +891,22 @@ fto:11_transformation a fto:Transformation ;
 
 fto:12Evil_Queen a fto:Character ;
     rdfs:label "Evil Queen" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:12_Villain .
 
 fto:12Prince a fto:Character ;
     rdfs:label "Prince" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:12_Helper .
 
 fto:12Seven_Dwarfs a fto:Character ;
     rdfs:label "Seven Dwarfs" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:12_Helper .
 
 fto:12Snow_White a fto:Character ;
     rdfs:label "Snow White" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:12_Hero .
+
+fto:12_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:12_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:12_departure,
@@ -907,6 +915,9 @@ fto:12_Plot a fto:Plot ;
         fto:12_testortrial,
         fto:12_transformation ;
     fto:hasValue "A poor woodcutter finds a magical tree that rewards kindness and punishes greed when his wife’s selfishness destroys their blessings." .
+
+fto:12_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:12_departure a fto:Departure ;
     fto:hasValue "Marries the prince, evil is punished.",
@@ -925,23 +936,26 @@ fto:12_transformation a fto:Transformation ;
 
 fto:13Bird_Spirit a fto:Character ;
     rdfs:label "Bird Spirit" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:13_Helper .
 
 fto:13Boy a fto:Character ;
     rdfs:label "Boy" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:13_Hero .
 
 fto:13Father a fto:Character ;
     rdfs:label "Father" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:13_Helper .
 
 fto:13Sister a fto:Character ;
     rdfs:label "Sister" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:13_Helper .
 
 fto:13Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:13_Villain .
+
+fto:13_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:13_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:13_departure,
@@ -950,6 +964,9 @@ fto:13_Plot a fto:Plot ;
         fto:13_testortrial,
         fto:13_transformation ;
     fto:hasValue "An adaptation where a humble woodcutter gains fortune from a magical tree while his greedy wife is punished for her arrogance." .
+
+fto:13_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:13_departure a fto:Departure ;
     fto:hasValue "Family is restored, evil is destroyed.",
@@ -968,19 +985,22 @@ fto:13_transformation a fto:Transformation ;
 
 fto:14Iguana a fto:Character ;
     rdfs:label "Iguana" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:14_Helper .
 
 fto:14Lion_King a fto:Character ;
     rdfs:label "Lion (King)" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:14_Helper .
 
 fto:14Mosquito a fto:Character ;
     rdfs:label "Mosquito" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:14_Villain .
 
 fto:14Mother_Owl a fto:Character ;
     rdfs:label "Mother Owl" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:14_Hero .
+
+fto:14_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:14_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:14_departure,
@@ -989,6 +1009,9 @@ fto:14_Plot a fto:Plot ;
         fto:14_testortrial,
         fto:14_transformation ;
     fto:hasValue "A prince cursed to live as a beast learns love and humility from a maiden who sacrifices herself for him; her love breaks the spell." .
+
+fto:14_Villain a fto:Villain ;
+    fto:hasAttribute fto:Rebel .
 
 fto:14_departure a fto:Departure ;
     fto:hasValue "Mosquito is cursed, lesson is learned.",
@@ -1007,19 +1030,22 @@ fto:14_transformation a fto:Transformation ;
 
 fto:15Fujitsubo a fto:Character ;
     rdfs:label "Fujitsubo" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:15_Helper .
 
 fto:15Genji a fto:Character ;
     rdfs:label "Genji" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:15_Hero .
 
 fto:15Murasaki a fto:Character ;
     rdfs:label "Murasaki" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:15_Helper .
 
 fto:15Rokujo_Lady a fto:Character ;
     rdfs:label "Rokujo Lady" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:15_Villain .
+
+fto:15_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:15_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:15_departure,
@@ -1028,6 +1054,9 @@ fto:15_Plot a fto:Plot ;
         fto:15_testortrial,
         fto:15_transformation ;
     fto:hasValue "Disney’s adaptation where Belle sacrifices herself for her father, befriends enchanted objects, falls in love with the Beast, and breaks the spell." .
+
+fto:15_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:15_departure a fto:Departure ;
     fto:hasValue "Genji is exiled from court.",
@@ -1046,19 +1075,22 @@ fto:15_transformation a fto:Transformation ;
 
 fto:16Firebird a fto:Character ;
     rdfs:label "Firebird" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:16_Helper .
 
 fto:16Koshchei a fto:Character ;
     rdfs:label "Koshchei" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:16_Villain .
 
 fto:16Prince_Ivan a fto:Character ;
     rdfs:label "Prince Ivan" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:16_Hero .
 
 fto:16Princess_Elena a fto:Character ;
     rdfs:label "Princess Elena" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:16_Helper .
+
+fto:16_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:16_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:16_departure,
@@ -1067,6 +1099,9 @@ fto:16_Plot a fto:Plot ;
         fto:16_testortrial,
         fto:16_transformation ;
     fto:hasValue "A poor girl endures hardship under her stepmother, is helped by the spirit of her mother through a magical tree, and marries the king." .
+
+fto:16_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:16_departure a fto:Departure ;
     fto:hasValue "Prince Ivan seeks the Firebird.",
@@ -1085,23 +1120,23 @@ fto:16_transformation a fto:Transformation ;
 
 fto:17Cat a fto:Character ;
     rdfs:label "Cat" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:17_Hero .
 
 fto:17Dog a fto:Character ;
     rdfs:label "Dog" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:17_Hero .
 
 fto:17Donkey a fto:Character ;
     rdfs:label "Donkey" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:17_Hero .
 
 fto:17Robbers a fto:Character ;
     rdfs:label "Robbers" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:17_Villain .
 
 fto:17Rooster a fto:Character ;
     rdfs:label "Rooster" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:17_Hero .
 
 fto:17_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:17_departure,
@@ -1110,6 +1145,9 @@ fto:17_Plot a fto:Plot ;
         fto:17_testortrial,
         fto:17_transformation ;
     fto:hasValue "A cinematic adaptation where Cinderella is mistreated by her stepfamily but wins the prince’s heart with inner beauty and kindness." .
+
+fto:17_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:17_departure a fto:Departure ;
     fto:hasValue "Animals run away to Bremen.",
@@ -1128,19 +1166,22 @@ fto:17_transformation a fto:Transformation ;
 
 fto:18Bamboo_Cutter_s_Wife a fto:Character ;
     rdfs:label "Bamboo Cutter's Wife" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:18_Helper .
 
 fto:18Emperor a fto:Character ;
     rdfs:label "Emperor" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:18_Helper .
 
 fto:18Old_Bamboo_Cutter a fto:Character ;
     rdfs:label "Old Bamboo Cutter" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:18_Helper .
 
 fto:18Princess_Kaguya a fto:Character ;
     rdfs:label "Princess Kaguya" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:18_Hero .
+
+fto:18_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:18_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:18_departure,
@@ -1167,11 +1208,14 @@ fto:18_transformation a fto:Transformation ;
 
 fto:19Animals a fto:Character ;
     rdfs:label "Animals" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:19_Hero .
 
 fto:19Trickster_Figure a fto:Character ;
     rdfs:label "Trickster Figure" ;
-    fto:hasCharacterType fto:Trickster .
+    fto:hasCharacterType fto:19_Trickster .
+
+fto:19_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:19_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:19_departure,
@@ -1180,6 +1224,9 @@ fto:19_Plot a fto:Plot ;
         fto:19_testortrial,
         fto:19_transformation ;
     fto:hasValue "An animated version where Jack climbs the beanstalk, outwits the ogre, and escapes with gold, ensuring his mother’s prosperity." .
+
+fto:19_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
 
 fto:19_departure a fto:Departure ;
     fto:hasValue "The world is illuminated.",
@@ -1198,23 +1245,26 @@ fto:19_transformation a fto:Transformation ;
 
 fto:1Dwarf a fto:Character ;
     rdfs:label "Dwarf" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:1_Helper .
 
 fto:1King a fto:Character ;
     rdfs:label "King" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:1_Helper .
 
 fto:1Older_Brother a fto:Character ;
     rdfs:label "Older Brother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:1_Villain .
 
 fto:1Shepherd a fto:Character ;
     rdfs:label "Shepherd" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:1_Helper .
 
 fto:1Younger_Brother a fto:Character ;
     rdfs:label "Younger Brother" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:1_Hero .
+
+fto:1_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:1_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:1_departure,
@@ -1223,6 +1273,9 @@ fto:1_Plot a fto:Plot ;
         fto:1_testortrial,
         fto:1_transformation ;
     fto:hasValue "A bone from a slain brother sings the truth, revealing fratricide and resulting in the murderer’s execution, ending in tragic justice." .
+
+fto:1_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:1_departure a fto:Departure ;
     fto:hasValue "Justice is restored; the innocent is honored.",
@@ -1241,23 +1294,26 @@ fto:1_transformation a fto:Transformation ;
 
 fto:20Cinderella a fto:Character ;
     rdfs:label "Cinderella" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:20_Hero .
 
 fto:20Fairy_Godmother a fto:Character ;
     rdfs:label "Fairy Godmother" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:20_Helper .
 
 fto:20Prince a fto:Character ;
     rdfs:label "Prince" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:20_Helper .
 
 fto:20Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:20_Villain .
 
 fto:20Stepsisters a fto:Character ;
     rdfs:label "Stepsisters" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:20_Villain .
+
+fto:20_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:20_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:20_departure,
@@ -1284,23 +1340,23 @@ fto:20_transformation a fto:Transformation ;
 
 fto:21Beast a fto:Character ;
     rdfs:label "Beast" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:21_Hero .
 
 fto:21Belle a fto:Character ;
     rdfs:label "Belle" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:21_Hero .
 
 fto:21Gaston a fto:Character ;
     rdfs:label "Gaston" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:21_Villain .
 
 fto:21Lumière a fto:Character ;
     rdfs:label "Lumière" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:21_Helper .
 
 fto:21Mrs._Potts a fto:Character ;
     rdfs:label "Mrs. Potts" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:21_Helper .
 
 fto:21_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:21_departure,
@@ -1309,6 +1365,9 @@ fto:21_Plot a fto:Plot ;
         fto:21_testortrial,
         fto:21_transformation ;
     fto:hasValue "An adaptation of King Thrushbeard where the princess learns humility as a beggar’s wife before happily reuniting with her disguised husband." .
+
+fto:21_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:21_departure a fto:Departure ;
     fto:hasValue "Belle takes her father's place.",
@@ -1327,19 +1386,22 @@ fto:21_transformation a fto:Transformation ;
 
 fto:22Bamboo_Cutter_s_Wife a fto:Character ;
     rdfs:label "Bamboo Cutter's Wife" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:22_Helper .
 
 fto:22Emperor a fto:Character ;
     rdfs:label "Emperor" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:22_Helper .
 
 fto:22Old_Bamboo_Cutter a fto:Character ;
     rdfs:label "Old Bamboo Cutter" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:22_Helper .
 
 fto:22Princess_Kaguya a fto:Character ;
     rdfs:label "Princess Kaguya" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:22_Hero .
+
+fto:22_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:22_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:22_departure,
@@ -1366,11 +1428,14 @@ fto:22_transformation a fto:Transformation ;
 
 fto:23Animals a fto:Character ;
     rdfs:label "Animals" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:23_Hero .
 
 fto:23Trickster_Figure a fto:Character ;
     rdfs:label "Trickster Figure" ;
-    fto:hasCharacterType fto:Trickster .
+    fto:hasCharacterType fto:23_Trickster .
+
+fto:23_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:23_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:23_departure,
@@ -1379,6 +1444,9 @@ fto:23_Plot a fto:Plot ;
         fto:23_testortrial,
         fto:23_transformation ;
     fto:hasValue "Disney’s adaptation where Ariel trades her voice for legs, defeats Ursula, regains her voice, and marries Prince Eric happily ever after." .
+
+fto:23_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
 
 fto:23_departure a fto:Departure ;
     fto:hasValue "The world is illuminated.",
@@ -1397,19 +1465,22 @@ fto:23_transformation a fto:Transformation ;
 
 fto:24Iguana a fto:Character ;
     rdfs:label "Iguana" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:24_Helper .
 
 fto:24Lion_King a fto:Character ;
     rdfs:label "Lion (King)" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:24_Helper .
 
 fto:24Mosquito a fto:Character ;
     rdfs:label "Mosquito" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:24_Villain .
 
 fto:24Mother_Owl a fto:Character ;
     rdfs:label "Mother Owl" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:24_Hero .
+
+fto:24_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:24_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:24_departure,
@@ -1418,6 +1489,9 @@ fto:24_Plot a fto:Plot ;
         fto:24_testortrial,
         fto:24_transformation ;
     fto:hasValue "A girl sacrifices herself to save her siblings turned into swans by their stepmother, enduring silence for years to break their curse." .
+
+fto:24_Villain a fto:Villain ;
+    fto:hasAttribute fto:Rebel .
 
 fto:24_departure a fto:Departure ;
     fto:hasValue "Mosquito is cursed, lesson is learned.",
@@ -1436,19 +1510,22 @@ fto:24_transformation a fto:Transformation ;
 
 fto:25Big_Bad_Wolf a fto:Character ;
     rdfs:label "Big Bad Wolf" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:25_Villain .
 
 fto:25Grandmother a fto:Character ;
     rdfs:label "Grandmother" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:25_Helper .
 
 fto:25Huntsman a fto:Character ;
     rdfs:label "Huntsman" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:25_Helper .
 
 fto:25Little_Red_Riding_Hood a fto:Character ;
     rdfs:label "Little Red Riding Hood" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:25_Hero .
+
+fto:25_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:25_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:25_departure,
@@ -1457,6 +1534,9 @@ fto:25_Plot a fto:Plot ;
         fto:25_testortrial,
         fto:25_transformation ;
     fto:hasValue "An animated adaptation where a sister rescues her six brothers cursed as swans by enduring trials in silence to weave them shirts of nettles." .
+
+fto:25_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:25_departure a fto:Departure ;
     fto:hasValue "Girl sets out to grandmother’s house.",
@@ -1475,19 +1555,22 @@ fto:25_transformation a fto:Transformation ;
 
 fto:26Iguana a fto:Character ;
     rdfs:label "Iguana" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:26_Helper .
 
 fto:26Lion_King a fto:Character ;
     rdfs:label "Lion (King)" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:26_Helper .
 
 fto:26Mosquito a fto:Character ;
     rdfs:label "Mosquito" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:26_Villain .
 
 fto:26Mother_Owl a fto:Character ;
     rdfs:label "Mother Owl" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:26_Hero .
+
+fto:26_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:26_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:26_departure,
@@ -1496,6 +1579,9 @@ fto:26_Plot a fto:Plot ;
         fto:26_testortrial,
         fto:26_transformation ;
     fto:hasValue "A poor shoemaker receives mysterious help at night from elves who craft fine shoes, making him prosperous; he thanks them with gifts of clothes." .
+
+fto:26_Villain a fto:Villain ;
+    fto:hasAttribute fto:Rebel .
 
 fto:26_departure a fto:Departure ;
     fto:hasValue "Mosquito is cursed, lesson is learned.",
@@ -1514,11 +1600,14 @@ fto:26_transformation a fto:Transformation ;
 
 fto:27Devil a fto:Character ;
     rdfs:label "Devil" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:27_Villain .
 
 fto:27Peasant a fto:Character ;
     rdfs:label "Peasant" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:27_Hero .
+
+fto:27_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:27_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:27_departure,
@@ -1527,6 +1616,9 @@ fto:27_Plot a fto:Plot ;
         fto:27_testortrial,
         fto:27_transformation ;
     fto:hasValue "An animated adaptation showing elves secretly helping a shoemaker become wealthy, until he gratefully gifts them clothes and they disappear happily." .
+
+fto:27_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:27_departure a fto:Departure ;
     fto:hasValue "Peasant earns reward without loss of soul",
@@ -1545,19 +1637,22 @@ fto:27_transformation a fto:Transformation ;
 
 fto:28Girl a fto:Character ;
     rdfs:label "Girl" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:28_Hero .
 
 fto:28North_Wind a fto:Character ;
     rdfs:label "North Wind" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:28_Helper .
 
 fto:28Troll_Princess a fto:Character ;
     rdfs:label "Troll Princess" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:28_Villain .
 
 fto:28White_Bear_Prince a fto:Character ;
     rdfs:label "White Bear/Prince" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:28_Helper .
+
+fto:28_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:28_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:28_departure,
@@ -1566,6 +1661,9 @@ fto:28_Plot a fto:Plot ;
         fto:28_testortrial,
         fto:28_transformation ;
     fto:hasValue "A girl with long hair is imprisoned by a witch but escapes with the help of a prince, finding love and freedom after hardship." .
+
+fto:28_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:28_departure a fto:Departure ;
     fto:hasValue "Reunites with prince; curse broken",
@@ -1584,15 +1682,21 @@ fto:28_transformation a fto:Transformation ;
 
 fto:29Children a fto:Character ;
     rdfs:label "Children" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:29_Hero .
 
 fto:29La_Llorona a fto:Character ;
     rdfs:label "La Llorona" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:29_Villain .
 
 fto:29Villagers a fto:Character ;
     rdfs:label "Villagers" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:29_Helper .
+
+fto:29_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:29_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:29_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:29_departure,
@@ -1601,6 +1705,9 @@ fto:29_Plot a fto:Plot ;
         fto:29_testortrial,
         fto:29_transformation ;
     fto:hasValue "Disney’s Tangled adaptation where Rapunzel leaves her tower, discovers her identity, defeats Mother Gothel, and reunites with her royal family." .
+
+fto:29_Villain a fto:Villain ;
+    fto:hasAttribute fto:Tragic .
 
 fto:29_departure a fto:Departure ;
     fto:hasValue "Cursed eternally but serves as moral warning",
@@ -1619,15 +1726,21 @@ fto:29_transformation a fto:Transformation ;
 
 fto:2Fisherman a fto:Character ;
     rdfs:label "Fisherman" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:2_Hero .
 
 fto:2Fisherman_s_Wife a fto:Character ;
     rdfs:label "Fisherman’s Wife" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:2_Villain .
 
 fto:2Magic_Flounder a fto:Character ;
     rdfs:label "Magic Flounder" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:2_Helper .
+
+fto:2_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:2_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:2_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:2_departure,
@@ -1636,6 +1749,9 @@ fto:2_Plot a fto:Plot ;
         fto:2_testortrial,
         fto:2_transformation ;
     fto:hasValue "A poor fisherman catches a magical flounder who grants wishes, but his wife's growing greed leads to their ruin as they are returned to poverty." .
+
+fto:2_Villain a fto:Villain ;
+    fto:hasAttribute fto:Rebel .
 
 fto:2_departure a fto:Departure ;
     fto:hasValue "Everything returns to the beginning; lesson on greed.",
@@ -1654,23 +1770,26 @@ fto:2_transformation a fto:Transformation ;
 
 fto:30Heavenly_Court a fto:Character ;
     rdfs:label "Heavenly Court" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:30_Villain .
 
 fto:30Pigsy a fto:Character ;
     rdfs:label "Pigsy" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:30_Helper .
 
 fto:30Sandy a fto:Character ;
     rdfs:label "Sandy" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:30_Helper .
 
 fto:30Sun_Wukong a fto:Character ;
     rdfs:label "Sun Wukong" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:30_Hero .
 
 fto:30Tripitaka a fto:Character ;
     rdfs:label "Tripitaka" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:30_Helper .
+
+fto:30_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:30_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:30_departure,
@@ -1679,6 +1798,9 @@ fto:30_Plot a fto:Plot ;
         fto:30_testortrial,
         fto:30_transformation ;
     fto:hasValue "A white bear takes a girl to his castle; after her curiosity breaks his curse, she quests to save him from trolls East of the Sun and West of the Moon." .
+
+fto:30_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:30_departure a fto:Departure ;
     fto:hasValue "Becomes protector of the monk on his journey",
@@ -1697,23 +1819,26 @@ fto:30_transformation a fto:Transformation ;
 
 fto:31Bird_Spirit a fto:Character ;
     rdfs:label "Bird Spirit" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:31_Helper .
 
 fto:31Boy a fto:Character ;
     rdfs:label "Boy" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:31_Hero .
 
 fto:31Father a fto:Character ;
     rdfs:label "Father" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:31_Helper .
 
 fto:31Sister a fto:Character ;
     rdfs:label "Sister" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:31_Helper .
 
 fto:31Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:31_Villain .
+
+fto:31_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:31_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:31_departure,
@@ -1722,6 +1847,9 @@ fto:31_Plot a fto:Plot ;
         fto:31_testortrial,
         fto:31_transformation ;
     fto:hasValue "An animated retelling where a girl rescues her prince from trolls after traveling to East of the Sun and West of the Moon to redeem her mistake." .
+
+fto:31_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:31_departure a fto:Departure ;
     fto:hasValue "Family is restored, evil is destroyed.",
@@ -1740,11 +1868,17 @@ fto:31_transformation a fto:Transformation ;
 
 fto:32Crane_Wife a fto:Character ;
     rdfs:label "Crane Wife" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:32_Hero .
 
 fto:32Husband a fto:Character ;
     rdfs:label "Husband" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:32_Helper .
+
+fto:32_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:32_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:32_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:32_departure,
@@ -1771,23 +1905,29 @@ fto:32_transformation a fto:Transformation ;
 
 fto:33Baba_Yaga a fto:Character ;
     rdfs:label "Baba Yaga" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:33_Villain .
 
 fto:33Magical_Doll a fto:Character ;
     rdfs:label "Magical Doll" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:33_Helper .
 
 fto:33Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:33_Villain .
 
 fto:33Stepsisters a fto:Character ;
     rdfs:label "Stepsisters" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:33_Villain .
 
 fto:33Vasilisa a fto:Character ;
     rdfs:label "Vasilisa" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:33_Hero .
+
+fto:33_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:33_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:33_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:33_departure,
@@ -1814,11 +1954,17 @@ fto:33_transformation a fto:Transformation ;
 
 fto:34Crane_Wife a fto:Character ;
     rdfs:label "Crane Wife" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:34_Hero .
 
 fto:34Husband a fto:Character ;
     rdfs:label "Husband" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:34_Helper .
+
+fto:34_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:34_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:34_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:34_departure,
@@ -1845,15 +1991,18 @@ fto:34_transformation a fto:Transformation ;
 
 fto:35Camel a fto:Character ;
     rdfs:label "Camel" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:35_Hero .
 
 fto:35Crocodiles a fto:Character ;
     rdfs:label "Crocodiles" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:35_Villain .
 
 fto:35Jackal a fto:Character ;
     rdfs:label "Jackal" ;
-    fto:hasCharacterType fto:Trickster .
+    fto:hasCharacterType fto:35_Trickster .
+
+fto:35_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:35_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:35_departure,
@@ -1862,6 +2011,12 @@ fto:35_Plot a fto:Plot ;
         fto:35_testortrial,
         fto:35_transformation ;
     fto:hasValue "In this 1954 adaptation, a spoiled princess learns humility after marrying a disguised king and living a hard life before finding true love." .
+
+fto:35_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
+
+fto:35_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:35_departure a fto:Departure ;
     fto:hasValue "Camel escapes; Jackal is left alone",
@@ -1880,19 +2035,22 @@ fto:35_transformation a fto:Transformation ;
 
 fto:36Big_Bad_Wolf a fto:Character ;
     rdfs:label "Big Bad Wolf" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:36_Villain .
 
 fto:36Grandmother a fto:Character ;
     rdfs:label "Grandmother" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:36_Helper .
 
 fto:36Huntsman a fto:Character ;
     rdfs:label "Huntsman" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:36_Helper .
 
 fto:36Little_Red_Riding_Hood a fto:Character ;
     rdfs:label "Little Red Riding Hood" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:36_Hero .
+
+fto:36_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:36_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:36_departure,
@@ -1901,6 +2059,9 @@ fto:36_Plot a fto:Plot ;
         fto:36_testortrial,
         fto:36_transformation ;
     fto:hasValue "A Romanian princess marries a pig prince; after breaking his curse through forbidden curiosity, she undergoes trials to win him back forever." .
+
+fto:36_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:36_departure a fto:Departure ;
     fto:hasValue "Girl sets out to grandmother’s house.",
@@ -1919,23 +2080,23 @@ fto:36_transformation a fto:Transformation ;
 
 fto:37Beast a fto:Character ;
     rdfs:label "Beast" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:37_Hero .
 
 fto:37Belle a fto:Character ;
     rdfs:label "Belle" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:37_Hero .
 
 fto:37Gaston a fto:Character ;
     rdfs:label "Gaston" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:37_Villain .
 
 fto:37Lumière a fto:Character ;
     rdfs:label "Lumière" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:37_Helper .
 
 fto:37Mrs._Potts a fto:Character ;
     rdfs:label "Mrs. Potts" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:37_Helper .
 
 fto:37_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:37_departure,
@@ -1944,6 +2105,9 @@ fto:37_Plot a fto:Plot ;
         fto:37_testortrial,
         fto:37_transformation ;
     fto:hasValue "A Norwegian girl journeys to East of the Sun and West of the Moon to rescue her prince from trolls, breaking his curse with courage and loyalty." .
+
+fto:37_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:37_departure a fto:Departure ;
     fto:hasValue "Belle takes her father's place.",
@@ -1962,19 +2126,25 @@ fto:37_transformation a fto:Transformation ;
 
 fto:38Children a fto:Character ;
     rdfs:label "Children" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:38_Helper .
 
 fto:38Pied_Piper a fto:Character ;
     rdfs:label "Pied Piper" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:38_Hero .
 
 fto:38Rats a fto:Character ;
     rdfs:label "Rats" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:38_Villain .
 
 fto:38Town_Mayor a fto:Character ;
     rdfs:label "Town Mayor" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:38_Villain .
+
+fto:38_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:38_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:38_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:38_departure,
@@ -2001,15 +2171,21 @@ fto:38_transformation a fto:Transformation ;
 
 fto:39Feathered_Serpent a fto:Character ;
     rdfs:label "Feathered Serpent" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:39_Hero .
 
 fto:39Human_Priests a fto:Character ;
     rdfs:label "Human Priests" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:39_Helper .
 
 fto:39Rival_Warriors a fto:Character ;
     rdfs:label "Rival Warriors" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:39_Villain .
+
+fto:39_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:39_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:39_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:39_departure,
@@ -2018,6 +2194,9 @@ fto:39_Plot a fto:Plot ;
         fto:39_testortrial,
         fto:39_transformation ;
     fto:hasValue "Four aging animals form a band and journey to Bremen; they outsmart robbers, claim a cottage, and live happily together in solidarity." .
+
+fto:39_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:39_departure a fto:Departure ;
     fto:hasValue "Feathered Serpent brings civilization",
@@ -2036,11 +2215,17 @@ fto:39_transformation a fto:Transformation ;
 
 fto:3Crane_Wife a fto:Character ;
     rdfs:label "Crane Wife" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:3_Hero .
 
 fto:3Husband a fto:Character ;
     rdfs:label "Husband" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:3_Helper .
+
+fto:3_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:3_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:3_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:3_departure,
@@ -2067,15 +2252,21 @@ fto:3_transformation a fto:Transformation ;
 
 fto:40Rainbow_Serpent a fto:Character ;
     rdfs:label "Rainbow Serpent" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:40_Hero .
 
 fto:40Tribal_Ancestors a fto:Character ;
     rdfs:label "Tribal Ancestors" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:40_Helper .
 
 fto:40Trickster_Animals a fto:Character ;
     rdfs:label "Trickster Animals" ;
-    fto:hasCharacterType fto:Trickster .
+    fto:hasCharacterType fto:40_Trickster .
+
+fto:40_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:40_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:40_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:40_departure,
@@ -2084,6 +2275,9 @@ fto:40_Plot a fto:Plot ;
         fto:40_testortrial,
         fto:40_transformation ;
     fto:hasValue "A piper removes rats from Hamelin but leads away the children when unpaid, teaching a haunting lesson about broken promises and greed." .
+
+fto:40_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
 
 fto:40_departure a fto:Departure ;
     fto:hasValue "Earth is shaped and fertility ensured",
@@ -2102,23 +2296,29 @@ fto:40_transformation a fto:Transformation ;
 
 fto:41Baba_Yaga a fto:Character ;
     rdfs:label "Baba Yaga" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:41_Villain .
 
 fto:41Magical_Doll a fto:Character ;
     rdfs:label "Magical Doll" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:41_Helper .
 
 fto:41Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:41_Villain .
 
 fto:41Stepsisters a fto:Character ;
     rdfs:label "Stepsisters" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:41_Villain .
 
 fto:41Vasilisa a fto:Character ;
     rdfs:label "Vasilisa" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:41_Hero .
+
+fto:41_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:41_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:41_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:41_departure,
@@ -2145,15 +2345,21 @@ fto:41_transformation a fto:Transformation ;
 
 fto:42Rainbow_Serpent a fto:Character ;
     rdfs:label "Rainbow Serpent" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:42_Hero .
 
 fto:42Tribal_Ancestors a fto:Character ;
     rdfs:label "Tribal Ancestors" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:42_Helper .
 
 fto:42Trickster_Animals a fto:Character ;
     rdfs:label "Trickster Animals" ;
-    fto:hasCharacterType fto:Trickster .
+    fto:hasCharacterType fto:42_Trickster .
+
+fto:42_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:42_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:42_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:42_departure,
@@ -2162,6 +2368,9 @@ fto:42_Plot a fto:Plot ;
         fto:42_testortrial,
         fto:42_transformation ;
     fto:hasValue "A prince cursed into a bear by day marries a princess; when she breaks a taboo, he is taken by trolls until she rescues him with perseverance." .
+
+fto:42_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
 
 fto:42_departure a fto:Departure ;
     fto:hasValue "In the beginning, the world is still and quiet, with no water or life",
@@ -2180,11 +2389,17 @@ fto:42_transformation a fto:Transformation ;
 
 fto:43Crane_Wife a fto:Character ;
     rdfs:label "Crane Wife" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:43_Hero .
 
 fto:43Husband a fto:Character ;
     rdfs:label "Husband" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:43_Helper .
+
+fto:43_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:43_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:43_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:43_departure,
@@ -2211,23 +2426,23 @@ fto:43_transformation a fto:Transformation ;
 
 fto:44Beast a fto:Character ;
     rdfs:label "Beast" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:44_Hero .
 
 fto:44Belle a fto:Character ;
     rdfs:label "Belle" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:44_Hero .
 
 fto:44Gaston a fto:Character ;
     rdfs:label "Gaston" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:44_Villain .
 
 fto:44Lumière a fto:Character ;
     rdfs:label "Lumière" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:44_Helper .
 
 fto:44Mrs._Potts a fto:Character ;
     rdfs:label "Mrs. Potts" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:44_Helper .
 
 fto:44_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:44_departure,
@@ -2236,6 +2451,9 @@ fto:44_Plot a fto:Plot ;
         fto:44_testortrial,
         fto:44_transformation ;
     fto:hasValue "A Japanese folktale where a crane becomes a wife and weaves cloth from her feathers, but leaves forever when her secret is discovered." .
+
+fto:44_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:44_departure a fto:Departure ;
     fto:hasValue "Belle takes her father's place.",
@@ -2254,15 +2472,21 @@ fto:44_transformation a fto:Transformation ;
 
 fto:45Rainbow_Serpent a fto:Character ;
     rdfs:label "Rainbow Serpent" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:45_Hero .
 
 fto:45Tribal_Ancestors a fto:Character ;
     rdfs:label "Tribal Ancestors" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:45_Helper .
 
 fto:45Trickster_Animals a fto:Character ;
     rdfs:label "Trickster Animals" ;
-    fto:hasCharacterType fto:Trickster .
+    fto:hasCharacterType fto:45_Trickster .
+
+fto:45_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:45_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:45_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:45_departure,
@@ -2271,6 +2495,9 @@ fto:45_Plot a fto:Plot ;
         fto:45_testortrial,
         fto:45_transformation ;
     fto:hasValue "A cinematic retelling of The Crane Wife emphasizing sacrifice, hidden identity, and love lost due to human curiosity and betrayal." .
+
+fto:45_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
 
 fto:45_departure a fto:Departure ;
     fto:hasValue "Unknown" .
@@ -2288,19 +2515,22 @@ fto:45_transformation a fto:Transformation ;
 
 fto:46Adoptive_Mother a fto:Character ;
     rdfs:label "Adoptive Mother" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:46_Helper .
 
 fto:46Angel a fto:Character ;
     rdfs:label "Angel" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:46_Helper .
 
 fto:46Karen a fto:Character ;
     rdfs:label "Karen" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:46_Hero .
 
 fto:46Red_Shoes a fto:Character ;
     rdfs:label "Red Shoes" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:46_Villain .
+
+fto:46_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:46_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:46_departure,
@@ -2309,6 +2539,9 @@ fto:46_Plot a fto:Plot ;
         fto:46_testortrial,
         fto:46_transformation ;
     fto:hasValue "A proud girl rejects suitors and is forced to marry a minstrel, who is revealed as a king testing her arrogance before their happy reunion." .
+
+fto:46_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:46_departure a fto:Departure ;
     fto:hasValue "After her death, her spirit finds peace; angel offers mercy",
@@ -2327,19 +2560,22 @@ fto:46_transformation a fto:Transformation ;
 
 fto:47Evil_Queen a fto:Character ;
     rdfs:label "Evil Queen" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:47_Villain .
 
 fto:47Prince a fto:Character ;
     rdfs:label "Prince" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:47_Helper .
 
 fto:47Seven_Dwarfs a fto:Character ;
     rdfs:label "Seven Dwarfs" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:47_Helper .
 
 fto:47Snow_White a fto:Character ;
     rdfs:label "Snow White" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:47_Hero .
+
+fto:47_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:47_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:47_departure,
@@ -2348,6 +2584,9 @@ fto:47_Plot a fto:Plot ;
         fto:47_testortrial,
         fto:47_transformation ;
     fto:hasValue "An animated adaptation where King Thrushbeard teaches the proud princess humility by disguising himself as a minstrel before revealing his identity." .
+
+fto:47_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:47_departure a fto:Departure ;
     fto:hasValue "Marries the prince, evil is punished.",
@@ -2366,23 +2605,26 @@ fto:47_transformation a fto:Transformation ;
 
 fto:48Aladdin a fto:Character ;
     rdfs:label "Aladdin" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:48_Hero .
 
 fto:48Genie a fto:Character ;
     rdfs:label "Genie" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:48_Helper .
 
 fto:48Magic_Carpet a fto:Character ;
     rdfs:label "Magic Carpet" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:48_Helper .
 
 fto:48Princess_Badroulbadour a fto:Character ;
     rdfs:label "Princess Badroulbadour" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:48_Helper .
 
 fto:48Sorcerer a fto:Character ;
     rdfs:label "Sorcerer" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:48_Villain .
+
+fto:48_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:48_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:48_departure,
@@ -2391,6 +2633,9 @@ fto:48_Plot a fto:Plot ;
         fto:48_testortrial,
         fto:48_transformation ;
     fto:hasValue "A turtle wins a race against a rabbit by slow, steady perseverance, teaching the moral that consistency defeats arrogance and haste." .
+
+fto:48_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:48_departure a fto:Departure ;
     fto:hasValue "Aladdin finds the magic lamp",
@@ -2409,19 +2654,22 @@ fto:48_transformation a fto:Transformation ;
 
 fto:49Girl a fto:Character ;
     rdfs:label "Girl" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:49_Hero .
 
 fto:49North_Wind a fto:Character ;
     rdfs:label "North Wind" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:49_Helper .
 
 fto:49Troll_Princess a fto:Character ;
     rdfs:label "Troll Princess" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:49_Villain .
 
 fto:49White_Bear_Prince a fto:Character ;
     rdfs:label "White Bear/Prince" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:49_Helper .
+
+fto:49_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:49_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:49_departure,
@@ -2430,6 +2678,9 @@ fto:49_Plot a fto:Plot ;
         fto:49_testortrial,
         fto:49_transformation ;
     fto:hasValue "An animated retelling of the Tortoise and the Hare where the boastful hare loses due to overconfidence and distraction, highlighting humility." .
+
+fto:49_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:49_departure a fto:Departure ;
     fto:hasValue "Unknown" .
@@ -2447,23 +2698,29 @@ fto:49_transformation a fto:Transformation ;
 
 fto:4Baba_Yaga a fto:Character ;
     rdfs:label "Baba Yaga" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:4_Villain .
 
 fto:4Magical_Doll a fto:Character ;
     rdfs:label "Magical Doll" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:4_Helper .
 
 fto:4Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:4_Villain .
 
 fto:4Stepsisters a fto:Character ;
     rdfs:label "Stepsisters" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:4_Villain .
 
 fto:4Vasilisa a fto:Character ;
     rdfs:label "Vasilisa" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:4_Hero .
+
+fto:4_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:4_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:4_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:4_departure,
@@ -2490,19 +2747,22 @@ fto:4_transformation a fto:Transformation ;
 
 fto:50Bamboo_Cutter_s_Wife a fto:Character ;
     rdfs:label "Bamboo Cutter's Wife" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:50_Helper .
 
 fto:50Emperor a fto:Character ;
     rdfs:label "Emperor" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:50_Helper .
 
 fto:50Old_Bamboo_Cutter a fto:Character ;
     rdfs:label "Old Bamboo Cutter" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:50_Helper .
 
 fto:50Princess_Kaguya a fto:Character ;
     rdfs:label "Princess Kaguya" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:50_Hero .
+
+fto:50_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:50_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:50_departure,
@@ -2529,11 +2789,17 @@ fto:50_transformation a fto:Transformation ;
 
 fto:5Crane_Wife a fto:Character ;
     rdfs:label "Crane Wife" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:5_Hero .
 
 fto:5Husband a fto:Character ;
     rdfs:label "Husband" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:5_Helper .
+
+fto:5_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:5_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:5_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:5_departure,
@@ -2560,15 +2826,21 @@ fto:5_transformation a fto:Transformation ;
 
 fto:6Tenali_Raman a fto:Character ;
     rdfs:label "Tenali Raman" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:6_Hero .
 
 fto:6Tenali_s_Wife a fto:Character ;
     rdfs:label "Tenali's Wife" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:6_Helper .
 
 fto:6Thieves a fto:Character ;
     rdfs:label "Thieves" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:6_Villain .
+
+fto:6_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:6_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:6_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:6_departure,
@@ -2577,6 +2849,9 @@ fto:6_Plot a fto:Plot ;
         fto:6_testortrial,
         fto:6_transformation ;
     fto:hasValue "A young girl trades her voice for legs to win a prince’s love but he marries another, and she dissolves into sea foam out of heartbreak." .
+
+fto:6_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:6_departure a fto:Departure ;
     fto:hasValue "Thieves are defeated, peace returns.",
@@ -2595,15 +2870,18 @@ fto:6_transformation a fto:Transformation ;
 
 fto:7Chang_e a fto:Character ;
     rdfs:label "Chang'e" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:7_Hero .
 
 fto:7Houyi a fto:Character ;
     rdfs:label "Houyi" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:7_Helper .
 
 fto:7Jade_Rabbit a fto:Character ;
     rdfs:label "Jade Rabbit" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:7_Helper .
+
+fto:7_Hero a fto:Hero ;
+    fto:hasAttribute fto:Tragic .
 
 fto:7_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:7_departure,
@@ -2630,19 +2908,22 @@ fto:7_transformation a fto:Transformation ;
 
 fto:8Dogs_with_Eyes a fto:Character ;
     rdfs:label "Dogs with Eyes" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:8_Helper .
 
 fto:8Princess a fto:Character ;
     rdfs:label "Princess" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:8_Helper .
 
 fto:8Soldier a fto:Character ;
     rdfs:label "Soldier" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:8_Hero .
 
 fto:8Witch a fto:Character ;
     rdfs:label "Witch" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:8_Villain .
+
+fto:8_Hero a fto:Hero ;
+    fto:hasAttribute fto:Rebel .
 
 fto:8_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:8_departure,
@@ -2651,6 +2932,9 @@ fto:8_Plot a fto:Plot ;
         fto:8_testortrial,
         fto:8_transformation ;
     fto:hasValue "A vain emperor is tricked by swindlers who sell him 'invisible clothes'; his pride blinds him until a child points out his nakedness." .
+
+fto:8_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
 
 fto:8_departure a fto:Departure ;
     fto:hasValue "A soldier meets a witch seeking a tinderbox.",
@@ -2669,23 +2953,29 @@ fto:8_transformation a fto:Transformation ;
 
 fto:9Baba_Yaga a fto:Character ;
     rdfs:label "Baba Yaga" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:9_Villain .
 
 fto:9Magical_Doll a fto:Character ;
     rdfs:label "Magical Doll" ;
-    fto:hasCharacterType fto:Helper .
+    fto:hasCharacterType fto:9_Helper .
 
 fto:9Stepmother a fto:Character ;
     rdfs:label "Stepmother" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:9_Villain .
 
 fto:9Stepsisters a fto:Character ;
     rdfs:label "Stepsisters" ;
-    fto:hasCharacterType fto:Villain .
+    fto:hasCharacterType fto:9_Villain .
 
 fto:9Vasilisa a fto:Character ;
     rdfs:label "Vasilisa" ;
-    fto:hasCharacterType fto:Hero .
+    fto:hasCharacterType fto:9_Hero .
+
+fto:9_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:9_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:9_Plot a fto:Plot ;
     fto:hasNarrativeStructure fto:9_departure,
@@ -2712,14 +3002,92 @@ fto:9_transformation a fto:Transformation ;
 
 fto:Audience a owl:Class .
 
-fto:Evil a owl:Class ;
-    rdfs:label "Evil" ;
-    rdfs:subClassOf fto:CharacterAttribute .
-
 fto:NarrativeUnit a owl:Class .
 
 fto:Persian-oral_tradition a fto:Creator ;
     fto:hasValue "Persian-oral tradition" .
+
+fto:11_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:11_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent,
+        fto:Rebel .
+
+fto:12_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:14_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:15_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent,
+        fto:Tragic .
+
+fto:16_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:20_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:20_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:21_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:21_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent,
+        fto:Tragic .
+
+fto:24_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:25_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:26_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:28_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent,
+        fto:Tragic .
+
+fto:36_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:37_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:37_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent,
+        fto:Tragic .
+
+fto:38_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:44_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:44_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent,
+        fto:Tragic .
+
+fto:46_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:47_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:49_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent,
+        fto:Tragic .
+
+fto:7_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:8_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
 
 fto:Grimm_Brothers a fto:Creator ;
     fto:hasValue "Grimm Brothers" .
@@ -2729,10 +3097,6 @@ fto:Hans_Christian_Andersen a fto:Creator ;
 
 fto:Indian-oral_tradition a fto:Creator ;
     fto:hasValue "Indian-oral tradition" .
-
-fto:Innocent a owl:Class ;
-    rdfs:label "Innocent" ;
-    rdfs:subClassOf fto:CharacterAttribute .
 
 fto:Japanese-oral_tradition a fto:Creator ;
     fto:hasValue "Japanese-oral tradition" .
@@ -2749,6 +3113,42 @@ fto:Russian-oral_tradition a fto:Creator ;
 fto:Zulu-oral_tradition a fto:Creator ;
     fto:hasValue "Zulu-oral tradition" .
 
+fto:13_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:18_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:1_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:22_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:30_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:31_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:33_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:41_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:48_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:4_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:50_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:9_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
 fto:ActivePromotion a owl:Class .
 
 fto:Italian-oral_tradition a fto:Creator ;
@@ -2759,13 +3159,8 @@ fto:Medium a owl:Class .
 fto:Perrault a fto:Creator ;
     fto:hasValue "Perrault" .
 
-fto:Rebel a owl:Class ;
-    rdfs:label "Rebel" ;
-    rdfs:subClassOf fto:CharacterAttribute .
-
-fto:Tragic a owl:Class ;
-    rdfs:label "Tragic" ;
-    rdfs:subClassOf fto:CharacterAttribute .
+fto:17_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
 
 fto:DreamWorks a fto:Creator ;
     fto:hasValue "DreamWorks" .
@@ -2795,7 +3190,6 @@ fto:RecurringNarrativeStructure a owl:Class ;
 
 fto:Trickster a owl:Class ;
     rdfs:label "Trickster" ;
-    fto:hasAttribute fto:Rebel ;
     rdfs:subClassOf fto:CharacterArchetype,
         fto:LiteraryMode .
 
@@ -2854,6 +3248,10 @@ fto:EmpowermentTheme a owl:Class ;
     rdfs:label "Empowerment Theme" ;
     rdfs:subClassOf fto:MoralTheme .
 
+fto:Rebel a owl:Class ;
+    rdfs:label "Rebel" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
 fto:PositiveReception a owl:Class ;
     rdfs:label "Positive Reception" .
 
@@ -2864,21 +3262,34 @@ fto:OuterWorld a owl:Class ;
     rdfs:label "Outer World" ;
     rdfs:subClassOf fto:ActivePromotion .
 
+fto:Tragic a owl:Class ;
+    rdfs:label "Tragic" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
 fto:CinematicAdaptation a owl:Class .
 
 fto:InnerSelf a owl:Class ;
     rdfs:label "Inner Self" ;
     rdfs:subClassOf fto:ActivePromotion .
 
+fto:Evil a owl:Class ;
+    rdfs:label "Evil" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
 fto:Villain a owl:Class ;
     rdfs:label "Villain" ;
-    fto:hasAttribute fto:Evil,
-        fto:Rebel,
-        fto:Tragic ;
+    rdfs:subClassOf fto:CharacterArchetype .
+
+fto:Helper a owl:Class ;
+    rdfs:label "Helper" ;
     rdfs:subClassOf fto:CharacterArchetype .
 
 fto:Departure a owl:Class ;
     rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:Hero a owl:Class ;
+    rdfs:label "Hero" ;
+    rdfs:subClassOf fto:CharacterArchetype .
 
 fto:MagicalAid a owl:Class ;
     rdfs:subClassOf fto:RecurringNarrativeStructure .
@@ -2894,20 +3305,11 @@ fto:Transformation a owl:Class ;
 
 fto:Plot a owl:Class .
 
-fto:Hero a owl:Class ;
-    rdfs:label "Hero" ;
-    fto:hasAttribute fto:Innocent,
-        fto:Rebel,
-        fto:Tragic ;
-    rdfs:subClassOf fto:CharacterArchetype .
-
 fto:Fairytale a owl:Class .
 
-fto:Helper a owl:Class ;
-    rdfs:label "Helper" ;
-    fto:hasAttribute fto:Innocent,
-        fto:Tragic ;
-    rdfs:subClassOf fto:CharacterArchetype .
+fto:Innocent a owl:Class ;
+    rdfs:label "Innocent" ;
+    rdfs:subClassOf fto:CharacterAttribute .
 
 fto:Character a owl:Class .
 
