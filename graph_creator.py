@@ -205,7 +205,7 @@ full_df = base_df.merge(char_df, how= 'outer', on='ID').merge(plt_df, how='outer
 
 # Omit unwanted elements from the strings
 def normalize_string(string):
-    rep = {"'":"_", " ":"_", "(":"", ")":"", "/":"_", "’":"_"}
+    rep = {"'":"_", " ":"_", "(":"", ")":"", "/":"_", "’":"_", ",":"", ".":""}
     string.strip()
     rep = dict((re.escape(k), v) for k, v in rep.items())
     pattern = re.compile("|".join(rep.keys()))
@@ -290,7 +290,7 @@ for index, row in full_df.iterrows():
             g.add((fairytale_uri, FTO.hasPromotedAspect, FTO.OuterWorld))
 
     # Add character
-    character_uri = URIRef(FTO[normalize_string(str(row['ID']) + row['Character'])])
+    character_uri = URIRef(FTO[normalize_string(str(row['ID']) + '_' + row['Character'])])
     g.add((character_uri, RDF.type, FTO.Character))
     g.add((fairytale_uri, FTO.hasCharacter, character_uri))
     g.add((character_uri, RDFS.label, Literal(row['Character'].strip())))
