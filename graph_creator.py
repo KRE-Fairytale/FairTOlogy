@@ -12,7 +12,7 @@ RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 OWL = Namespace("http://www.w3.org/2002/07/owl#")
 XML = Namespace("http://www.w3.org/XML/1998/namespace")
 XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
-PERS = Namespace("http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#")
+PERSP = Namespace("http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#")
 GC = Namespace("https://ontology.golemlab.org.eu/")
 
 # Define graph
@@ -25,7 +25,7 @@ g.bind("rdf", RDF)
 g.bind("owl", OWL)
 g.bind("xml", XML)
 g.bind("xsd", XSD)
-g.bind("pers", PERS)
+g.bind("persp", PERSP)
 g.bind("gc", GC)
 
 # Define object properties
@@ -117,7 +117,7 @@ g.add((FTO['TestOrTrial'], RDF.type, OWL.Class))
 g.add((FTO['Transformation'], RDF.type, OWL.Class))
 g.add((FTO['ActivePromotion'], RDF.type, OWL.Class))
 g.add((FTO['PublicAttitude'], RDF.type, OWL.Class))
-g.add((PERS['Attitude'], RDF.type, OWL.Class))
+g.add((PERSP['Attitude'], RDF.type, OWL.Class))
 g.add((FTO['Character'], RDF.type, OWL.Class))
 g.add((FTO['Innocent'], RDF.type, OWL.Class))
 g.add((FTO['Evil'], RDF.type, OWL.Class))
@@ -136,7 +136,6 @@ g.add((FTO['NegativeReception'], RDF.type, OWL.Class))
 g.add((FTO['InnerSelf'], RDF.type, OWL.Class))
 g.add((FTO['OuterWorld'], RDF.type, OWL.Class))
 g.add((FTO['Character'], RDF.type, OWL.Class))
-
 
 # Define Labels
 g.add((FTO['EmpowermentTheme'], RDFS.label, Literal('Empowerment Theme')))
@@ -183,7 +182,7 @@ g.add((FTO['MagicalAid'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['ReturnAndReward'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['TestOrTrial'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
 g.add((FTO['Transformation'], RDFS.subClassOf, FTO.RecurringNarrativeStructure))
-g.add((FTO['PublicAttitude'], RDFS.subClassOf, PERS.Attitude))
+g.add((FTO['PublicAttitude'], RDFS.subClassOf, PERSP.Attitude))
 g.add((FTO.Innocent, RDFS.subClassOf, FTO.CharacterAttribute))
 g.add((FTO.Evil, RDFS.subClassOf, FTO.CharacterAttribute))
 g.add((FTO.Rebel, RDFS.subClassOf, FTO.CharacterAttribute))
@@ -201,7 +200,7 @@ g.add((FTO.RecurringNarrativeStructure, OWL.sameAs, FTO.NarrativeUnit))
 # Read the datasets
 base_df = pd.read_csv("data/Fairytale_Adaptations_Dataset_FinalUpdated.csv")
 char_df = pd.read_csv("data/characters_full.csv")
-plt_df = pd.read_csv("data/plot.csv")
+plt_df = pd.read_csv("data/NarrativeUnit.csv")
 full_df = base_df.merge(char_df, how= 'outer', on='ID').merge(plt_df, how='outer', on='ID')
 
 # Omit unwanted elements from the strings

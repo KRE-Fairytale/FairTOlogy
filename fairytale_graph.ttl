@@ -1,6 +1,6 @@
 @prefix fto: <http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pers: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 fto:10_The_Little_Match_Girl a fto:Fairytale ;
@@ -980,7 +980,7 @@ fto:receivedBy rdfs:domain fto:Fairytale ;
 
 fto:recievedBy a owl:ObjectProperty .
 
-pers:Attitude a owl:Class .
+persp:Attitude a owl:Class .
 
 fto:10Grandmother_s_Spirit a fto:Character ;
     rdfs:label "Grandmother's Spirit" ;
@@ -3815,7 +3815,7 @@ fto:Pixar a fto:Creator ;
     fto:hasValue "Pixar" .
 
 fto:PublicAttitude a owl:Class ;
-    rdfs:subClassOf pers:Attitude .
+    rdfs:subClassOf persp:Attitude .
 
 fto:Russian-oral_tradition a fto:Creator ;
     fto:hasValue "Russian-oral tradition" .
