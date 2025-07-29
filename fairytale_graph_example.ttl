@@ -1,0 +1,402 @@
+@prefix fto: <http://www.semanticweb.org/nazanin/ontologies/2025/Fairtology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+fto:51_The_Little_Mermaid_1837 a fto:Fairytale ;
+    rdfs:label "The Little Mermaid, 1837" ;
+    fto:createdBy fto:Hans_Christian_Andersen ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:51_Prince,
+        fto:51_Sea_Witch,
+        fto:51_The_Little_Mermaid ;
+    fto:hasEndingType fto:BittersweetEnding ;
+    fto:hasLiteraryMode fto:TragicMode ;
+    fto:hasMedium fto:LiteraryForm ;
+    fto:hasMoralTheme fto:MoralAmbiguityTheme ;
+    fto:hasPlot fto:51_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+fto:52_The_Little_Mermaid_1989 a fto:Fairytale ;
+    rdfs:label "The Little Mermaid, 1989" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:PositiveReception ;
+    fto:hasCharacter fto:52_Ariel,
+        fto:52_Sebastian,
+        fto:52_Ursula ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:RomanticMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:EmpowermentTheme ;
+    fto:hasPlot fto:52_Plot ;
+    fto:hasPromotedAspect fto:OuterWorld .
+
+fto:53_The_Little_Mermaid_2023 a fto:Fairytale ;
+    rdfs:label "The Little Mermaid, 2023" ;
+    fto:createdBy fto:Disney ;
+    fto:hasAudienceAttitude fto:MixedReception ;
+    fto:hasCharacter fto:53_Ariel,
+        fto:53_Scuttle,
+        fto:53_Ursula ;
+    fto:hasEndingType fto:HappilyEverAfter ;
+    fto:hasLiteraryMode fto:MythicMode ;
+    fto:hasMedium fto:CinematicAdaptation ;
+    fto:hasMoralTheme fto:IdentityAndInclusionTheme ;
+    fto:hasPlot fto:53_Plot ;
+    fto:hasPromotedAspect fto:InnerSelf .
+
+fto:IronicMode a owl:Class ;
+    rdfs:label "Ironic Mode" ;
+    rdfs:subClassOf fto:LiteraryMode .
+
+fto:NegativeReception a owl:Class ;
+    rdfs:label "Negative Reception" .
+
+fto:ReceivedBy a owl:ObjectProperty .
+
+fto:TragicEnding a owl:Class ;
+    rdfs:label "Tragic Ending" ;
+    rdfs:subClassOf fto:EndingType .
+
+fto:TricksterMode a owl:Class ;
+    rdfs:label "Trickster Mode" .
+
+fto:VirtueRewardedTheme a owl:Class ;
+    rdfs:label "Virtue Rewarded Theme" ;
+    rdfs:subClassOf fto:MoralTheme .
+
+fto:createdBy a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Creator .
+
+fto:creates a owl:ObjectProperty .
+
+fto:has rdfs:domain fto:Fairytale ;
+    rdfs:range fto:PublicAttitude .
+
+fto:hasAdaptation a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Medium .
+
+fto:hasAttribute a owl:ObjectProperty ;
+    rdfs:domain fto:CharacterArchetype ;
+    rdfs:range fto:CharacterAttribute .
+
+fto:hasAudienceAtitude rdfs:domain fto:Fairytale ;
+    rdfs:range fto:PublicAttitude .
+
+fto:hasAudienceAttitude a owl:ObjectProperty .
+
+fto:hasCharacter a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Character .
+
+fto:hasCharacterType a owl:ObjectProperty ;
+    rdfs:domain fto:Character ;
+    rdfs:range fto:CharacterArchetype .
+
+fto:hasEndingType a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:EndingType .
+
+fto:hasLiteraryMode a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:LiteraryMode .
+
+fto:hasMedium a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Medium .
+
+fto:hasMoralTheme a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:MoralTheme .
+
+fto:hasNarrativeStructure a owl:ObjectProperty ;
+    rdfs:domain fto:Plot ;
+    rdfs:range fto:RecurringNarrativeStructure .
+
+fto:hasPlot a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Plot .
+
+fto:hasPromotedAspect a owl:ObjectProperty ;
+    rdfs:domain fto:Fairytale ;
+    rdfs:range fto:ActivePromotion .
+
+fto:hasValue a owl:DatatypeProperty ;
+    rdfs:range rdfs:Literal .
+
+fto:receivedBy rdfs:domain fto:Fairytale ;
+    rdfs:range fto:Audience .
+
+fto:recievedBy a owl:ObjectProperty .
+
+persp:Attitude a owl:Class .
+
+fto:51_Helper a fto:Helper ;
+    fto:hasAttribute fto:Innocent .
+
+fto:51_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:51_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:51_departure,
+        fto:51_magicaid,
+        fto:51_returnandreward,
+        fto:51_testortrial,
+        fto:51_transformation ;
+    fto:hasValue "The Little Mermaid  saves a human prince  and longs for an immortal soul. She sacrifices her voice to the Sea Witch  in exchange for legs. The prince marries another woman, and the mermaid chooses to die rather than harm him. She dissolves into sea foam but is granted spiritual ascension as a daughter of the air." .
+
+fto:51_Prince a fto:Character ;
+    rdfs:label "Prince" ;
+    fto:hasCharacterType fto:51_Helper .
+
+fto:51_Sea_Witch a fto:Character ;
+    rdfs:label "Sea Witch" ;
+    fto:hasCharacterType fto:51_Villain .
+
+fto:51_The_Little_Mermaid a fto:Character ;
+    rdfs:label "The Little Mermaid" ;
+    fto:hasCharacterType fto:51_Hero .
+
+fto:51_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:51_departure a fto:Departure ;
+    fto:hasValue "No romantic reward; gains moral growth and eternal spirit, aligning with tragic and moral themes.",
+        "The little mermaid dreams of the human world and disobeys her father, leaving the sea behind to pursue love on land." .
+
+fto:51_magicaid a fto:MagicalAid ;
+    fto:hasValue "She bargains with the Sea Witch for legs in exchange for her voice, a magical transformation." .
+
+fto:51_returnandreward a fto:ReturnAndReward .
+
+fto:51_testortrial a fto:TestOrTrial ;
+    fto:hasValue "The little mermaid must win the prince's love without her voice, while the Sea Witch interferes." .
+
+fto:51_transformation a fto:Transformation ;
+    fto:hasValue "The little mermaid sacrifices herself, ultimately transforming into sea foam, suggesting spiritual transcendence." .
+
+fto:52_Ariel a fto:Character ;
+    rdfs:label "Ariel" ;
+    fto:hasCharacterType fto:52_Hero .
+
+fto:52_Helper a fto:Helper ;
+    fto:hasAttribute fto:Tragic .
+
+fto:52_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:52_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:52_departure,
+        fto:52_magicaid,
+        fto:52_returnandreward,
+        fto:52_testortrial,
+        fto:52_transformation ;
+    fto:hasValue "Ariel, a curious mermaid princess, falls in love with Prince Eric and trades her voice to Ursula for legs. With help from Sebastian and Flounder, she regains her voice and defeats Ursula. Ariel marries Eric and becomes human, fulfilling her dream." .
+
+fto:52_Sebastian a fto:Character ;
+    rdfs:label "Sebastian" ;
+    fto:hasCharacterType fto:52_Helper .
+
+fto:52_Ursula a fto:Character ;
+    rdfs:label "Ursula" ;
+    fto:hasCharacterType fto:52_Villain .
+
+fto:52_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:52_departure a fto:Departure ;
+    fto:hasValue "Ariel longs for freedom and a life on land, rescuing the prince and setting her heart on change.",
+        "Marries the prince; gains agency and happiness, fulfilling empowerment and OuterWorld promotion." .
+
+fto:52_magicaid a fto:MagicalAid ;
+    fto:hasValue "She makes a deal with Ursula to gain legs, losing her voice in the process." .
+
+fto:52_returnandreward a fto:ReturnAndReward .
+
+fto:52_testortrial a fto:TestOrTrial ;
+    fto:hasValue "She must make the prince fall in love and defeat Ursula's schemes." .
+
+fto:52_transformation a fto:Transformation ;
+    fto:hasValue "With help from friends, Ariel defeats Ursula and regains her voice and freedom." .
+
+fto:53_Ariel a fto:Character ;
+    rdfs:label "Ariel" ;
+    fto:hasCharacterType fto:53_Hero .
+
+fto:53_Hero a fto:Hero ;
+    fto:hasAttribute fto:Innocent .
+
+fto:53_Plot a fto:Plot ;
+    fto:hasNarrativeStructure fto:53_departure,
+        fto:53_magicaid,
+        fto:53_returnandreward,
+        fto:53_testortrial,
+        fto:53_transformation ;
+    fto:hasValue "Ariel, driven by curiosity and longing for freedom, makes a pact with Ursula, sacrificing her voice to explore the human world. With Prince Eric and support from both sea and land allies, she overcomes Ursula and helps bridge their two worlds. Ariel chooses love and agency, reshaping her own destiny." .
+
+fto:53_Scuttle a fto:Character ;
+    rdfs:label "Scuttle" ;
+    fto:hasCharacterType fto:53_Trickster .
+
+fto:53_Trickster a fto:Trickster ;
+    fto:hasAttribute fto:Rebel .
+
+fto:53_Ursula a fto:Character ;
+    rdfs:label "Ursula" ;
+    fto:hasCharacterType fto:53_Villain .
+
+fto:53_Villain a fto:Villain ;
+    fto:hasAttribute fto:Evil .
+
+fto:53_departure a fto:Departure ;
+    fto:hasValue "Ariel feels stifled in her undersea world and saves Eric, sparking her journey to the human world.",
+        "Wins both love and a new place in the world, symbolizing empowerment and transformation." .
+
+fto:53_magicaid a fto:MagicalAid ;
+    fto:hasValue "She trades her voice for legs to find love and selfhood." .
+
+fto:53_returnandreward a fto:ReturnAndReward .
+
+fto:53_testortrial a fto:TestOrTrial ;
+    fto:hasValue "Faces deception and Ursula's manipulations, must find her true voice." .
+
+fto:53_transformation a fto:Transformation ;
+    fto:hasValue "Ariel asserts her identity, confronts Ursula, and reclaims her agency." .
+
+fto:Audience a owl:Class .
+
+fto:BittersweetEnding a owl:Class ;
+    rdfs:label "Bittersweet Ending" ;
+    rdfs:subClassOf fto:EndingType .
+
+fto:EmpowermentTheme a owl:Class ;
+    rdfs:label "Empowerment Theme" ;
+    rdfs:subClassOf fto:MoralTheme .
+
+fto:Hans_Christian_Andersen a fto:Creator ;
+    fto:hasValue "Hans Christian Andersen" .
+
+fto:IdentityAndInclusionTheme a owl:Class ;
+    rdfs:label "Identity and Inclusion Theme" ;
+    rdfs:subClassOf fto:MoralTheme .
+
+fto:LiteraryForm a owl:Class ;
+    rdfs:subClassOf fto:Medium .
+
+fto:MoralAmbiguityTheme a owl:Class ;
+    rdfs:label "Moral Ambiguity Theme" ;
+    rdfs:subClassOf fto:MoralTheme .
+
+fto:MythicMode a owl:Class ;
+    rdfs:label "Mythic Mode" ;
+    rdfs:subClassOf fto:LiteraryMode .
+
+fto:NarrativeUnit a owl:Class .
+
+fto:OuterWorld a owl:Class ;
+    rdfs:label "Outer World" ;
+    rdfs:subClassOf fto:ActivePromotion .
+
+fto:PositiveReception a owl:Class ;
+    rdfs:label "Positive Reception" .
+
+fto:Rebel a owl:Class ;
+    rdfs:label "Rebel" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
+fto:RomanticMode a owl:Class ;
+    rdfs:label "Romantic Mode" ;
+    rdfs:subClassOf fto:LiteraryMode .
+
+fto:Tragic a owl:Class ;
+    rdfs:label "Tragic" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
+fto:TragicMode a owl:Class ;
+    rdfs:label "Tragic Mode" ;
+    rdfs:subClassOf fto:LiteraryMode .
+
+fto:Trickster a owl:Class ;
+    rdfs:label "Trickster" ;
+    rdfs:subClassOf fto:CharacterArchetype,
+        fto:LiteraryMode .
+
+fto:CinematicAdaptation a owl:Class .
+
+fto:Disney a fto:Creator ;
+    fto:hasValue "Disney" .
+
+fto:HappilyEverAfter a owl:Class ;
+    rdfs:label "Happily Ever After" ;
+    rdfs:subClassOf fto:EndingType .
+
+fto:Helper a owl:Class ;
+    rdfs:label "Helper" ;
+    rdfs:subClassOf fto:CharacterArchetype .
+
+fto:InnerSelf a owl:Class ;
+    rdfs:label "Inner Self" ;
+    rdfs:subClassOf fto:ActivePromotion .
+
+fto:MixedReception a owl:Class ;
+    rdfs:label "Mixed Reception" .
+
+fto:PublicAttitude a owl:Class ;
+    rdfs:subClassOf persp:Attitude .
+
+fto:ActivePromotion a owl:Class .
+
+fto:Creator a owl:Class .
+
+fto:Departure a owl:Class ;
+    rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:Evil a owl:Class ;
+    rdfs:label "Evil" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
+fto:Hero a owl:Class ;
+    rdfs:label "Hero" ;
+    rdfs:subClassOf fto:CharacterArchetype .
+
+fto:MagicalAid a owl:Class ;
+    rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:Medium a owl:Class .
+
+fto:ReturnAndReward a owl:Class ;
+    rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:TestOrTrial a owl:Class ;
+    rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:Transformation a owl:Class ;
+    rdfs:subClassOf fto:RecurringNarrativeStructure .
+
+fto:Villain a owl:Class ;
+    rdfs:label "Villain" ;
+    rdfs:subClassOf fto:CharacterArchetype .
+
+fto:EndingType a owl:Class .
+
+fto:Innocent a owl:Class ;
+    rdfs:label "Innocent" ;
+    rdfs:subClassOf fto:CharacterAttribute .
+
+fto:MoralTheme a owl:Class .
+
+fto:Plot a owl:Class .
+
+fto:CharacterArchetype a owl:Class .
+
+fto:LiteraryMode a owl:Class .
+
+fto:RecurringNarrativeStructure a owl:Class ;
+    owl:sameAs fto:NarrativeUnit .
+
+fto:Character a owl:Class .
+
+fto:Fairytale a owl:Class .
+
